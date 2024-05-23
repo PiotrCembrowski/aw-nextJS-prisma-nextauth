@@ -1,5 +1,5 @@
 import Link from "next/link";
-import UserNav from "./Usernav";
+import UserNav from "./UserNav";
 
 const Navbar = () => {
   return (
