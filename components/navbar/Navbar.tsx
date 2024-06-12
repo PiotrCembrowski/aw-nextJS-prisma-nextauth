@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchFilters from "./SearchFilters";
 
 const Navbar = () => {
   return (
@@ -7,7 +8,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link href="/">Around the World</Link>
 
-          <div className="flex space-x-6 ">Search Filter</div>
+          <div className="flex space-x-6 ">
+            <SearchFilters />
+          </div>
           <div className="flex items-center space-x-6">
             Add property - User nav
           </div>
