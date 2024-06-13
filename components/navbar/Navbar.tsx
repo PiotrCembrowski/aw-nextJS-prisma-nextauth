@@ -13,7 +13,7 @@ const Navbar = () => {
             <SearchFilters />
           </div>
           <div className="flex items-center space-x-6">
-            <UserNav />
+            Add property <UserNav />
           </div>
         </div>
       </div>
