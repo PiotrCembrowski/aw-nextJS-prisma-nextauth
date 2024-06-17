@@ -1,5 +1,13 @@
+import CountriesLisItem from "./CountriesLisItem";
+
 const CountriesList = () => {
-  return <div>CountriesList</div>;
+  return (
+    <>
+      <CountriesLisItem />
+      <CountriesLisItem />
+      <CountriesLisItem />
+    </>
+  );
 };
 
 export default CountriesList;

@@ -1,5 +1,5 @@
 const CountriesLisItem = () => {
-  return <div>CountriesLisItem</div>;
+  return <div>Country</div>;
 };
 
 export default CountriesLisItem;
