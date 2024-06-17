@@ -1,5 +1,5 @@
 import Image from "next/image";
-import icon from "@/app/images/search.svg";
+import icon from "@/public/images/search.svg";
 
 const SearchFilters = () => {
   return (
