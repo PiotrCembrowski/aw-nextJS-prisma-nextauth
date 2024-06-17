@@ -13,6 +13,16 @@ const CountriesLisItem = () => {
           alt="Asia"
         />
       </div>
+
+      <div className="mt-2">
+        <p className="text-lg font-bold">Country Name</p>
+      </div>
+
+      <div className="mt-2 ">
+        <p className="text-sm text-gray-500">
+          <strong>Avg cost of living: 200$/month</strong>
+        </p>
+      </div>
     </div>
   );
 };
