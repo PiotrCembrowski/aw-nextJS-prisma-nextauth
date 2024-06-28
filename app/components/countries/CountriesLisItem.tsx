@@ -20,7 +20,7 @@ const CountriesLisItem = () => {
 
       <div className="mt-2 ">
         <p className="text-sm text-gray-500">
-          <strong>Avg cost of living: 200$/month</strong>
+          Avg cost of living: <strong>200$/month</strong>
         </p>
       </div>
     </div>
