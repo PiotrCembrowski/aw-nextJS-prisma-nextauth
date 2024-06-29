@@ -12,6 +12,18 @@ const LivingCostTable = () => {
           <option value="">Dinner</option>
         </select>
       </div>
+
+      <div className="w-full mb-6 py-6 text-center text-white bg-aw rounded-xl hover:bg-awDark">
+        Show more
+      </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>200$/day</p>
+        <p>$2000/month</p>
+      </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>Best area:</p>
+        <p>City Center</p>
+      </div>
     </aside>
   );
 };
