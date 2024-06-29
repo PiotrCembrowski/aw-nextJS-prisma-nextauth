@@ -20,7 +20,7 @@ const UserDetailPage: React.FC = () => {
           </div>
         </aside>
 
-        <div className="col-span-3 pl-0 md:pl-6">Travel visits</div>
+        <div className="col-span-1 md:col-span-3 pl-0 md:pl-6">Posts</div>
       </div>
     </main>
   );
