@@ -17,12 +17,17 @@ const LivingCostTable = () => {
         Show more
       </div>
       <div className="mb-4 flex justify-between align-center">
-        <p>200$/day</p>
-        <p>$2000/month</p>
+        <p>4 people:</p>
+        <p>2000$/month</p>
       </div>
       <div className="mb-4 flex justify-between align-center">
         <p>Best area:</p>
         <p>City Center</p>
+      </div>
+      <hr />
+      <div className="mt-4 flex justify-between align-center font-bold">
+        <p>Total costs:</p>
+        <p>2400$</p>
       </div>
     </aside>
   );
