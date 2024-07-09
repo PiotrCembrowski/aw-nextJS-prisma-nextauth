@@ -3,6 +3,8 @@
 import { useState } from "react";
 
 const UserNav = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <div className="p-2 relative inline-block border-full">
       <button className="flex items-center">
@@ -33,6 +35,12 @@ const UserNav = () => {
           />
         </svg>
       </button>
+
+      {isOpen && (
+        <div className="w-[220px] absolute top-[60px] right-0 bg-white border rounded-xl shadow-md">
+          menu
+        </div>
+      )}
     </div>
   );
 };
