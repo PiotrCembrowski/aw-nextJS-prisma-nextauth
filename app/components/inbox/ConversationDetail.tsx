@@ -36,6 +36,7 @@ const ConversationDetail = () => {
           onClick={() => {
             console.log("clicked");
           }}
+          className="w-[100px]"
         />
       </div>
     </>

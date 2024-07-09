@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const UserNav = () => {
   return (
     <div className="p-2 relative inline-block border-full">
