@@ -16,12 +16,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const content = (
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tempore
+      mollitia facere est ea velit ex necessitatibus similique, dolore labore.
+    </p>
+  );
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         <div className="pt-32">{children}</div>
-        <Modal />
+        <Modal label="Modal" content={content} />
       </body>
     </html>
   );

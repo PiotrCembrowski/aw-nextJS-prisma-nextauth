@@ -1,6 +1,11 @@
 "use client";
 
-const Modal: React.FC = () => {
+interface ModalProps {
+  label: string;
+  content: React.ReactElement;
+}
+
+const Modal: React.FC<ModalProps> = ({ label, content }) => {
   return (
     <div className="flex items-center justify-center fixed inset-0 z-50 bg-black/60">
       <div className="relative w-[90%] md:w-[80%] lg:w-[700px] my-6 h-auto">
@@ -24,14 +29,10 @@ const Modal: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h2 className="text-ld font-bold">The Title</h2>
+              <h2 className="text-ld font-bold">{label}</h2>
             </header>
 
-            <section className="p-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-              incidunt consectetur quod odio animi repellat velit reprehenderit
-              minima necessitatibus enim?
-            </section>
+            <section className="p-6">{content}</section>
           </div>
         </div>
       </div>
