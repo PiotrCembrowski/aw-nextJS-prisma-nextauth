@@ -18,6 +18,10 @@ const Modal: React.FC<ModalProps> = ({ label, content, isOpen, close }) => {
 
   const handleClose = useCallback(() => {
     setShowModal(false);
+
+    setTimeout(() => {
+      close();
+    }, 300);
   }, [close]);
 
   return (
