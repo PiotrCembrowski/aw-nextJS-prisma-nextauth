@@ -1,19 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 interface ModalProps {
   label: string;
+  close: () => void;
   content: React.ReactElement;
   isOpen: boolean;
 }
 
-const Modal: React.FC<ModalProps> = ({ label, content, isOpen }) => {
+const Modal: React.FC<ModalProps> = ({ label, content, isOpen, close }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
-  if (!isOpen) {
-    // return null;
-  }
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
+
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+  }, [close]);
 
   return (
     <div className="flex items-center justify-center fixed inset-0 z-50 bg-black/60">
