@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <div className="pt-32">{children}</div>
-        <Modal label="Modal" content={content} isOpen={true} />
+        <Modal label="Modal" content={content} isOpen={false} />
       </body>
     </html>
   );
