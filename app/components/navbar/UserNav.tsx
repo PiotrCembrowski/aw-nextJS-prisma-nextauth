@@ -45,6 +45,7 @@ const UserNav = () => {
             label="Log in"
             onClick={() => {
               console.log("clicked");
+              setIsOpen(false);
               loginModal.open();
             }}
           />
