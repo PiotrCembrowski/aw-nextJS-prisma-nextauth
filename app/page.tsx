@@ -1,4 +1,4 @@
-import Categories from "./components/Categories";
+import Categories from "./components/ui/Categories";
 import CountriesList from "./components/countries/CountriesList";
 
 export default function Home() {
