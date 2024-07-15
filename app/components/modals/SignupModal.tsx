@@ -1,7 +1,6 @@
 "use client";
 
 import Modal from "./Modal";
-import { useState } from "react";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 import CustomButton from "../forms/CustomButton";
 
@@ -18,6 +17,11 @@ const SignupModal = () => {
         />
         <input
           placeholder="Your password."
+          type="password"
+          className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
+        />
+        <input
+          placeholder="Repeat password."
           type="password"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
         />
