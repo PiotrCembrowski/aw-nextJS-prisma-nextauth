@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-code --compiler-options {\"module\": \"CommonJS\"} prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^5.17.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
