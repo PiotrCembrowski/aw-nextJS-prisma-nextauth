@@ -1,9 +1,12 @@
 import prisma from "@/lib/prisma";
+import { hashPassword } from "@/lib/auth";
 
 function handler(req: Request, res: Response) {
   const data = req.body;
 
   const { email, password } = data;
+
+  const hashedPassword = hashPassword(password);
 
   if (
     !email ||
