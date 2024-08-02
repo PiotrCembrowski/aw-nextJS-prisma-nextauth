@@ -4,7 +4,8 @@ import { hashPassword } from "@/lib/auth";
 function handler(req: Request, res: Response) {
   const data = req.body;
 
-  const { email, password } = data;
+  const email = data?.email;
+  const password = data?.password;
 
   const hashedPassword = hashPassword(password);
 
