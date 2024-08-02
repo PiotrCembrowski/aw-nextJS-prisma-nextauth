@@ -1,11 +1,12 @@
 import prisma from "@/lib/prisma";
 import { hashPassword } from "@/lib/auth";
+import { Request, Response } from "node-fetch";
 
 function handler(req: Request, res: Response) {
   const data = req.body;
 
-  const email = data?.email;
-  const password = data?.password;
+  const email: string = data?.email;
+  const password: string = data?.password;
 
   const hashedPassword = hashPassword(password);
 
