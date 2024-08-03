@@ -7,6 +7,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Countries {
+  country_id String @id @default(cuid())
+  name       String
+  cities     City[]
+  costs      Int
+}
+
 model Post {
   id        String  @id @default(cuid())
   title     String

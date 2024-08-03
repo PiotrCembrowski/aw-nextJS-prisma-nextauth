@@ -12,7 +12,10 @@ const CountriesList = () => {
   useEffect(() => {
     getCountries();
 
-    const [fetch] = useQuery();
+    const query = useQuery({
+      queryKey: ['Contries'],
+      queryFn: 
+    });
   }, []);
 
   return (
