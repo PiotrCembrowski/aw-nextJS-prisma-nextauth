@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
 
 const CountriesList = () => {
@@ -10,6 +11,8 @@ const CountriesList = () => {
 
   useEffect(() => {
     getCountries();
+
+    const [fetch] = useQuery();
   }, []);
 
   return (
