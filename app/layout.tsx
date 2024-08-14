@@ -10,6 +10,27 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 
+function makeQueryClient() {
+  return new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: 60 * 1000,
+      },
+    },
+  });
+}
+
+let browserQuertClient: QueryClient | undefined = undefined;
+
+function getQueryClient() {
+  if (isServer) {
+    return makeQueryClient();
+  } else {
+    if (!browserQuertClient) browserQuertClient = makeQueryClient();
+    return browserQuertClient;
+  }
+}
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,32 +50,17 @@ export default function RootLayout({
     </p>
   );
 
-  function makeQueryClient() {
-    return new QueryClient({
-      defaultOptions: {
-        queries: {
-          staleTime: 60 * 1000,
-        },
-      },
-    });
-  }
-
-  let browserQuertClient: QueryClient | undefined = undefined;
-
-  function getQueryClient() {
-    if (isServer) {
-      return makeQueryClient();
-    } else {
-      if (!browserQuertClient) browserQuertClient = makeQueryClient();
-      return browserQuertClient;
-    }
-  }
+  const queryClient = getQueryClient();
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div className="pt-32">{children}</div>
+        <div className="pt-32">
+          <QueryClientProvider client={queryClient}>
+            {children}
+          </QueryClientProvider>
+        </div>
         <LoginModal />
         <SignupModal />
       </body>
