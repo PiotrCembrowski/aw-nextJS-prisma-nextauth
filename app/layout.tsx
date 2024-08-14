@@ -4,7 +4,11 @@ import "./globals.css";
 import Navbar from "@/app/components/navbar/Navbar";
 import LoginModal from "./components/modals/LoginModal";
 import SignupModal from "./components/modals/SignupModal";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  isServer,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +40,15 @@ export default function RootLayout({
   }
 
   let browserQuertClient: QueryClient | undefined = undefined;
+
+  function getQueryClient() {
+    if (isServer) {
+      return makeQueryClient();
+    } else {
+      if (!browserQuertClient) browserQuertClient = makeQueryClient();
+      return browserQuertClient;
+    }
+  }
 
   return (
     <html lang="en">
