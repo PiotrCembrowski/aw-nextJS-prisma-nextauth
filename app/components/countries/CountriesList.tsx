@@ -9,14 +9,12 @@ const CountriesList = () => {
     const url = "http://localhost:3000/api/countries";
   };
 
-  useEffect(() => {
-    getCountries();
+  const query = useQuery({
+    queryKey: ["Countries"],
+    queryFn: getCountries(),
+  });
 
-    const query = useQuery({
-      queryKey: ['Contries'],
-      queryFn: 
-    });
-  }, []);
+  console.log(query);
 
   return (
     <>
