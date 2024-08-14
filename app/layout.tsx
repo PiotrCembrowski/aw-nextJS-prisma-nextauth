@@ -35,6 +35,8 @@ export default function RootLayout({
     });
   }
 
+  let browserQuertClient: QueryClient | undefined = undefined;
+
   return (
     <html lang="en">
       <body className={inter.className}>
