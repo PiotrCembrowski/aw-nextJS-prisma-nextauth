@@ -11,7 +11,7 @@ const CountriesList = () => {
 
   const query = useQuery({
     queryKey: ["Countries"],
-    queryFn: getCountries(),
+    queryFn: getCountries,
   });
 
   console.log(query);

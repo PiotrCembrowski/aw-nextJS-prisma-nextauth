@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/app/components/navbar/Navbar";
 import LoginModal from "./components/modals/LoginModal";
 import SignupModal from "./components/modals/SignupModal";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,16 @@ export default function RootLayout({
       mollitia facere est ea velit ex necessitatibus similique, dolore labore.
     </p>
   );
+
+  function makeQueryClient() {
+    return new QueryClient({
+      defaultOptions: {
+        queries: {
+          staleTime: 60 * 1000,
+        },
+      },
+    });
+  }
 
   return (
     <html lang="en">
