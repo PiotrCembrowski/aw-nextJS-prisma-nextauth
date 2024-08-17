@@ -15,21 +15,21 @@ model Country {
 }
 
 model City {
-  city_id             String   @id @default(cuid())
-  country             Country? @relation(fields: [countriesCountry_id], references: [country_id])
-  countriesCountry_id String?
-  Post                Post[]
+  city_id              String   @id @default(cuid())
+  country              Country? @relation(fields: [countries_country_id], references: [country_id])
+  countries_country_id String?
+  Post                 Post[]
 }
 
 model Post {
-  id            String  @id @default(cuid())
-  title         String
-  content       String?
-  published     Boolean @default(false)
-  authorId      String?
-  author        User?   @relation(fields: [authorId], references: [id])
-  city          City?   @relation(fields: [citiesCity_id], references: [city_id])
-  citiesCity_id String?
+  id             String  @id @default(cuid())
+  title          String
+  content        String?
+  published      Boolean @default(false)
+  authorId       String?
+  author         User?   @relation(fields: [authorId], references: [id])
+  city           City?   @relation(fields: [cities_city_id], references: [city_id])
+  cities_city_id String?
 }
 
 model User {
