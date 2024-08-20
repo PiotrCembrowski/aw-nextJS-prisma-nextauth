@@ -1,35 +1,30 @@
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 async function main() {
-  // const user = await prisma.user.create({
-  //   data: {
-  //     email: "losttape@gmail.com",
-  //     password: "1234",
-  //     name: "Piotr",
-  //     posts: {
-  //       create: {
-  //         title: "Check out Prisma with Next.js",
-  //         content: "https://www.prisma.io/nextjs",
-  //         published: false,
-  //       },
-  //     },
-  //   },
-  // });
+  const citiesData: Array<Prisma.CityCreateInput> = [
+    {
+      name: "Warsaw",
+      posts: {},
+    },
+  ];
+
+  const dataCities: Prisma.UserCreateInput[] = [
+    {
+      name: "Poland",
+      cities: citiesData,
+    },
+  ];
+
+  const country = await prisma.user.create({
+    data: dataCities,
+  });
 
   console.log("Start seeding...");
   // console.log(`Created user with id: ${user.id}`);
 
   console.log(`Seeding finished.`);
-
-  const userRead = await prisma.user.findUnique({
-    where: {
-      email: "losttape@gmail.com",
-    },
-  });
-
-  console.log(userRead);
 }
 
 main()
