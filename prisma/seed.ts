@@ -1,18 +1,33 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Prisma } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-async function main() {
-  const piotr = await prisma.user.upsert({
-    where: { email: "losttape@gmail.com" },
-    update: {},
-    create: {
-      email: "losttape@gmail.com",
-      password: "1234",
-      name: "piotrcembrowski",
-      posts: {},
+const userData: Prisma.UserCreateInput[] = [
+  {
+    email: "losttape@gmail.com",
+    password: "1234",
+    name: "Piotr",
+    posts: {
+      create: [
+        {
+          title: "New post",
+          content: "New content",
+          published: false,
+        },
+      ],
     },
-  });
+  },
+];
+
+async function main() {
+  console.log("Start seeding...");
+  for (const u of userData) {
+    const user = await prisma.user.create({
+      data: u,
+    });
+    console.log(`Created user with id: ${user.id}`);
+  }
+  console.log(`Seeding finished.`);
 }
 
 main()
