@@ -12,6 +12,7 @@ model Country {
   name       String
   cities     City[]
   costs      Int
+  contient   String
 }
 
 model City {
