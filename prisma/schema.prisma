@@ -16,9 +16,9 @@ model Country {
 
 model City {
   city_id              String   @id @default(cuid())
-  country              Country? @relation(fields: [countries_country_id], references:          [country_id])
+  country              Country? @relation(fields: [countries_country_id], references: [country_id])
   countries_country_id String?
-  posts                 Post[]
+  posts                Post[]
 }
 
 model Post {
