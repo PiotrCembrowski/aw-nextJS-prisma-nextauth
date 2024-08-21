@@ -1,25 +1,29 @@
 import { Prisma, PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-let citiesData: Array<Prisma.CityCreateInput>;
+let citiesData: Prisma.CityCreateNestedManyWithoutCountryInput;
 
 async function main() {
-  citiesData = [
-    {
-      name: "Warsaw",
-      posts: {},
-    },
-  ];
+  citiesData = {
+    create: [
+      {
+        name: "Warsaw",
+        posts: {},
+      },
+    ],
+  };
 
-  const dataCities: Prisma.CountryCreateInput[] = [
+  const Europe: Prisma.CountryCreateInput[] = [
     {
       name: "Poland",
+      costs: 750,
+      continent: "Europe",
       cities: citiesData,
     },
   ];
 
   const country = await prisma.user.create({
-    data: dataCities,
+    data: Europe,
   });
 
   console.log("Start seeding...");
