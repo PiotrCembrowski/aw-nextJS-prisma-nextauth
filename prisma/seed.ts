@@ -1,24 +1,21 @@
 import { Prisma, PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-let citiesData: Prisma.CityCreateNestedManyWithoutCountryInput;
 
 async function main() {
-  citiesData = {
-    create: [
-      {
-        name: "Warsaw",
-        posts: {},
-      },
-    ],
-  };
-
   const Europe: Prisma.CountryCreateInput[] = [
     {
       name: "Poland",
       costs: 750,
       continent: "Europe",
-      cities: citiesData,
+      cities: {
+        create: [
+          {
+            name: "Warsaw",
+            posts: {},
+          },
+        ],
+      },
     },
   ];
 
