@@ -1,16 +1,17 @@
 import { Prisma, PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
+let citiesData: Array<Prisma.CityCreateInput>;
 
 async function main() {
-  const citiesData: Array<Prisma.CityCreateInput> = [
+  citiesData = [
     {
       name: "Warsaw",
       posts: {},
     },
   ];
 
-  const dataCities: Prisma.UserCreateInput[] = [
+  const dataCities: Prisma.CountryCreateInput[] = [
     {
       name: "Poland",
       cities: citiesData,
