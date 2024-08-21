@@ -12,6 +12,12 @@ async function main() {
         create: [
           {
             name: "Warsaw",
+            costs: 1000,
+            posts: {},
+          },
+          {
+            name: "Cracow",
+            costs: 500,
             posts: {},
           },
         ],
@@ -19,11 +25,12 @@ async function main() {
     },
   ];
 
-  const country = await prisma.user.create({
-    data: Europe,
-  });
-
-  console.log("Start seeding...");
+  Europe.forEach(async (country) => {
+    return (country = await prisma.country.create({
+      data: country,
+    }));
+  }),
+    console.log("Start seeding...");
   // console.log(`Created user with id: ${user.id}`);
 
   console.log(`Seeding finished.`);
