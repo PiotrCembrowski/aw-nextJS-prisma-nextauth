@@ -5,12 +5,12 @@ import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
 
 const CountriesList = () => {
-  const query = useQuery({
+  const { data } = useQuery({
     queryKey: ["Countries"],
     queryFn: getCountries,
   });
 
-  console.log(query);
+  console.log(data);
 
   return (
     <>

@@ -15,5 +15,5 @@ export async function getCountries() {
 
   const data = await response.json();
 
-  return Response.json({ data });
+  return Response.json(data);
 }
