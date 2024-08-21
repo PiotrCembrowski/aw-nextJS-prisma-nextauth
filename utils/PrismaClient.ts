@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 export async function prisma() {
-  const prisma = new PrismaClient();
+  const client = new PrismaClient();
 
-  return prisma;
+  return client;
 }
