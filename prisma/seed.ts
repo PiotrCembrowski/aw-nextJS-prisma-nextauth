@@ -3,6 +3,8 @@ import { Prisma, PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
+  console.log("Start seeding...");
+
   const Europe: Prisma.CountryCreateInput[] = [
     {
       name: "Poland",
@@ -25,12 +27,18 @@ async function main() {
     },
   ];
 
+  console.log("Seeding countries...");
+
   Europe.forEach(async (country) => {
     return (country = await prisma.country.create({
       data: country,
     }));
-  }),
-    console.log("Start seeding...");
+  });
+
+  const states = await prisma.country.findMany();
+
+  console.log(states);
+
   // console.log(`Created user with id: ${user.id}`);
 
   console.log(`Seeding finished.`);
