@@ -36,8 +36,10 @@ async function main() {
   });
 
   const states = await prisma.country.findMany();
+  const cities = await prisma.city.findMany();
 
   console.log(states);
+  console.log(cities);
 
   // console.log(`Created user with id: ${user.id}`);
 
