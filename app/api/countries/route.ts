@@ -7,7 +7,16 @@ export async function GET(req: Request, res: Response) {
 }
 
 export async function POST(request: Request, reesponse: Response) {
-  const formData = await request.formData();
-  const name = formData.get("name");
-  return Response.json({ name });
+  const formData = await request.
+
+  return Response.json();
 }
+
+export async function PUT(request: Request, reesponse: Response) {
+  return  
+}
+
+export async function DELETE(request: Request, reesponse: Response) {
+  return
+}
+
