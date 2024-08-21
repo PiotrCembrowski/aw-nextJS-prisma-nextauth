@@ -1,18 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
+import { getCountries } from "@/lib/fetchCountries";
 
 const CountriesList = () => {
-  const getCountries = async () => {
-    const url = "http://localhost:3000/api/countries";
-  };
-
-  useEffect(() => {
-    getCountries();
-  }, []);
-
   const query = useQuery({
     queryKey: ["Countries"],
     queryFn: getCountries,
