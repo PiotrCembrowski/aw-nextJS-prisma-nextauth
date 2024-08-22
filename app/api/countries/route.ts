@@ -14,3 +14,7 @@ export async function GET(req: Request, res: Response) {
 export async function PUT(request: Request, reesponse: Response) {
   return;
 }
+
+export async function DELETE(request: Request, reesponse: Response) {
+  return;
+}
