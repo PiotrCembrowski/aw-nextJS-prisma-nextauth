@@ -18,8 +18,8 @@ export async function getCountries() {
   return JSON.stringify(data);
 }
 
-export async function deleteCountries() {
-  const response = await fetch("http://localhost:3000/api/countries", {
+export async function deleteCountry(name: string) {
+  const response = await fetch(`http://localhost:3000/api/countries/${name}`, {
     method: "DELETE",
     credentials: "include",
   });
