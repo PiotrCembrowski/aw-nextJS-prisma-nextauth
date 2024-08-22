@@ -6,7 +6,7 @@ import { getCountries } from "@/lib/fetchCountries";
 import { useEffect, useState } from "react";
 
 const CountriesList = () => {
-  const [countryList, setCountryList] = useState<string | undefined>();
+  const [countries, setCountries] = useState<string | undefined>();
 
   const { data } = useQuery({
     queryKey: ["Countries"],
@@ -14,10 +14,10 @@ const CountriesList = () => {
   });
 
   useEffect(() => {
-    setCountryList(data);
-  }, [data, countryList]);
+    setCountries(data);
+  }, [data, countries]);
 
-  console.log(countryList);
+  console.log(countries);
 
   return (
     <>
