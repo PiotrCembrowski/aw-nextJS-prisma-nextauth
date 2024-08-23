@@ -13,16 +13,21 @@ const CountriesList = () => {
     queryFn: getCountries,
   });
 
-  useEffect(() => {
+  function renderCountries() {
     setCountries(data);
-  }, [data, countries]);
+  }
+
+  useEffect(() => {
+    renderCountries();
+  });
 
   console.log(countries);
 
   return (
     <>
-      <CountriesLisItem />
-      <CountriesLisItem />
+      {countries.map((country, index) => {
+        return <CountriesLisItem key={index} />;
+      })}
       <CountriesLisItem />
     </>
   );
