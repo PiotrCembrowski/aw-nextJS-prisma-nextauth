@@ -5,35 +5,35 @@ const prisma = new PrismaClient();
 async function main() {
   console.log("Start seeding...");
 
-  const Europe: Prisma.CountryCreateInput[] = await [
-    {
-      name: "Poland",
-      costs: 750,
-      continent: "Europe",
-      cities: {
-        create: [
-          {
-            name: "Warsaw",
-            costs: 1000,
-            posts: {},
-          },
-          {
-            name: "Cracow",
-            costs: 500,
-            posts: {},
-          },
-        ],
-      },
-    },
-  ];
+  // const Europe: Prisma.CountryCreateInput[] = await [
+  //   {
+  //     name: "Poland",
+  //     costs: 750,
+  //     continent: "Europe",
+  //     cities: {
+  //       create: [
+  //         {
+  //           name: "Warsaw",
+  //           costs: 1000,
+  //           posts: {},
+  //         },
+  //         {
+  //           name: "Cracow",
+  //           costs: 500,
+  //           posts: {},
+  //         },
+  //       ],
+  //     },
+  //   },
+  // ];
 
-  console.log("Seeding countries...");
+  // console.log("Seeding countries...");
 
-  Europe.forEach(async (country) => {
-    await prisma.country.create({
-      data: country,
-    });
-  });
+  // Europe.forEach(async (country) => {
+  //   await prisma.country.create({
+  //     data: country,
+  //   });
+  // });
 
   const states = await prisma.country.findMany();
   const cities = await prisma.city.findMany();
