@@ -10,6 +10,7 @@ export type CountryType = {
   name: string;
   continent: string;
   costs: number;
+  image: string;
 };
 
 const CountriesList = () => {
