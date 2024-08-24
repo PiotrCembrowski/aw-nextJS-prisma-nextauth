@@ -1,7 +1,12 @@
 import Image from "next/image";
 import AsiaImg from "@/public/images/asia.jpg";
+import { CountryType } from "./CountriesList";
 
-const CountriesLisItem = () => {
+interface CountryProps {
+  country: CountryType;
+}
+
+const CountriesLisItem: React.FC<CountryProps> = () => {
   return (
     <div className="cursor-pointer">
       <div className="relative overflow-hidden aspect-square rounded-xl">

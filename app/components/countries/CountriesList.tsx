@@ -30,7 +30,7 @@ const CountriesList = () => {
   return (
     <>
       {countries?.map((country: any) => {
-        return <CountriesLisItem key={country.id} />;
+        return <CountriesLisItem key={country.id} country={country} />;
       })}
     </>
   );
