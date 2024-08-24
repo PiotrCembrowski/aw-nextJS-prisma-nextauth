@@ -6,7 +6,7 @@ interface CountryProps {
   country: CountryType;
 }
 
-const CountriesLisItem: React.FC<CountryProps> = () => {
+const CountriesLisItem: React.FC<CountryProps> = ({ country }) => {
   return (
     <div className="cursor-pointer">
       <div className="relative overflow-hidden aspect-square rounded-xl">
@@ -20,7 +20,7 @@ const CountriesLisItem: React.FC<CountryProps> = () => {
       </div>
 
       <div className="mt-2">
-        <p className="text-lg font-bold">Country Name</p>
+        <p className="text-lg font-bold">{country.name}</p>
       </div>
 
       <div className="mt-2 ">

@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
 
 export type CountryType = {
   id: string;
+  name: string;
+  continent: string;
+  costs: number;
 };
 
 const CountriesList = () => {
