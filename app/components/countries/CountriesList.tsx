@@ -5,8 +5,12 @@ import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
 import { useEffect, useState } from "react";
 
+export type CountryType = {
+  id: string;
+};
+
 const CountriesList = () => {
-  const [countries, setCountries] = useState<string[] | undefined>();
+  const [countries, setCountries] = useState<CountryType[]>([]);
 
   const { data } = useQuery({
     queryKey: ["Countries"],
@@ -25,8 +29,8 @@ const CountriesList = () => {
 
   return (
     <>
-      {countries?.map((country: unknown, index: number) => {
-        return <CountriesLisItem key={index} />;
+      {countries?.map((country: any) => {
+        return <CountriesLisItem key={country.id} />;
       })}
     </>
   );
