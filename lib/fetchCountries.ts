@@ -15,7 +15,7 @@ export async function getCountries() {
 
   const data = await response.json();
 
-  return JSON.stringify(data);
+  return data;
 }
 
 export async function deleteCountry(name: string) {

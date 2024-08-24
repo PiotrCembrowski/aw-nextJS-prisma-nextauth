@@ -14,7 +14,7 @@ const CountriesList = () => {
   });
 
   function renderCountries() {
-    setCountries(data);
+    setCountries(data?.list);
   }
 
   useEffect(() => {
@@ -25,10 +25,9 @@ const CountriesList = () => {
 
   return (
     <>
-      {countries.map((country, index) => {
+      {countries?.map((country, index) => {
         return <CountriesLisItem key={index} />;
       })}
-      <CountriesLisItem />
     </>
   );
 };
