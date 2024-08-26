@@ -40,7 +40,14 @@ const SignupModal = () => {
           The error message
         </div>
 
-        <CustomButton label="Submit" onClick={() => console.log("test")} />
+        <button
+          type="submit"
+          className="w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition cursor-pointer "
+        >
+          Submit
+        </button>
+
+        {/* <CustomButton label="Submit" onClick={() => console.log("test")} /> */}
       </form>
     </>
   );

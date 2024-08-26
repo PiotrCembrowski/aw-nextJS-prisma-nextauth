@@ -6,6 +6,8 @@ const register = async (formData: FormData) => {
   const password = formData.get("userpassword") as String;
   const passwordRepeated = formData.get("userpasswordrepeated") as String;
 
+  console.log(username, email, password, passwordRepeated);
+
   if (!username || !email || !password || !passwordRepeated) {
     throw new Error("Please fill all fields.");
   }
