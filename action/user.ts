@@ -5,10 +5,10 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 const register = async (formData: FormData) => {
-  const username = formData.get("username") as String;
-  const email = formData.get("useremail") as String;
-  const password = formData.get("userpassword") as String;
-  const passwordRepeated = formData.get("userpasswordrepeated") as String;
+  const username = formData.get("username") as string;
+  const email = formData.get("useremail") as string;
+  const password = formData.get("userpassword") as string;
+  const passwordRepeated = formData.get("userpasswordrepeated") as string;
 
   console.log(username, email, password, passwordRepeated);
 
