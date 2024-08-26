@@ -14,7 +14,7 @@ const SignupModal = () => {
           placeholder="Your e-mail address."
           type="email"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
-          name="email"
+          name="useremail"
         />
         <input
           placeholder="Your password."
@@ -26,7 +26,7 @@ const SignupModal = () => {
           placeholder="Repeat password."
           type="password"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
-          name="userpassword"
+          name="userpasswordrepeated"
         />
 
         <div className="p-5 bg-aw text-white rounded-xl opacity-80">
