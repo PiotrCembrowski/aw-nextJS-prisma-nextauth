@@ -44,6 +44,5 @@ model User {
   updatedAt      DateTime @updatedAt @map("updated_at")
   posts          Post[]
   img            String?
-  // google & facebook Providers
   authProviderId String?
 }
