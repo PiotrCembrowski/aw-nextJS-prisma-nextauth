@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+export { auth } from "@/auth";
+
 export function middleware(request: NextRequest) {
   //Log the current request pathname
   console.log("Current path:", request.nextUrl.pathname);
