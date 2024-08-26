@@ -1,11 +1,12 @@
 "use server";
 
 import { PrismaClient } from "@prisma/client";
+import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
 
 const register = async (formData: FormData) => {
-  const username = formData.get("username") as string;
+  const userName = formData.get("username") as string;
   const email = formData.get("useremail") as string;
   const password = formData.get("userpassword") as string;
   const passwordRepeated = formData.get("userpasswordrepeated") as string;
@@ -25,6 +26,18 @@ const register = async (formData: FormData) => {
   });
 
   if (existingUser) throw new Error("User already exist.");
+
+  await await prisma.user.create({
+    data: {
+      userName,
+      email,
+      password,
+    },
+  });
+
+  console.log("User created successfully.");
+
+  redirect("/login");
 };
 
 export { register };
