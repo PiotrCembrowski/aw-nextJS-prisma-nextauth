@@ -23,6 +23,8 @@ const register = async (formData: FormData) => {
       email: email,
     },
   });
+
+  if (existingUser) throw new Error("User already exist.");
 };
 
 export { register };
