@@ -12,6 +12,12 @@ const SignupModal = () => {
     <>
       <form action={register} className="space-y-4">
         <input
+          placeholder="Your user name."
+          type="text"
+          className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
+          name="username"
+        />
+        <input
           placeholder="Your e-mail address."
           type="email"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
