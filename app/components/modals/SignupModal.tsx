@@ -3,13 +3,14 @@
 import Modal from "./Modal";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 import CustomButton from "../forms/CustomButton";
+import { register } from "@/action/user";
 
 const SignupModal = () => {
   const SignupModal = useSignupModal();
 
   const content = (
     <>
-      <form action="" className="space-y-4">
+      <form action={register} className="space-y-4">
         <input
           placeholder="Your e-mail address."
           type="email"
