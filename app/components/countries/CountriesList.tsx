@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Fragment } from "react";
 
 export type CountryType = {
   id: string;
@@ -13,7 +13,7 @@ export type CountryType = {
   image: string;
 };
 
-const CountriesList = () => {
+const CountriesList = (index: any) => {
   const [countries, setCountries] = useState<CountryType[]>([]);
 
   const { data } = useQuery({
@@ -32,11 +32,11 @@ const CountriesList = () => {
   console.log(countries);
 
   return (
-    <>
+    <Fragment key={index}>
       {countries?.map((country: any) => {
         return <CountriesLisItem key={country.id} country={country} />;
       })}
-    </>
+    </Fragment>
   );
 };
 
