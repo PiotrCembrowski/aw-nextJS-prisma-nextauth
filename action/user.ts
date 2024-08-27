@@ -39,7 +39,7 @@ const register = async (formData: FormData) => {
   await console.log(showuser);
   console.log("User created successfully.");
 
-  redirect("/login");
+  redirect("/");
 };
 
 export { register };
