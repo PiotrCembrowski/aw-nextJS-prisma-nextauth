@@ -3,6 +3,7 @@ CREATE TABLE "Country" (
     "country_id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "costs" INTEGER NOT NULL,
+    "continent" TEXT NOT NULL,
 
     CONSTRAINT "Country_pkey" PRIMARY KEY ("country_id")
 );
@@ -10,6 +11,8 @@ CREATE TABLE "Country" (
 -- CreateTable
 CREATE TABLE "City" (
     "city_id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
+    "costs" INTEGER NOT NULL,
     "countries_country_id" TEXT,
 
     CONSTRAINT "City_pkey" PRIMARY KEY ("city_id")
@@ -31,10 +34,12 @@ CREATE TABLE "Post" (
 CREATE TABLE "User" (
     "id" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "password" TEXT NOT NULL,
+    "password" TEXT,
     "name" TEXT,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,
+    "img" TEXT,
+    "authProviderId" TEXT,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );

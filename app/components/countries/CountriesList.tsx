@@ -29,8 +29,6 @@ const CountriesList = (index: any) => {
     renderCountries();
   });
 
-  console.log(countries);
-
   return (
     <Fragment key={index}>
       {countries?.map((country: any) => {
