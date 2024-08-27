@@ -1,6 +1,7 @@
 "use server";
 
 import { PrismaClient } from "@prisma/client";
+import { hash } from "bcryptjs";
 import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
@@ -27,11 +28,13 @@ const register = async (formData: FormData) => {
 
   if (existingUser) throw new Error("User already exist.");
 
+  const hashedPassword = await hash(password, 12);
+
   await await prisma.user.create({
     data: {
       userName,
       email,
-      password,
+      password: hashedPassword,
     },
   });
 
