@@ -47,6 +47,9 @@ CREATE TABLE "User" (
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 
+-- CreateIndex
+CREATE UNIQUE INDEX "User_name_key" ON "User"("name");
+
 -- AddForeignKey
 ALTER TABLE "City" ADD CONSTRAINT "City_countries_country_id_fkey" FOREIGN KEY ("countries_country_id") REFERENCES "Country"("country_id") ON DELETE SET NULL ON UPDATE CASCADE;
 

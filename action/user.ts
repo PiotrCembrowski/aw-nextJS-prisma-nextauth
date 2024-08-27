@@ -19,9 +19,6 @@ const register = async (formData: FormData) => {
 
   //  existing user
 
-  const showuser = await prisma.user.findMany();
-  await console.log(showuser);
-
   const existingUser = await prisma.user.findUnique({
     where: {
       email: email,
@@ -38,6 +35,8 @@ const register = async (formData: FormData) => {
     },
   });
 
+  const showuser = await prisma.user.findMany();
+  await console.log(showuser);
   console.log("User created successfully.");
 
   redirect("/login");
