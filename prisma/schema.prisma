@@ -10,17 +10,17 @@ datasource db {
 model Country {
   country_id String @id @default(cuid())
   name       String
-  cities     City[]
   costs      Int
   continent  String
+  cities     City[]
 }
 
 model City {
   city_id              String   @id @default(cuid())
   name                 String
   costs                Int
-  country              Country? @relation(fields: [countries_country_id], references: [country_id])
   countries_country_id String?
+  country              Country? @relation(fields: [countries_country_id], references: [country_id])
   posts                Post[]
 }
 
@@ -30,19 +30,19 @@ model Post {
   content        String?
   published      Boolean @default(false)
   authorId       String?
+  cities_city_id String?
   author         User?   @relation(fields: [authorId], references: [id])
   city           City?   @relation(fields: [cities_city_id], references: [city_id])
-  cities_city_id String?
 }
 
 model User {
   id             String   @id @default(cuid())
   email          String   @unique
   password       String?
-  name           String?  @unique
+  userName       String?  
   createdAt      DateTime @default(now()) @map("created_at")
   updatedAt      DateTime @updatedAt @map("updated_at")
-  posts          Post[]
   img            String?
   authProviderId String?
+  posts          Post[]
 }

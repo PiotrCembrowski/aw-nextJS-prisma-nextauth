@@ -38,7 +38,7 @@ async function main() {
   const User: Prisma.UserCreateInput = await {
     email: "losttape@gmail.com",
     password: "123",
-    name: "piotr",
+    userName: "piotr",
   };
 
   await prisma.user.create({

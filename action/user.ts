@@ -6,14 +6,14 @@ import { redirect } from "next/navigation";
 const prisma = new PrismaClient();
 
 const register = async (formData: FormData) => {
-  const name = formData.get("username") as string;
+  const userName = formData.get("username") as string;
   const email = formData.get("useremail") as string;
   const password = formData.get("userpassword") as string;
   const passwordRepeated = formData.get("userpasswordrepeated") as string;
 
-  console.log(name, email, password, passwordRepeated);
+  console.log(userName, email, password, passwordRepeated);
 
-  if (!name || !email || !password || !passwordRepeated) {
+  if (!userName || !email || !password || !passwordRepeated) {
     throw new Error("Please fill all fields.");
   }
 
@@ -29,7 +29,7 @@ const register = async (formData: FormData) => {
 
   await await prisma.user.create({
     data: {
-      name,
+      userName,
       email,
       password,
     },
