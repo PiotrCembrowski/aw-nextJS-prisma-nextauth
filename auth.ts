@@ -28,6 +28,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             password: password,
           },
         });
+
+        if (!existingUser) {
+          throw new Error("Invalid email or password.");
+        }
+
+        if (!existingUser.password) {
+          throw new Error("Invalid email or password.");
+        }
       },
     }),
   ],
