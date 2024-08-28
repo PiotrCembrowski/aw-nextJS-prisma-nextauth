@@ -65,4 +65,4 @@ const register = async (formData: FormData) => {
   redirect("/");
 };
 
-export { register };
+export { register, login };
