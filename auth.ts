@@ -1,5 +1,8 @@
-import NextAuth from "next-auth";
+import { PrismaClient } from "@prisma/client";
+import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
+
+const prisma = new PrismaClient;
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
@@ -17,6 +20,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if(!email || !password) {
         throw new CredentialsSignin('Please provide both email and password.')
       }
+
+      const existingUser = await prisma.user.findUnique({
+        where: {
+          email: email,
+          password: password,
+        },
+      });
     }
   ],
 });
