@@ -6,6 +6,11 @@ import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
 
+const login = async (formData: FormData) => {
+  const email = formData.get("email") as string;
+  const password = formData.get("password") as string;
+};
+
 const register = async (formData: FormData) => {
   const userName = formData.get("username") as string;
   const email = formData.get("useremail") as string;
