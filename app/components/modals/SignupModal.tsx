@@ -2,7 +2,6 @@
 
 import Modal from "./Modal";
 import useSignupModal from "@/app/hooks/UseSignupModal";
-import CustomButton from "../forms/CustomButton";
 import { register } from "@/action/user";
 
 const SignupModal = () => {
