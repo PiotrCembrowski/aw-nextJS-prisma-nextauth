@@ -1,7 +1,9 @@
 "use server";
 
+import { signIn } from "@/auth";
 import { PrismaClient } from "@prisma/client";
 import { hash } from "bcryptjs";
+import { CredentialsSignin } from "next-auth";
 import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
@@ -9,6 +11,19 @@ const prisma = new PrismaClient();
 const login = async (formData: FormData) => {
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
+
+  try {
+    await signIn("credentials", {
+      redirect: false,
+      callbackUrl: "/",
+      email,
+      password,
+    });
+  } catch (error) {
+    const anError = error as CredentialsSignin;
+
+    return anError.cause;
+  }
 };
 
 const register = async (formData: FormData) => {
