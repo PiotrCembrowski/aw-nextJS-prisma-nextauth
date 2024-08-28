@@ -1,6 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import NextAuth, { CredentialsSignin } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
+import { compare } from "bcryptjs";
 
 const prisma = new PrismaClient();
 
@@ -22,19 +23,25 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           );
         }
 
-        const existingUser = await prisma.user.findUnique({
+        const user = await prisma.user.findUnique({
           where: {
             email: email,
             password: password,
           },
         });
 
-        if (!existingUser) {
+        if (!user) {
           throw new Error("Invalid email or password.");
         }
 
-        if (!existingUser.password) {
+        if (!user.password) {
           throw new Error("Invalid email or password.");
+        }
+
+        const isMatched = await compare(password, user.password);
+
+        if (!isMatched) {
+          throw new Error("Password didn't mached.");
         }
       },
     }),
