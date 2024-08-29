@@ -4,13 +4,16 @@ import { signIn } from "@/auth";
 import { PrismaClient } from "@prisma/client";
 import { hash } from "bcryptjs";
 import { CredentialsSignin } from "next-auth";
-import { redirect } from "next/navigation";
 
 const prisma = new PrismaClient();
 
 const login = async (formData: FormData) => {
+  const users = await prisma.user.findMany();
+  console.log(users);
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
+  const hashedPassword = await hash(password, 12);
+  console.log(hashedPassword);
 
   try {
     await signIn("credentials", {
@@ -63,8 +66,6 @@ const register = async (formData: FormData) => {
   const showuser = await prisma.user.findMany();
   await console.log(showuser);
   console.log("User created successfully.");
-
-  redirect("/");
 };
 
 export { register, login };
