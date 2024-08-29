@@ -26,7 +26,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const user = await prisma.user.findUnique({
           where: {
             email: email,
-            password: password,
+          },
+          select: {
+            email: true,
+            password: true,
           },
         });
 
@@ -41,7 +44,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const isMatched = await compare(password, user.password);
 
         if (!isMatched) {
-          throw new Error("Password didn't mached.");
+          throw new Error("Password didn't matched.");
         }
 
         const userData = {

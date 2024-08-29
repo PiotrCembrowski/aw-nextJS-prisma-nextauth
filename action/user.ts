@@ -8,12 +8,8 @@ import { CredentialsSignin } from "next-auth";
 const prisma = new PrismaClient();
 
 const login = async (formData: FormData) => {
-  const users = await prisma.user.findMany();
-  console.log(users);
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
-  const hashedPassword = await hash(password, 12);
-  console.log(hashedPassword);
 
   try {
     await signIn("credentials", {
