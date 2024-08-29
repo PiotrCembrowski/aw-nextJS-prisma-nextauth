@@ -22,7 +22,9 @@ const login = async (formData: FormData) => {
   } catch (error) {
     const anError = error as CredentialsSignin;
 
-    return anError.cause;
+    const someErro = JSON.parse(JSON.stringify(anError.cause));
+
+    return someErro;
   }
 };
 
