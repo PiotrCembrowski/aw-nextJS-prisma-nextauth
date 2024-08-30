@@ -28,6 +28,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             email: email,
           },
           select: {
+            id: true,
+            userName: true,
             email: true,
             password: true,
           },
