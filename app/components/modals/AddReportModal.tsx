@@ -1,3 +1,5 @@
+"use client";
+
 import Modal from "./Modal";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
