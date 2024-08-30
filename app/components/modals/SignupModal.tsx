@@ -3,8 +3,12 @@
 import Modal from "./Modal";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 import { register } from "@/action/user";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const SignupModal = () => {
+  const router = useRouter();
+  const [error, setError] = useState<string[]>([]);
   const SignupModal = useSignupModal();
 
   const content = (
