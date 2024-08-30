@@ -40,12 +40,14 @@ const SignupModal = () => {
           type="text"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="username"
+          required
         />
         <input
           placeholder="Your e-mail address."
           type="email"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="useremail"
+          required
         />
         <input
           placeholder="Your password."
@@ -53,6 +55,7 @@ const SignupModal = () => {
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="userpassword"
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <input
           placeholder="Repeat password."
@@ -60,6 +63,7 @@ const SignupModal = () => {
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="userpasswordrepeated"
           onChange={(e) => setPassword2(e.target.value)}
+          required
         />
         {errors.map((error, index) => {
           return (
