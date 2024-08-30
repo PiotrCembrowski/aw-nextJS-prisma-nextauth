@@ -2,7 +2,7 @@
 
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
-const AddPropertyButton = () => {
+const AddReportButton = () => {
   const addReportModal = useAddReportModal();
   const arountTheWorldHome = () => {
     addReportModal.open();
@@ -17,4 +17,4 @@ const AddPropertyButton = () => {
   );
 };
 
-export default AddPropertyButton;
+export default AddReportButton;
