@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const SignupModal = () => {
   const router = useRouter();
-  const [error, setError] = useState<string[]>([]);
+  const [errors, setErrors] = useState<string[]>([]);
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
   const SignupModal = useSignupModal();
@@ -33,25 +33,31 @@ const SignupModal = () => {
           type="password"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="userpassword"
+          onChange={(e) => setPassword(e.target.value)}
         />
         <input
           placeholder="Repeat password."
           type="password"
           className="w-full h-[54px] px-4 border border-gray-300 rounded-xl"
           name="userpasswordrepeated"
+          onChange={(e) => setPassword2(e.target.value)}
         />
-
-        <div className="p-5 bg-aw text-white rounded-xl opacity-80">
-          The error message
-        </div>
-
+        {errors.map((error, index) => {
+          return (
+            <div
+              key={index}
+              className="p-5 bg-aw text-white rounded-xl opacity-80"
+            >
+              {error}
+            </div>
+          );
+        })}
         <button
           type="submit"
           className="w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition cursor-pointer "
         >
           Submit
         </button>
-
         {/* <CustomButton label="Submit" onClick={() => console.log("test")} /> */}
       </form>
     </>
