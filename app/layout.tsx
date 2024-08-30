@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/app/components/navbar/Navbar";
 import LoginModal from "./components/modals/LoginModal";
 import SignupModal from "./components/modals/SignupModal";
+import AddReportModal from "./components/modals/AddReportModal";
 import QueryClientContextProvider from "@/utils/QueryClientContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,6 +35,7 @@ export default function RootLayout({
         </div>
         <LoginModal />
         <SignupModal />
+        <AddReportModal />
       </body>
     </html>
   );
