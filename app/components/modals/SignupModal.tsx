@@ -8,29 +8,18 @@ import { useEffect, useState } from "react";
 
 const SignupModal = () => {
   const router = useRouter();
-  const [errors, setErrors] = useState<string[]>([]);
+  const [error, setError] = useState<string>();
   const [password, setPassword] = useState("password");
   const [password2, setPassword2] = useState("password2");
   const [flag, setFlag] = useState<boolean>(false);
   const SignupModal = useSignupModal();
 
   useEffect(() => {
-    if (password == password2) setFlag(true);
+    if (password == password2) {
+      setFlag(true);
+      setError("Passwords do not match.");
+    }
   }, [flag, password, password2]);
-
-  let button;
-
-  button = (
-    <button
-      type="submit"
-      className={`w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition ${
-        flag ? "cursor-pointer" : "cursor-not-allowed"
-      }`}
-      disabled={flag ? true : false}
-    >
-      Submit
-    </button>
-  );
 
   const content = (
     <>
@@ -65,17 +54,18 @@ const SignupModal = () => {
           onChange={(e) => setPassword2(e.target.value)}
           required
         />
-        {errors.map((error, index) => {
-          return (
-            <div
-              key={`error_${index}`}
-              className="p-5 bg-aw text-white rounded-xl opacity-80"
-            >
-              {error}
-            </div>
-          );
-        })}
-        {button}
+        <div className="p-5 bg-aw text-white rounded-xl opacity-80">
+          {error}
+        </div>
+        <button
+          type="submit"
+          className={`w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition ${
+            flag ? "cursor-pointer" : "cursor-not-allowed"
+          }`}
+          disabled={flag ? true : false}
+        >
+          Submit
+        </button>
       </form>
     </>
   );
