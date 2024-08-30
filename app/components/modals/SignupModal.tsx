@@ -45,7 +45,7 @@ const SignupModal = () => {
         {errors.map((error, index) => {
           return (
             <div
-              key={index}
+              key={`error_${index}`}
               className="p-5 bg-aw text-white rounded-xl opacity-80"
             >
               {error}
