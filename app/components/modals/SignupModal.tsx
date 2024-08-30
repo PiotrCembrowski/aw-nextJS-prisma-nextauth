@@ -9,6 +9,8 @@ import { useState } from "react";
 const SignupModal = () => {
   const router = useRouter();
   const [error, setError] = useState<string[]>([]);
+  const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
   const SignupModal = useSignupModal();
 
   const content = (
