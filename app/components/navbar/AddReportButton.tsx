@@ -1,13 +1,17 @@
+"use client";
+
 import useAddReportModal from "@/app/hooks/UseReportModal";
-import AddReportModal from "../modals/AddReportModal";
 
 const AddPropertyButton = () => {
   const addReportModal = useAddReportModal();
-  const ArountTheWorldHome = () => {
+  const arountTheWorldHome = () => {
     addReportModal.open();
   };
   return (
-    <div className="p-2 cursor-pointer text-sm font-semibold rounded-full hover:bg-gray-200">
+    <div
+      onClick={arountTheWorldHome}
+      className="p-2 cursor-pointer text-sm font-semibold rounded-full hover:bg-gray-200"
+    >
       Around The World Home
     </div>
   );
