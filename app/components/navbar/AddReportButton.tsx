@@ -1,6 +1,6 @@
 "use client";
 
-import useAddReportModal from "@/app/hooks/UseReportModal";
+import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
 const AddPropertyButton = () => {
   const addReportModal = useAddReportModal();

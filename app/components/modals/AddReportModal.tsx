@@ -1,5 +1,5 @@
 import Modal from "./Modal";
-import useAddReportModal from "@/app/hooks/UseReportModal";
+import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
 const AddReportModal = () => {
   const addReportModal = useAddReportModal();
