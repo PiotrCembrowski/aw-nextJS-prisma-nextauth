@@ -4,14 +4,33 @@ import Modal from "./Modal";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 import { register } from "@/action/user";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const SignupModal = () => {
   const router = useRouter();
   const [errors, setErrors] = useState<string[]>([]);
-  const [password, setPassword] = useState("");
-  const [password2, setPassword2] = useState("");
+  const [password, setPassword] = useState("password");
+  const [password2, setPassword2] = useState("password2");
+  const [flag, setFlag] = useState<boolean>(false);
   const SignupModal = useSignupModal();
+
+  useEffect(() => {
+    if (password == password2) setFlag(true);
+  }, [flag, password, password2]);
+
+  let button;
+
+  button = (
+    <button
+      type="submit"
+      className={`w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition ${
+        flag ? "cursor-pointer" : "cursor-not-allowed"
+      }`}
+      disabled={true}
+    >
+      Submit
+    </button>
+  );
 
   const content = (
     <>
@@ -52,13 +71,7 @@ const SignupModal = () => {
             </div>
           );
         })}
-        <button
-          type="submit"
-          className="w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition cursor-pointer "
-        >
-          Submit
-        </button>
-        {/* <CustomButton label="Submit" onClick={() => console.log("test")} /> */}
+        {button}
       </form>
     </>
   );
