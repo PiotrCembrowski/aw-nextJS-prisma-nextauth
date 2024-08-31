@@ -91,6 +91,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
               email: emailString,
             },
           });
+
+          if (!existUser) {
+            await prisma.user.create({
+              email: emailString,
+              userName: name,
+              image,
+              id,
+            });
+          }
         } catch (error) {
           throw new Error("Error while creating user.");
         }
