@@ -3,12 +3,11 @@
 import Modal from "./Modal";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import { login } from "@/action/user";
-import { auth } from "@/auth";
+import { getSession } from "@/action/fetchAuth";
 
 const LoginModal = () => {
   const LoginModal = useLoginModal();
-  const session = auth();
-  console.log("--------", session);
+  getSession();
 
   const content = (
     <>
