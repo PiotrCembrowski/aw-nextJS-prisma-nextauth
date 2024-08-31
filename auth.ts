@@ -76,8 +76,17 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (user) {
         token.email = user.email;
       }
-
       return token;
+    },
+
+    signIn: async ({ user, account }) => {
+      if (account?.provider == "google") {
+        try {
+          const { email, name, image, id } = user;
+        } catch (error) {
+          throw new Error("Error while creating user.");
+        }
+      }
     },
   },
 });
