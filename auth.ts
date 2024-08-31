@@ -69,6 +69,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         session.user.id = token.sub;
         session.user.email = token.email;
       }
+      return session;
     },
   },
 });
