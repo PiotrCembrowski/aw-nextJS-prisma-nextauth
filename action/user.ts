@@ -56,6 +56,7 @@ const register = async (formData: FormData) => {
       userName,
       email,
       password: hashedPassword,
+      role: "user",
     },
   });
 
