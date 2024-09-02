@@ -80,29 +80,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
 
     signIn: async ({ user, account }) => {
-      if (account?.provider == "google") {
-        try {
-          const { email, name, image, id } = user;
-
-          const emailString = JSON.stringify(email);
-
-          const existUser = await prisma.user.findUnique({
-            where: {
-              email: emailString,
-            },
-          });
-
-          if (!existUser) {
-            await prisma.user.create({
-              email: emailString,
-              userName: name,
-              image,
-              id,
-            });
-          }
-        } catch (error) {
-          throw new Error("Error while creating user.");
-        }
+      if (account?.provider == "credentials") {
+        return true;
+      } else {
+        return false;
       }
     },
   },
