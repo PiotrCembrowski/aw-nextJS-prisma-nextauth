@@ -35,23 +35,15 @@ async function main() {
     });
   });
 
-  const User: Prisma.UserCreateInput = await {
-    email: "losttape@gmail.com",
-    password: "123",
-    userName: "piotr",
-  };
+  // const User: Prisma.UserCreateInput = await {
+  //   email: "losttape@gmail.com",
+  //   password: "123",
+  //   userName: "piotr",
+  // };
 
-  await prisma.user.create({
-    data: User,
-  });
-
-  const states = await prisma.country.findMany();
-  const cities = await prisma.city.findMany();
-  const users = await prisma.user.findMany();
-
-  console.log(states);
-  console.log(cities);
-  console.log(users);
+  // await prisma.user.create({
+  //   data: User,
+  // });
 
   // console.log(`Created user with id: ${user.id}`);
 
