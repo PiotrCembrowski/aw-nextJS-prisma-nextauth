@@ -14,12 +14,12 @@ const SignupModal = () => {
   const [flag, setFlag] = useState<boolean>(false);
   const SignupModal = useSignupModal();
 
-  useEffect(() => {
-    if (password == password2) {
-      setFlag(true);
-      setError("Passwords do not match.");
-    }
-  }, [flag, password, password2]);
+  // useEffect(() => {
+  //   if (password === password2) {
+  //     setFlag(true);
+  //     setError("Passwords do not match.");
+  //   }
+  // }, [flag, password, password2]);
 
   const content = (
     <>
