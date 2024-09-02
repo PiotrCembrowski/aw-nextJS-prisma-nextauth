@@ -10,4 +10,6 @@ export const getSession = cache(async () => {
     console.log("user loaded");
   }
   console.log("--------", session);
+
+  return session;
 });
