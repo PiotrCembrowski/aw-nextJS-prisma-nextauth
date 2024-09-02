@@ -7,7 +7,7 @@ import { getSession } from "@/action/fetchAuth";
 
 const LoginModal = () => {
   const LoginModal = useLoginModal();
-  const session = getSession();
+  getSession();
 
   const content = (
     <>

@@ -79,7 +79,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return token;
     },
 
-    signIn: async ({ user, account }) => {
+    signIn: async ({ account }: any) => {
       if (account?.provider == "credentials") {
         return true;
       } else {
