@@ -59,11 +59,15 @@ const SignupModal = () => {
         </div>
         <button
           type="submit"
+          className={`w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition`}
+        >
+          {/* <button
+          type="submit"
           className={`w-full py-4 bg-aw hover:bg-awDark text-white text-center rounded-xl transition ${
             flag ? "cursor-pointer" : "cursor-not-allowed"
           }`}
-          disabled={flag ? true : false}
-        >
+          disabled={flag ? false : false}
+        > */}
           Submit
         </button>
       </form>

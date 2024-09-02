@@ -51,12 +51,11 @@ const register = async (formData: FormData) => {
 
   const hashedPassword = await hash(password, 12);
 
-  await await prisma.user.create({
+  await prisma.user.create({
     data: {
       userName,
       email,
       password: hashedPassword,
-      role: "user",
     },
   });
 

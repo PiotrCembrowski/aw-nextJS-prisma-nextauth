@@ -45,5 +45,5 @@ model User {
   img            String?
   authProviderId String?
   posts          Post[]
-  role           String
+  role           String?
 }
