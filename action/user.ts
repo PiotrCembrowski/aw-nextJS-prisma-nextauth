@@ -10,6 +10,8 @@ const prisma = new PrismaClient();
 const login = async (formData: FormData) => {
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
+  const showuser = await prisma.user.findMany();
+  console.log(showuser);
 
   try {
     await signIn("credentials", {

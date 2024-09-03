@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuLink from "./MenuLink";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import useSignupModal from "@/app/hooks/UseSignupModal";
@@ -9,6 +9,7 @@ const UserNav = () => {
   const loginModal = useLoginModal();
   const SignupModal = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState(false);
 
   return (
     <div className="p-2 relative inline-block border-full">
