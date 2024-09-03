@@ -3,11 +3,15 @@
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
-interface AddReportButtonProps {
-  userId?: string | null;
-}
-
-const AddReportButton: React.FC<AddReportButtonProps> = ({ userId }) => {
+const AddReportButton = ({
+  userId,
+}: {
+  userId:
+    | {
+        role: string | undefined | null | {};
+      }
+    | undefined;
+}) => {
   const loginModal = useLoginModal();
   const addReportModal = useAddReportModal();
 

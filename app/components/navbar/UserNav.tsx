@@ -70,6 +70,16 @@ const UserNav = ({
               }}
             />
           )}
+
+          {userId && (
+            <MenuLink
+              label="Dashboard"
+              onClick={() => {
+                setIsOpen(false);
+                SignupModal.open();
+              }}
+            />
+          )}
         </div>
       )}
     </div>
