@@ -2,12 +2,14 @@ import Link from "next/link";
 import SearchFilters from "./SearchFilters";
 import UserNav from "./UserNav";
 import AddReportButton from "./AddReportButton";
-import { getUserCookie } from "@/action/getCookie";
+import { getSession } from "@/action/fetchAuth";
 
 const Navbar = async () => {
-  const token = await getUserCookie();
-  console.log(token);
-  console.log("dada");
+  const session = await getSession();
+  const user = session?.user;
+  if (user) {
+    console.log(user);
+  }
 
   return (
     <nav className="w-full fixed top-0 left-0 py-6 border-b bg-white z-10">
