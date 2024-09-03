@@ -9,7 +9,7 @@ export const getSession = cache(async () => {
   if (user) {
     console.log("user loaded");
   }
-  console.log("--------", session);
+  // console.log("--------", session);
 
   return session;
 });

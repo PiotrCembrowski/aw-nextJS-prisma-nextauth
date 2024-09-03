@@ -5,7 +5,15 @@ import MenuLink from "./MenuLink";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 
-const UserNav = ({ userId }: { userId: string }) => {
+const UserNav = ({
+  userId,
+}: {
+  userId:
+    | {
+        role: string | undefined | null | {};
+      }
+    | undefined;
+}) => {
   const loginModal = useLoginModal();
   const SignupModal = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +51,7 @@ const UserNav = ({ userId }: { userId: string }) => {
 
       {isOpen && (
         <div className="w-[220px] absolute top-[60px] right-0 bg-white border rounded-xl shadow-md flex flex-col cursor-pointer">
-          {userId && (
+          {!userId && (
             <MenuLink
               label="Log in"
               onClick={() => {
@@ -53,7 +61,7 @@ const UserNav = ({ userId }: { userId: string }) => {
             />
           )}
 
-          {userId && (
+          {!userId && (
             <MenuLink
               label="Sign Up"
               onClick={() => {
