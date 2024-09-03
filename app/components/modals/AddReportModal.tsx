@@ -6,13 +6,19 @@ import Modal from "./Modal";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
 
 const AddReportModal = () => {
-  const [currentSteo, setCurrentStep] = useState();
+  const [currentStep, setCurrentStep] = useState(1);
   const addReportModal = useAddReportModal();
 
   const content = (
     <>
-      <h2 className="mb-6 text-2xl">Choose Category</h2>
-      <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
+      {currentStep == 1 ? (
+        <>
+          <h2 className="mb-6 text-2xl">Choose Category</h2>
+          <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
+        </>
+      ) : (
+        <p>Step 2</p>
+      )}
     </>
   );
 
