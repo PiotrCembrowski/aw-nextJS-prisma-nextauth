@@ -5,11 +5,10 @@ import MenuLink from "./MenuLink";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 
-const UserNav = ({ userId }: { userId: string | null }) => {
+const UserNav = ({ userId }: { userId: string }) => {
   const loginModal = useLoginModal();
   const SignupModal = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
-  const [user, setUser] = useState(false);
 
   return (
     <div className="p-2 relative inline-block border-full">
@@ -44,20 +43,25 @@ const UserNav = ({ userId }: { userId: string | null }) => {
 
       {isOpen && (
         <div className="w-[220px] absolute top-[60px] right-0 bg-white border rounded-xl shadow-md flex flex-col cursor-pointer">
-          <MenuLink
-            label="Log in"
-            onClick={() => {
-              setIsOpen(false);
-              loginModal.open();
-            }}
-          />
-          <MenuLink
-            label="Sign Up"
-            onClick={() => {
-              setIsOpen(false);
-              SignupModal.open();
-            }}
-          />
+          {userId && (
+            <MenuLink
+              label="Log in"
+              onClick={() => {
+                setIsOpen(false);
+                loginModal.open();
+              }}
+            />
+          )}
+
+          {userId && (
+            <MenuLink
+              label="Sign Up"
+              onClick={() => {
+                setIsOpen(false);
+                SignupModal.open();
+              }}
+            />
+          )}
         </div>
       )}
     </div>

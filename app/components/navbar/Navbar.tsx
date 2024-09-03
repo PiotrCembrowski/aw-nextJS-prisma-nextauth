@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-6">
             <AddReportButton />
-            <UserNav userId="yes" />
+            <UserNav userId="asd" />
           </div>
         </div>
       </div>
