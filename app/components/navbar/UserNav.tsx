@@ -5,7 +5,7 @@ import MenuLink from "./MenuLink";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import useSignupModal from "@/app/hooks/UseSignupModal";
 
-const UserNav = ({ userId }: { userId: string }) => {
+const UserNav = ({ userId }: { userId: string | null }) => {
   const loginModal = useLoginModal();
   const SignupModal = useSignupModal();
   const [isOpen, setIsOpen] = useState(false);
