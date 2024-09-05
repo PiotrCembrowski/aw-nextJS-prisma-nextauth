@@ -10,9 +10,17 @@ const AddReportModal = () => {
   //
   // States
   const [currentStep, setCurrentStep] = useState(1);
-  const [dataReport, setDataReport] = useState();
+
+  const [dataReport, setDataReport] = useState("");
 
   const addReportModal = useAddReportModal();
+
+  //
+  // Set datas
+
+  const setCountry = (country: string) => {
+    setDataReport(country);
+  };
 
   const content = (
     <>
