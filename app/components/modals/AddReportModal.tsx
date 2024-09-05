@@ -52,7 +52,7 @@ const AddReportModal = () => {
               <textarea
                 value={dataDescription}
                 onChange={(e) => setDataDescription(e.target.value)}
-                className="w-full p-4 border border-gray-400 rounded-xl"
+                className="w-full h-[200px] p-4 border border-gray-400 rounded-xl"
               ></textarea>
             </div>
           </div>
