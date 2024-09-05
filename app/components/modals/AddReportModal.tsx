@@ -11,6 +11,8 @@ const AddReportModal = () => {
   // States
   const [currentStep, setCurrentStep] = useState(1);
   const [dataReport, setDataReport] = useState("");
+  const [dataTitle, setDataTitle] = useState("");
+  const [dataDescription, setDataDescription] = useState("");
 
   const addReportModal = useAddReportModal();
 
@@ -45,7 +47,11 @@ const AddReportModal = () => {
       ) : (
         <>
           <p>Step 3</p>
-          <CustomButton label="Previous" onClick={() => setCurrentStep(2)} />
+          <CustomButton
+            className="mb-2 bg-black hover:bg-gray-800"
+            label="Previous"
+            onClick={() => setCurrentStep(2)}
+          />
           <CustomButton label="Next" onClick={() => setCurrentStep(4)} />
         </>
       )}
