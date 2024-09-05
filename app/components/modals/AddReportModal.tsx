@@ -32,8 +32,22 @@ const AddReportModal = () => {
           />
           <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
         </>
+      ) : currentStep == 2 ? (
+        <>
+          <p>Step 2</p>
+          <CustomButton
+            className="mb-2 bg-black hover:bg-gray-800"
+            label="Previous"
+            onClick={() => setCurrentStep(1)}
+          />
+          <CustomButton label="Next" onClick={() => setCurrentStep(3)} />
+        </>
       ) : (
-        <p>Step 2</p>
+        <>
+          <p>Step 3</p>
+          <CustomButton label="Previous" onClick={() => setCurrentStep(2)} />
+          <CustomButton label="Next" onClick={() => setCurrentStep(4)} />
+        </>
       )}
     </>
   );
