@@ -11,24 +11,24 @@ const Continents: React.FC<ContinentsProps> = ({
 }) => {
   return (
     <>
-      <div className="pt-3 cursor-pointer pb-6 flex items-center space-x-12">
+      <div className="pt-3 cursor-pointer pb-6 flex items-center space-x-10">
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">Asia</Link>
+          <span className="text-sm">Asia</span>
         </div>
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">Europe</Link>
+          <span className="text-sm">Europe</span>
         </div>
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">North America</Link>
+          <span className="text-sm">North America</span>
         </div>
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">South America</Link>
+          <span className="text-sm">South America</span>
         </div>
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">Africa</Link>
+          <span className="text-sm">Africa</span>
         </div>
         <div className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100">
-          <Link href="/">Austalia & Oceania</Link>
+          <span className="text-sm">Austalia & Oceania</span>
         </div>
       </div>
     </>
