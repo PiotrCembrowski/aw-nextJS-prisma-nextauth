@@ -64,7 +64,7 @@ const AddReportModal = () => {
           />
           <CustomButton label="Next" onClick={() => setCurrentStep(3)} />
         </>
-      ) : (
+      ) : currentStep == 3 ? (
         <>
           <p>Step 3</p>
           <CustomButton
@@ -74,6 +74,8 @@ const AddReportModal = () => {
           />
           <CustomButton label="Next" onClick={() => setCurrentStep(4)} />
         </>
+      ) : (
+        <>step 4</>
       )}
     </>
   );
