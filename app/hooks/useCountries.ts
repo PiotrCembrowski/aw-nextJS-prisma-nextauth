@@ -15,4 +15,4 @@ const useCountries = () => {
   return { getAll, getByValue };
 };
 
-export default countries;
+export default useCountries;
