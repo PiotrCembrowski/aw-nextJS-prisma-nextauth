@@ -5,6 +5,7 @@ import CustomButton from "../forms/CustomButton";
 import Modal from "./Modal";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
 import Continents from "../addreport/Continents";
+import SelectCountry from "../forms/SelectCountry";
 
 const AddReportModal = () => {
   //
@@ -13,6 +14,7 @@ const AddReportModal = () => {
   const [dataReport, setDataReport] = useState("");
   const [dataTitle, setDataTitle] = useState("");
   const [dataDescription, setDataDescription] = useState("");
+  const [dataCountry, setDataCountry] = useState();
 
   const addReportModal = useAddReportModal();
 
@@ -82,7 +84,9 @@ const AddReportModal = () => {
       ) : (
         <>
           <h2 className="mb-6 text-2xl">Location</h2>
-          <div className="pt-3 pb-6 space-y-4">Select</div>
+          <div className="pt-3 pb-6 space-y-4">
+            <SelectCountry value={dataCountry} onChange={} />
+          </div>
         </>
       )}
     </>
