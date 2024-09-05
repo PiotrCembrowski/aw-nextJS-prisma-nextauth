@@ -17,8 +17,8 @@ const AddReportModal = () => {
   //
   // Set datas
 
-  const setCountry = (country: string) => {
-    setDataReport(country);
+  const setContinent = (continent: string) => {
+    setDataReport(continent);
   };
 
   const content = (
@@ -28,7 +28,7 @@ const AddReportModal = () => {
           <h2 className="mb-6 text-2xl">Choose Category</h2>
           <Continents
             dataContinents={dataReport}
-            setContinents={(country) => setCountry(country)}
+            setContinents={(continent) => setContinent(continent)}
           />
           <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
         </>

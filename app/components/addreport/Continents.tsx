@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ContinentsProps {
   dataContinents: string;
   setContinents: (country: string) => void;
@@ -26,7 +24,9 @@ const Continents: React.FC<ContinentsProps> = ({
         </div>
         <div
           onClick={() => setContinents("North America")}
-          className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100"
+          className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${
+            dataContinents == "Asia" ? "border-gray-800" : "border-white"
+          } opacity-60 hover:opacity-100`}
         >
           <span className="text-sm">North America</span>
         </div>
