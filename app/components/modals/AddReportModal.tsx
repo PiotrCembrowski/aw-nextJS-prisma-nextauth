@@ -44,7 +44,16 @@ const AddReportModal = () => {
                 type="text"
                 value={dataTitle}
                 onChange={(e) => setDataTitle(e.target.value)}
+                className="w-full p-4 border border-gray-400 rounded-xl"
               />
+            </div>
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="">Description</label>
+              <textarea
+                value={dataDescription}
+                onChange={(e) => setDataDescription(e.target.value)}
+                className="w-full p-4 border border-gray-400 rounded-xl"
+              ></textarea>
             </div>
           </div>
 
