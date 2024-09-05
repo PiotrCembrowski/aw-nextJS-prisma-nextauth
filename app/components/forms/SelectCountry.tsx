@@ -13,8 +13,8 @@ interface SelectCountryProps {
   onChange: (value: SelectCountryValue) => void;
 }
 
-const SelectCountry = () => {
-  return <div>SelectCountry</div>;
+const SelectCountry: React.FC<SelectCountryProps> = (value, onChange) => {
+  return <>asd</>;
 };
 
 export default SelectCountry;

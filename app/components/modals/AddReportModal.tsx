@@ -72,10 +72,18 @@ const AddReportModal = () => {
             label="Previous"
             onClick={() => setCurrentStep(2)}
           />
+          <CustomButton
+            className="mb-2 bg-black hover:bg-gray-800"
+            label="Previous"
+            onClick={() => setCurrentStep(2)}
+          />
           <CustomButton label="Next" onClick={() => setCurrentStep(4)} />
         </>
       ) : (
-        <>step 4</>
+        <>
+          <h2 className="mb-6 text-2xl">Location</h2>
+          <div className="pt-3 pb-6 space-y-4">Select</div>
+        </>
       )}
     </>
   );
