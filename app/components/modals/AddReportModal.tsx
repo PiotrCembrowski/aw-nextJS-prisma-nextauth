@@ -7,7 +7,11 @@ import useAddReportModal from "@/app/hooks/UseAddReportModal";
 import Reports from "../addreport/Reports";
 
 const AddReportModal = () => {
+  //
+  // States
   const [currentStep, setCurrentStep] = useState(1);
+  const [dataReport, setDataReport] = useState();
+
   const addReportModal = useAddReportModal();
 
   const content = (
