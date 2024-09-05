@@ -4,6 +4,7 @@ import { useState } from "react";
 import CustomButton from "../forms/CustomButton";
 import Modal from "./Modal";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
+import Reports from "../addreport/Reports";
 
 const AddReportModal = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -14,6 +15,10 @@ const AddReportModal = () => {
       {currentStep == 1 ? (
         <>
           <h2 className="mb-6 text-2xl">Choose Category</h2>
+          <Reports
+            dataReport={dataReport}
+            setReport={(country) => setCountry(country)}
+          />
           <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
         </>
       ) : (
