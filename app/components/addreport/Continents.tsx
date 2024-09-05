@@ -9,14 +9,14 @@ const Continents: React.FC<ContinentsProps> = ({
 }) => {
   return (
     <>
-      <div className="pt-3 cursor-pointer pb-6 flex items-center space-x-6">
+      <div className="pt-3 cursor-pointer pb-6 flex items-center space-x-2">
         <div
           onClick={() => setContinents("Asia")}
           className={`py-2 px-4 flex flex-col text-center items-center space-y-2 border-2 ${
             dataContinents == "Asia" ? "border-gray-800" : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">Asia</span>
+          <span className="text-xs">Asia</span>
         </div>
         <div
           onClick={() => setContinents("Europe")}
@@ -24,7 +24,7 @@ const Continents: React.FC<ContinentsProps> = ({
             dataContinents == "Europe" ? "border-gray-800" : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">Europe</span>
+          <span className="text-xs">Europe</span>
         </div>
         <div
           onClick={() => setContinents("North America")}
@@ -34,7 +34,7 @@ const Continents: React.FC<ContinentsProps> = ({
               : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">North America</span>
+          <span className="text-xs whitespace-nowrap	">North America</span>
         </div>
         <div
           onClick={() => setContinents("South America")}
@@ -44,7 +44,7 @@ const Continents: React.FC<ContinentsProps> = ({
               : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">South America</span>
+          <span className="text-xs whitespace-nowrap	">South America</span>
         </div>
         <div
           onClick={() => setContinents("Africa")}
@@ -52,7 +52,7 @@ const Continents: React.FC<ContinentsProps> = ({
             dataContinents == "Africa" ? "border-gray-800" : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">Africa</span>
+          <span className="text-xs">Africa</span>
         </div>
         <div
           onClick={() => setContinents("Austalia & Oceania")}
@@ -62,7 +62,7 @@ const Continents: React.FC<ContinentsProps> = ({
               : "border-white"
           } rounded-3xl opacity-60 hover:opacity-100`}
         >
-          <span className="text-sm">Austalia & Oceania</span>
+          <span className="text-xs whitespace-nowrap">Austalia & Oceania</span>
         </div>
       </div>
     </>
