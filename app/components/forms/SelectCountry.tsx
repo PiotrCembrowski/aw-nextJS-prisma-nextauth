@@ -14,9 +14,11 @@ interface SelectCountryProps {
 }
 
 const SelectCountry: React.FC<SelectCountryProps> = (value, onChange) => {
+  const { getAll } = useCountries();
+
   return (
     <>
-      <Select isClearable placeholder="Anywhere" options={getAll} />
+      <Select isClearable placeholder="Anywhere" options={getAll()} />
     </>
   );
 };
