@@ -76,7 +76,7 @@ const AddReportModal = () => {
           />
           <CustomButton label="Next" onClick={() => setCurrentStep(4)} />
         </>
-      ) : (
+      ) : currentStep == 4 ? (
         <>
           <h2 className="mb-6 text-2xl">Location</h2>
           <div className="pt-3 pb-6 space-y-4">
@@ -85,7 +85,15 @@ const AddReportModal = () => {
               onChange={(value) => setDataCountry(value as SelectCountryValue)}
             />
           </div>
+          <CustomButton
+            className="mb-2 bg-black hover:bg-gray-800"
+            label="Previous"
+            onClick={() => setCurrentStep(3)}
+          />
+          <CustomButton label="Next" onClick={() => setCurrentStep(5)} />
         </>
+      ) : (
+        <>5 step</>
       )}
     </>
   );
