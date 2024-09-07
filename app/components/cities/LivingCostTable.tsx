@@ -14,7 +14,7 @@ interface ReportSidebarProps {
   report: Report;
 }
 
-const LivingCostTable = () => {
+const LivingCostTable: React.FC<ReportSidebarProps> = () => {
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
       <h2 className="mb-5 text-2xl">200$/daily</h2>
