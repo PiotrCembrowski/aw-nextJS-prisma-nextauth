@@ -4,8 +4,8 @@ import Select from "react-select";
 import useCountries from "@/app/hooks/useCountries";
 
 export type SelectCountryValue = {
-  label: string;
   value: string;
+  label: string;
 };
 
 interface SelectCountryProps {
@@ -18,7 +18,14 @@ const SelectCountry: React.FC<SelectCountryProps> = (value, onChange) => {
 
   return (
     <>
-      <Select isClearable placeholder="Anywhere" options={getAll()} />
+      <Select
+        isClearable
+        placeholder="Anywhere"
+        options={getAll()}
+        value={value as any}
+        // onChange={(value) => onChange(value as SelectCountryValue)}
+        onChange={(value) => value}
+      />
     </>
   );
 };
