@@ -41,7 +41,7 @@ const CityDetailPage = () => {
           </p>
         </div>
 
-        <LivingCostTable />
+        <LivingCostTable report={{ id: "fds", costs: 234 }} userId={"dsa"} />
       </div>
     </main>
   );

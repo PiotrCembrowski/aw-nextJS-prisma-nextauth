@@ -10,7 +10,7 @@ export type Report = {
 };
 
 interface ReportSidebarProps {
-  userId: string;
+  userId: string | null;
   report: Report;
 }
 
