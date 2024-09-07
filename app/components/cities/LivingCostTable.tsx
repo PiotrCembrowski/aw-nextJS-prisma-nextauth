@@ -1,3 +1,14 @@
+const initialDateRange = {
+  startDate: new Date(),
+  endDate: new Date(),
+  key: "selection",
+};
+
+export type Report = {
+  id: string;
+  costs: number;
+};
+
 const LivingCostTable = () => {
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
