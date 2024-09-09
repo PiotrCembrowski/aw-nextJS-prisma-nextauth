@@ -1,3 +1,7 @@
+"use client";
+
+import { Range } from "react-date-range";
+
 const initialDateRange = {
   startDate: new Date(),
   endDate: new Date(),
