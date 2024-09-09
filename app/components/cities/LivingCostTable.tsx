@@ -22,6 +22,7 @@ interface ReportSidebarProps {
 const LivingCostTable: React.FC<ReportSidebarProps> = () => {
   const [costs, setCosts] = useState<Number>(200);
   const [dateRange, seDateRange] = useState<Range>(initialDateRange);
+  const [minDate, setMinDate] = useState<Date>(new Date());
 
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
