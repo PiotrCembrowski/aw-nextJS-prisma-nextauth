@@ -13,6 +13,11 @@ export type CountryType = {
   image: string;
 };
 
+interface CountryListProps {
+  user_id?: string | null;
+  favorites: boolean | null;
+}
+
 const CountriesList = (index: any) => {
   const [countries, setCountries] = useState<CountryType[]>([]);
 
