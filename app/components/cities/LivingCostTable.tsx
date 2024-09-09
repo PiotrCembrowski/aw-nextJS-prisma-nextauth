@@ -1,7 +1,8 @@
 "use client";
 
-import { Range } from "react-date-range";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { DateRange, Range } from "react-date-range";
+import { differenceInDays, eachDayOfInterval } from "date-fns";
 
 const initialDateRange = {
   startDate: new Date(),
@@ -23,6 +24,12 @@ const LivingCostTable: React.FC<ReportSidebarProps> = () => {
   const [costs, setCosts] = useState<Number>(200);
   const [dateRange, seDateRange] = useState<Range>(initialDateRange);
   const [minDate, setMinDate] = useState<Date>(new Date());
+
+  useEffect(() => {
+    if (dateRange.startDate && dateRange.endDate) {
+      const dayCount = differenceInDays(dateRange.endDate, dateRange.startDate);
+    }
+  }, [dateRange]);
 
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
