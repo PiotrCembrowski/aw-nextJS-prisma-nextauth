@@ -18,7 +18,10 @@ interface CountryListProps {
   favorites: boolean | null;
 }
 
-const CountriesList = (index: any) => {
+const CountriesList: React.FC<CountryListProps> = (
+  index: any,
+  { user_id, favorites }
+) => {
   const [countries, setCountries] = useState<CountryType[]>([]);
 
   const { data } = useQuery({
