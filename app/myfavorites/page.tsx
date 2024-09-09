@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CountriesList from "../components/countries/CountriesList";
 
 const MyFavoritePage = async () => {
   const userId = true;
@@ -15,7 +16,9 @@ const MyFavoritePage = async () => {
     <main className="max-w-[1500pz] max-auto px-6 pb-12">
       <h1 className="my-6 text-2xl">My favorites</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <CountriesList />
+      </div>
     </main>
   );
 };
