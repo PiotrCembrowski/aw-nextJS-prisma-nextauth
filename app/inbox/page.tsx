@@ -8,7 +8,7 @@ export type UserType = {
 
 export type ConversationType = {
   id: string;
-  users: UserType;
+  users: UserType[];
 };
 
 const InboxPage = () => {
