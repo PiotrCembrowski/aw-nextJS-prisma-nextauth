@@ -1,7 +1,10 @@
 import LivingCostTable from "@/app/components/cities/LivingCostTable";
 import Image from "next/image";
+import { useState } from "react";
 
 const CityDetailPage = async ({ params }: { params: { id: string } }) => {
+  const [costs, setCosts] = useState<Number>(200);
+
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
       <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">
