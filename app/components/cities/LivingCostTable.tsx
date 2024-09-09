@@ -1,6 +1,7 @@
 "use client";
 
 import { Range } from "react-date-range";
+import { useState } from "react";
 
 const initialDateRange = {
   startDate: new Date(),
@@ -19,6 +20,9 @@ interface ReportSidebarProps {
 }
 
 const LivingCostTable: React.FC<ReportSidebarProps> = () => {
+  const [costs, setCosts] = useState<Number>(200);
+  const [dateRange, seDateRange] = useState<Range>(initialDateRange);
+
   return (
     <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
       <h2 className="mb-5 text-2xl">200$/daily</h2>
