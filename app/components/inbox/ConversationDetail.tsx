@@ -1,17 +1,20 @@
 "use client";
 import { ConversationType } from "@/app/inbox/page";
 import CustomButton from "../forms/CustomButton";
+import { MessageType } from "@/app/inbox/[id]/page";
 
 interface ConversationDetailProps {
   token: string;
   userId: string;
   conversation: ConversationType;
+  messages: MessageType[];
 }
 
 const ConversationDetail: React.FC<ConversationDetailProps> = ({
   userId,
   token,
   conversation,
+  messages,
 }) => {
   return (
     <>
