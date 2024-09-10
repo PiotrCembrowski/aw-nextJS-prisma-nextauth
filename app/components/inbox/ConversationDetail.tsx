@@ -3,12 +3,14 @@ import { ConversationType } from "@/app/inbox/page";
 import CustomButton from "../forms/CustomButton";
 
 interface ConversationDetailProps {
+  token: string;
   userId: string;
   conversation: ConversationType;
 }
 
 const ConversationDetail: React.FC<ConversationDetailProps> = ({
   userId,
+  token,
   conversation,
 }) => {
   return (
