@@ -1,4 +1,14 @@
 import ConversationDetail from "@/app/components/inbox/ConversationDetail";
+import { UserType } from "../page";
+
+export type MessageType = {
+  id: string;
+  name: string;
+  body: string;
+  conversationId: string;
+  sent_to: UserType;
+  created_by: UserType;
+};
 
 const ConversationPage = () => {
   return (
