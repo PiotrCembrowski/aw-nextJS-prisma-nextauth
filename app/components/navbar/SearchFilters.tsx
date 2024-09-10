@@ -1,9 +1,15 @@
 import Image from "next/image";
 import icon from "@/public/images/search.svg";
+import useSearchModal from "@/app/hooks/useSearchModal";
 
 const SearchFilters = () => {
+  const searchModal = useSearchModal();
+
   return (
-    <div className="h-[48px] lg:h-[64px] flex flex-row items-center justify-between border rounded-full">
+    <div
+      onClick={() => searchModal.open()}
+      className="h-[48px] lg:h-[64px] flex flex-row items-center justify-between border rounded-full"
+    >
       <div className="hidden lg:block">
         <div className="flex flex-row items-center justify-between">
           <div className="cursor-pointer w-[250px] h-[48px] lg:h-[64px] px-8 flex flex-col justify-center rounded-full hover:bg-gray-100">
