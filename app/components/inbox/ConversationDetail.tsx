@@ -1,5 +1,10 @@
 "use client";
+import { ConversationType } from "@/app/inbox/page";
 import CustomButton from "../forms/CustomButton";
+
+interface ConversationDetailProps {
+  conversation: ConversationType;
+}
 
 const ConversationDetail = ({ conversation }) => {
   return (
