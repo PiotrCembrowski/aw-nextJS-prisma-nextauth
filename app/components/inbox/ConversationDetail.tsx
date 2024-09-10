@@ -1,7 +1,7 @@
 "use client";
 import CustomButton from "../forms/CustomButton";
 
-const ConversationDetail = () => {
+const ConversationDetail = ({ conversation }) => {
   return (
     <>
       <div className="max-h-[400px] overflow-auto flex flex-col space-y-4">
