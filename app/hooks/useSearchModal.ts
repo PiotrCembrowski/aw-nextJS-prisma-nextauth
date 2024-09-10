@@ -10,6 +10,8 @@ interface SearchModalStore {
   isOpen: boolean;
   open: () => void;
   close: () => void;
+  query: SearchQuery;
+  setQuery: (query: SearchQuery) => void;
 }
 
 const useSearchModal = create<SearchModalStore>((set) => ({
