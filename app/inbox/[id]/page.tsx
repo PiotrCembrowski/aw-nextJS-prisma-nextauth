@@ -10,7 +10,17 @@ export type MessageType = {
   created_by: UserType;
 };
 
-const ConversationPage = () => {
+const ConversationPage = async () => {
+  const userId = false;
+
+  if (!userId) {
+    return (
+      <main className="max-w-[1599px] max-auto px-6 py-12">
+        <p>You need to be authenticated.</p>
+      </main>
+    );
+  }
+
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
       <ConversationDetail />
