@@ -18,6 +18,12 @@ const useSearchModal = create<SearchModalStore>((set) => ({
   isOpen: false,
   open: () => set({ isOpen: true }),
   close: () => set({ isOpen: false }),
+  setQuery: (query: SearchQuery) => set({ query: query }),
+  query: {
+    country: "",
+    city: "",
+    costs: 100,
+  },
 }));
 
 export default useSearchModal;
