@@ -6,7 +6,9 @@ interface ConversationDetailProps {
   conversation: ConversationType;
 }
 
-const ConversationDetail = ({ conversation }) => {
+const ConversationDetail: React.FC<ConversationDetailProps> = ({
+  conversation,
+}) => {
   return (
     <>
       <div className="max-h-[400px] overflow-auto flex flex-col space-y-4">
