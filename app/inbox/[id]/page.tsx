@@ -10,7 +10,7 @@ export type MessageType = {
   created_by: UserType;
 };
 
-const ConversationPage = async () => {
+const ConversationPage = async ({ params }: { params: { id: string } }) => {
   const userId = false;
 
   if (!userId) {
