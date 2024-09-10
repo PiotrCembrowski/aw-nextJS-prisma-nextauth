@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import icon from "@/public/images/search.svg";
 import useSearchModal from "@/app/hooks/useSearchModal";
