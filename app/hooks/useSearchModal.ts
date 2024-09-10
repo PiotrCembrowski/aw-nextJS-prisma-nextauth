@@ -1,5 +1,11 @@
 import { create } from "zustand";
 
+export type SearchQuery = {
+  country: string;
+  city: string;
+  costs: number;
+};
+
 interface SearchModalStore {
   isOpen: boolean;
   open: () => void;
