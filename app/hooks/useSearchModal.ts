@@ -8,6 +8,7 @@ export type SearchQuery = {
 
 interface SearchModalStore {
   isOpen: boolean;
+  step: string;
   open: () => void;
   close: () => void;
   query: SearchQuery;
