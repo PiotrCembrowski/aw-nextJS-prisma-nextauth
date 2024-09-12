@@ -17,6 +17,7 @@ interface SearchModalStore {
 
 const useSearchModal = create<SearchModalStore>((set) => ({
   isOpen: false,
+  step: "",
   open: () => set({ isOpen: true }),
   close: () => set({ isOpen: false }),
   setQuery: (query: SearchQuery) => set({ query: query }),
