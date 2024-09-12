@@ -12,9 +12,11 @@ const SearchModal = () => {
 
   const contentLocation = (
     <>
-      <h2>
-        <h2 className="mb-6 text-2xl">Where do you want to go?</h2>
-      </h2>
+      <h2 className="mb-6 text-2xl">Where do you want to go?</h2>
+      <SelectCountry
+        value={country}
+        onChange={(value) => setCountry(value as SelectCountryValue)}
+      />
     </>
   );
 
