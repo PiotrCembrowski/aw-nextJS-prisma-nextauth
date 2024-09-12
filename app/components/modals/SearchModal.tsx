@@ -10,6 +10,18 @@ const SearchModal = () => {
   const searchModal = useSearchModal();
   const [country, setCountry] = useState<SelectCountryValue>();
 
+  const contentLocation = (
+    <>
+      <h2>
+        <h2 className="mb-6 text-2xl">Where do you want to go?</h2>
+      </h2>
+    </>
+  );
+
+  if (searchModal.step == "location") {
+    content = contentLocation;
+  }
+
   return (
     <Modal
       label="Search"
