@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import useSearchModal from "@/app/hooks/useSearchModal";
 import SelectCountry, { SelectCountryValue } from "../forms/SelectCountry";
 import { useState } from "react";
+import CustomButton from "../forms/CustomButton";
 
 const SearchModal = () => {
   let content = <></>;
@@ -17,6 +18,13 @@ const SearchModal = () => {
         value={country}
         onChange={(value) => setCountry(value as SelectCountryValue)}
       />
+
+      <div className="mt-6 flex flex-row gap-4">
+        <CustomButton
+          label="next ->"
+          onClick={() => searchModal.open("city")}
+        />
+      </div>
     </>
   );
 
