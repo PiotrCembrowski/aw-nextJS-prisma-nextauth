@@ -4,7 +4,6 @@ import { useState } from "react";
 import CustomButton from "../forms/CustomButton";
 import Modal from "./Modal";
 import useAddReportModal from "@/app/hooks/UseAddReportModal";
-import Continents from "../addreport/Continents";
 import SelectCountry, { SelectCountryValue } from "../forms/SelectCountry";
 
 const AddReportModal = () => {
@@ -21,19 +20,17 @@ const AddReportModal = () => {
   //
   // Set datas
 
-  const setContinent = async (continent: string) => {
-    await setDataReport(continent);
-  };
-
   const content = (
     <>
       {currentStep == 1 ? (
         <>
-          <h2 className="mb-6 text-2xl">Choose Category</h2>
-          <Continents
-            dataContinents={dataReport}
-            setContinents={(continent) => setContinent(continent)}
-          />
+          <h2 className="mb-6 text-2xl">Location</h2>
+          <div className="pt-3 pb-6 space-y-4">
+            <SelectCountry
+              value={dataCountry}
+              onChange={(value) => setDataCountry(value as SelectCountryValue)}
+            />
+          </div>
           <CustomButton label="Next" onClick={() => setCurrentStep(2)} />
         </>
       ) : currentStep == 2 ? (
