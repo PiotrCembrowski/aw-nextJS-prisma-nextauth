@@ -35,7 +35,7 @@ const AddReportModal = () => {
         </>
       ) : currentStep == 2 ? (
         <>
-          <h2 className="mb-6 text-2xl">Describe your place.</h2>
+          <h2 className="mb-6 text-2xl">{dataCountry?.label}</h2>
           <div className="pt-3 pb-6 space-y-4">
             <div className="flex flex-col space-y-2">
               <label htmlFor="">Title</label>
