@@ -21,8 +21,8 @@ const AddReportModal = () => {
   //
   // Set datas
 
-  const setContinent = (continent: string) => {
-    setDataReport(continent);
+  const setContinent = async (continent: string) => {
+    await setDataReport(continent);
   };
 
   const content = (
