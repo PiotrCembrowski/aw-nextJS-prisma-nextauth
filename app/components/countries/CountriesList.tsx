@@ -20,7 +20,8 @@ interface CountryListProps {
 
 const CountriesList: React.FC<CountryListProps> = (
   index: any,
-  { user_id, favorites }
+  name: string
+  // { user_id, favorites }
 ) => {
   const [countries, setCountries] = useState<CountryType[]>([]);
 
