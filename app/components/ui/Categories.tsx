@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const Categories = () => {
-  const [continent, setContinent] = useState();
+  const [continent, setContinent] = useState("Europe");
 
   const settingCountryName = (e: any) => {
     setContinent(e.target.innerText);
