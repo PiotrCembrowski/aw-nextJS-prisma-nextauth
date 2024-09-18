@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
 import { useEffect, useState, Fragment } from "react";
+import { useContinent } from "@/app/hooks/useContinents";
 
 export type CountryType = {
   id: string;
@@ -23,7 +24,9 @@ const CountriesList: React.FC<CountryListProps> = (
   name: string
   // { user_id, favorites }
 ) => {
+  const continentName = useContinent((state) => state.name);
   const [countries, setCountries] = useState<CountryType[]>([]);
+  console.log(continentName);
 
   const { data } = useQuery({
     queryKey: ["Countries"],
