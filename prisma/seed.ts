@@ -22,6 +22,21 @@ async function main() {
             costs: 500,
             posts: {},
           },
+          {
+            name: "Poznań",
+            costs: 500,
+            posts: {},
+          },
+          {
+            name: "Wrocław",
+            costs: 500,
+            posts: {},
+          },
+          {
+            name: "Lublin",
+            costs: 500,
+            posts: {},
+          },
         ],
       },
     },
