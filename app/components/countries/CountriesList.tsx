@@ -26,7 +26,6 @@ const CountriesList: React.FC<CountryListProps> = (
 ) => {
   const continentName = useContinent((state) => state.name);
   const [countries, setCountries] = useState<CountryType[]>([]);
-  console.log(continentName);
 
   const { data } = useQuery({
     queryKey: ["Countries"],
