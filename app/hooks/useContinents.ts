@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
-type ContinentStore = {
+interface ContinentStore {
   name: string;
   changeName: (name: string) => void;
-};
+}
 
 export const useContinent = create<ContinentStore>((set) => ({
   name: "",
-  changeName: (newName: string) => set({ name: newName }),
+  changeName: (name) => set({ name: name }),
 }));
