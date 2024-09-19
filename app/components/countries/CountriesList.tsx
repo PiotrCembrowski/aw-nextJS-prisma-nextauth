@@ -30,7 +30,10 @@ const CountriesList: React.FC<CountryListProps> = (
 
   const { data } = useQuery({
     queryKey: ["Countries"],
-    queryFn: getCountries,
+    queryFn: async () => {
+      const data = getCountries(continentName);
+      return data;
+    },
   });
 
   function renderCountries() {
