@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
 
 const Categories = () => {
