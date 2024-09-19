@@ -34,6 +34,7 @@ const CountriesList: React.FC<CountryListProps> = (
       const data = getCountries(continentName);
       return data;
     },
+    notifyOnChangeProps: "all",
   });
 
   function renderCountries() {
