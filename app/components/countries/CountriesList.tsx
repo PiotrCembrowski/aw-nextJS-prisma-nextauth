@@ -43,7 +43,9 @@ const CountriesList: React.FC<CountryListProps> = (
 
   useEffect(() => {
     renderCountries();
-  });
+  }, [continentName]);
+
+  console.log(continentName);
 
   return (
     <Fragment key={index}>

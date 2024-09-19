@@ -6,6 +6,6 @@ interface ContinentStore {
 }
 
 export const useContinent = create<ContinentStore>((set) => ({
-  name: "",
+  name: "Asia",
   changeName: (name) => set({ name: name }),
 }));
