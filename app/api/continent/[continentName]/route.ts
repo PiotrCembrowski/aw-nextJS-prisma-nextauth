@@ -10,17 +10,17 @@ export async function GET(req: Request, res: Response) {
   const lastPart = name.substring(name.lastIndexOf("/") + 1);
 
   let continent;
+  const queryName = lastPart.charAt(0).toUpperCase() + lastPart.slice(1);
 
-  if (lastPart.search("Asia")) {
+  if (name.search(lastPart)) {
     continent = await prisma.country.findMany({
       where: {
-        continent: "Asia",
+        continent: queryName,
       },
     });
   }
 
-  return NextResponse.json(
-    { message: `continent of ${lastPart}`, list: continent },
-    { status: 200 }
-  );
+  await console.log(lastPart.toUpperCase());
+
+  return NextResponse.json({ continent }, { status: 200 });
 }
