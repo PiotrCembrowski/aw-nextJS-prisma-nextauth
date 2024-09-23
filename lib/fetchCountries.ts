@@ -1,8 +1,12 @@
 export async function getCountries(continentName: string) {
-  const response = await fetch(`http://localhost:3000/api/countries/`, {
-    method: "GET",
-    credentials: "include",
-  });
+  console.log("message", continentName);
+  const response = await fetch(
+    `http://localhost:3000/api/continent/${continentName}`,
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
 
   if (!response.ok) {
     const error = new Error(
@@ -15,9 +19,9 @@ export async function getCountries(continentName: string) {
 
   const data = await response.json();
 
-  console.log(continentName);
+  const countries = data.continent;
 
-  return data;
+  return countries;
 }
 
 export async function deleteCountry(name: string) {

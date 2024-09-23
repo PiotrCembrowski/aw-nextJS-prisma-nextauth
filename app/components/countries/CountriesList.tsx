@@ -19,6 +19,11 @@ interface CountryListProps {
   favorites: boolean | null;
 }
 
+// TIMES INTERVALS AND AXIOS
+// asign data of countries to const var
+// nextjs course 129, 189, 290 episode, data fetching
+// get read of static cache
+
 const CountriesList: React.FC<CountryListProps> = (
   index: any,
   name: string
@@ -44,11 +49,11 @@ const CountriesList: React.FC<CountryListProps> = (
     renderCountries();
   }, [continentName]);
 
-  console.log(continentName);
+  console.log(data);
 
   return (
     <Fragment key={index}>
-      {countries?.map((country: any) => {
+      {data?.map((country: any) => {
         return <CountriesLisItem key={country.id} country={country} />;
       })}
     </Fragment>
