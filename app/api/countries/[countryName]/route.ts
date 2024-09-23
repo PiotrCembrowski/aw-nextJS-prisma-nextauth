@@ -6,10 +6,7 @@ const prisma = new PrismaClient();
 
 export const dynamic = "force-static";
 
-export const dynamicParams = true;
-
 export async function GET(req: Request, res: Response) {
-  const pathName = usePathname();
   const name = req.url;
 
   console.log(name);
