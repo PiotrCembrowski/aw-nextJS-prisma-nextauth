@@ -5,7 +5,60 @@ const prisma = new PrismaClient();
 async function main() {
   console.log("Start seeding...");
 
-  const Europe: Prisma.CountryCreateInput[] = await [
+  const Continent: Prisma.ContinentCreateInput[] = await [
+    {
+      name: "Asia",
+      costs: 9000,
+      countries: {
+        create: [],
+      },
+    },
+  ];
+
+  const Countries: Prisma.CountryCreateInput[] = await [
+    {
+      name: "China",
+      costs: 2500,
+      continent: "Asia",
+      cities: {
+        create: [
+          {
+            name: "Beijing",
+            costs: 3500,
+            posts: {},
+          },
+          {
+            name: "Hong Kong",
+            costs: 3500,
+            posts: {},
+          },
+        ],
+      },
+    },
+    {
+      name: "Japan",
+      costs: 4100,
+      continent: "Asia",
+      cities: {
+        create: [
+          {
+            name: "Tokio",
+            costs: 6000,
+            posts: {},
+          },
+          {
+            name: "Saitama",
+            costs: 4100,
+            posts: {},
+          },
+          {
+            name: "Osaka",
+            costs: 4100,
+            posts: {},
+          },
+        ],
+      },
+    },
     {
       name: "Poland",
       costs: 750,
@@ -44,7 +97,7 @@ async function main() {
 
   console.log("Seeding countries...");
 
-  Europe.forEach(async (country) => {
+  Countries.forEach(async (country) => {
     await prisma.country.create({
       data: country,
     });

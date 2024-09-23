@@ -7,17 +7,18 @@ export const dynamicParams = true;
 
 export async function GET(req: Request, res: Response) {
   const name = req.url;
+  const lastPart = name.substring(name.lastIndexOf("/") + 1);
+
   if (name.search("Asia")) {
-    const continent = await prisma.continent.findUnique({
+    const continent = await prisma.country.findMany({
       where: {
         name: "Asia",
       },
     });
   }
 
-  console.log(name);
   return NextResponse.json(
-    { message: `continent of ${name}` },
+    { message: `continent of ${lastPart}` },
     { status: 200 }
   );
 }

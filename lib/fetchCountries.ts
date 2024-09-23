@@ -1,5 +1,5 @@
-export async function getCountries(continentName) {
-  const response = await fetch("http://localhost:3000/api/countries", {
+export async function getCountries(continentName: string) {
+  const response = await fetch(`http://localhost:3000/api/countries/`, {
     method: "GET",
     credentials: "include",
   });
