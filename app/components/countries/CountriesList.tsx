@@ -5,6 +5,7 @@ import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
 import { useState, Fragment, useEffect, cache } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
+import useSWR from "swr";
 
 export type CountryType = {
   id: string;
@@ -26,6 +27,10 @@ const CountriesList: React.FC<CountryListProps> = (
 ) => {
   const continentName = useContinent((state) => state.name);
   const [countries, setCountries] = useState<CountryType[]>([]);
+
+  const { data, error } = useSWR(
+    `http://localhost:3000/api/continent/${continentName}`
+  );
 
   // const { data } = useQuery({
   //   queryKey: ["Countries"],

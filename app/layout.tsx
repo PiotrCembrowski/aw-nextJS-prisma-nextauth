@@ -7,6 +7,7 @@ import SignupModal from "./components/modals/SignupModal";
 import AddReportModal from "./components/modals/AddReportModal";
 import QueryClientContextProvider from "@/utils/QueryClientContextProvider";
 import SearchModal from "./components/modals/SearchModal";
+import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   description: "Traveling around the world",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -34,10 +35,12 @@ export default function RootLayout({
         <div className="pt-32">
           <QueryClientContextProvider>{children}</QueryClientContextProvider>
         </div>
-        <LoginModal />
-        <SignupModal />
-        <AddReportModal />
-        <SearchModal />
+        <SessionProvider>
+          <LoginModal />
+          <SignupModal />
+          <AddReportModal />
+          <SearchModal />
+        </SessionProvider>
       </body>
     </html>
   );

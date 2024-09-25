@@ -2,14 +2,10 @@ import Link from "next/link";
 import SearchFilters from "./SearchFilters";
 import UserNav from "./UserNav";
 import AddReportButton from "./AddReportButton";
-import { getSession } from "@/action/fetchAuth";
+import { auth } from "@/auth";
 
-const Navbar = async () => {
-  const session = await getSession();
+const Navbar = async ({ session }) => {
   const user = session?.user;
-  if (user) {
-    console.log(user);
-  }
 
   return (
     <nav className="w-full fixed top-0 left-0 py-6 border-b bg-white z-10">
@@ -28,6 +24,16 @@ const Navbar = async () => {
       </div>
     </nav>
   );
+};
+
+export const getServerSideProps = async () => {
+  const session = await auth();
+
+  return {
+    props: {
+      session,
+    },
+  };
 };
 
 export default Navbar;

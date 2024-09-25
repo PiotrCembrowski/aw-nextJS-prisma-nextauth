@@ -3,11 +3,15 @@
 import Modal from "./Modal";
 import useLoginModal from "@/app/hooks/UseLoginModa";
 import { login } from "@/action/user";
-import { getSession } from "@/action/fetchAuth";
+import { useSession } from "next-auth/react";
 
 const LoginModal = () => {
   const LoginModal = useLoginModal();
-  getSession();
+  const { data: session } = useSession();
+  const user = session?.user;
+  if (user) {
+    console.log(user);
+  }
 
   const content = (
     <>

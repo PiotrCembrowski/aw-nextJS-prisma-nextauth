@@ -1,14 +1,15 @@
-"use server";
+// "use server";
 
-import { auth } from "@/auth";
-import { cache } from "react";
+// import { auth } from "@/auth";
+// import { cache } from "react";
 
-export const getSession = async () => {
-  // const session = await auth();
-  // const user = session?.user;
-  // if (user) {
-  //   console.log("user loaded");
-  // }
-  // // console.log("--------", session);
-  // return session;
-};
+// export const getSession = cache(async () => {
+//   const session = await auth();
+//   const user = session?.user;
+//   if (user) {
+//     console.log("user loaded");
+//   }
+//   // console.log("--------", session);
+
+//   return session;
+// });
