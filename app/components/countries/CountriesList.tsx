@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
-import { useState, Fragment, useEffect } from "react";
+import { useState, Fragment, useEffect, cache } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
 
 export type CountryType = {
@@ -27,21 +27,18 @@ const CountriesList: React.FC<CountryListProps> = (
   const continentName = useContinent((state) => state.name);
   const [countries, setCountries] = useState<CountryType[]>([]);
 
-  const { data } = useQuery({
-    queryKey: ["Countries"],
-    queryFn: async () => {
-      const data = await getCountries(continentName);
-      return data;
-    },
-    notifyOnChangeProps: "all",
-  });
+  // const { data } = useQuery({
+  //   queryKey: ["Countries"],
+  //   queryFn: async () => {
+  //     const data = await getCountries(continentName);
+  //     return data;
+  //   },
+  //   notifyOnChangeProps: "all",
+  // });
 
   let content = data?.map((country: any) => {
     return <CountriesLisItem key={country.id} country={country} />;
   });
-
-  console.log(data);
-  console.log(continentName);
 
   return <Fragment key={index}>{content}</Fragment>;
 };
