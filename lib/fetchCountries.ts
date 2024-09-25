@@ -1,5 +1,4 @@
 export async function getCountries(continentName: string) {
-  console.log("message", continentName);
   const response = await fetch(
     `http://localhost:3000/api/continent/${continentName}`,
     {

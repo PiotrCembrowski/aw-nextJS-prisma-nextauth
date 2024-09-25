@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
 import { getCountries } from "@/lib/fetchCountries";
-import { useEffect, useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
 
 export type CountryType = {
@@ -19,11 +19,6 @@ interface CountryListProps {
   favorites: boolean | null;
 }
 
-// TIMES INTERVALS AND AXIOS
-// asign data of countries to const var
-// nextjs course 129, 189, 290 episode, data fetching
-// get read of static cache
-
 const CountriesList: React.FC<CountryListProps> = (
   index: any,
   name: string
@@ -35,29 +30,20 @@ const CountriesList: React.FC<CountryListProps> = (
   const { data } = useQuery({
     queryKey: ["Countries"],
     queryFn: async () => {
-      const data = getCountries(continentName);
+      const data = await getCountries(continentName);
       return data;
     },
     notifyOnChangeProps: "all",
   });
 
-  function renderCountries() {
-    setCountries(data?.list);
-  }
-
-  useEffect(() => {
-    renderCountries();
-  }, [continentName]);
+  let content = data?.map((country: any) => {
+    return <CountriesLisItem key={country.id} country={country} />;
+  });
 
   console.log(data);
+  console.log(continentName);
 
-  return (
-    <Fragment key={index}>
-      {data?.map((country: any) => {
-        return <CountriesLisItem key={country.id} country={country} />;
-      })}
-    </Fragment>
-  );
+  return <Fragment key={index}>{content}</Fragment>;
 };
 
 export default CountriesList;
