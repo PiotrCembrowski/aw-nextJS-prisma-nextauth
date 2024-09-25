@@ -9,9 +9,6 @@ const LoginModal = () => {
   const LoginModal = useLoginModal();
   const { data: session } = useSession();
   const user = session?.user;
-  if (user) {
-    console.log(user);
-  }
 
   const content = (
     <>
