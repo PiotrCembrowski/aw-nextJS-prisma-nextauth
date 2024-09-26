@@ -1,8 +1,6 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
 import CountriesLisItem from "./CountriesLisItem";
-import { getCountries } from "@/lib/fetchCountries";
 import { useState, Fragment, useEffect, cache } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
 import useSWR from "swr";
@@ -20,6 +18,8 @@ interface CountryListProps {
   favorites: boolean | null;
 }
 
+const fetcher = (url: string) => fetch(url).then((r) => r.json());
+
 const CountriesList: React.FC<CountryListProps> = (
   index: any,
   name: string
@@ -29,19 +29,21 @@ const CountriesList: React.FC<CountryListProps> = (
   const [countries, setCountries] = useState<CountryType[]>([]);
 
   const { data, error } = useSWR(
-    `http://localhost:3000/api/continent/${continentName}`
+    `http://localhost:3000/api/continent/${continentName}`,
+    fetcher
   );
 
-  // const { data } = useQuery({
-  //   queryKey: ["Countries"],
-  //   queryFn: async () => {
-  //     const data = await getCountries(continentName);
-  //     return data;
-  //   },
-  //   notifyOnChangeProps: "all",
-  // });
+  useEffect(() => {
+    if (data) {
+      const continent = data.continent;
+      setCountries(continent);
+    }
+  }, [data]);
 
-  let content = data?.map((country: any) => {
+  console.log(countries);
+  console.log(continentName);
+
+  let content = countries?.map((country: any) => {
     return <CountriesLisItem key={country.id} country={country} />;
   });
 
