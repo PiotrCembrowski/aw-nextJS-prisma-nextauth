@@ -1,12 +1,38 @@
 import LivingCostTable from "@/app/components/cities/LivingCostTable";
 import { headers } from "next/headers";
 import Image from "next/image";
+import useSWR from "swr";
+import { useState } from "react";
+
+export type CountryType = {
+  id: string;
+  name: string;
+  continent: string;
+  costs: number;
+  image: string;
+};
+
+const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 const CountryPage = async ({ params }: { params: { id: string } }) => {
   const headerList = headers();
   const pathname = await headerList.get("x-url");
-  const lastPart = pathname.substring(pathname.lastIndexOf("/") + 1);
-  console.log(lastPart);
+  const countryName = pathname.substring(pathname.lastIndexOf("/") + 1);
+
+  // useStates
+  const [country, setCountry] = useState<CountryType>();
+
+  const { data, error } = useSWR(
+    `http://localhost:3000/api/countries/${countryName}`,
+    fetcher
+  );
+
+  useEffect(() => {
+    if (data) {
+      const continent = data.continent;
+      setCountries(continent);
+    }
+  }, [data]);
 
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
@@ -21,7 +47,7 @@ const CountryPage = async ({ params }: { params: { id: string } }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="py-6 pr-6 col-span-3">
-          <h1 className="mb-4 text-4xl">Maledives</h1>
+          <h1 className="mb-4 text-4xl">{countryName}</h1>
           <span className="mt-6 block text-lg text-gray-600">
             Cost of leaving - 200$/monthly
           </span>
