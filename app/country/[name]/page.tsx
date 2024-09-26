@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const CountryPage = async ({ params }: { params: { id: string } }) => {
   const headerList = headers();
-  const pathname = headerList.get("x-url");
-
-  console.log(pathname);
+  const pathname = await headerList.get("x-url");
+  const lastPart = pathname.substring(pathname.lastIndexOf("/") + 1);
+  console.log(lastPart);
 
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
