@@ -1,8 +1,13 @@
 import LivingCostTable from "@/app/components/cities/LivingCostTable";
+import { headers } from "next/headers";
 import Image from "next/image";
 
 const CountryPage = async ({ params }: { params: { id: string } }) => {
-  console.log(params);
+  const headerList = headers();
+  const pathname = headerList.get("x-url");
+
+  console.log(pathname);
+
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
       <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">

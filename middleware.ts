@@ -6,8 +6,10 @@ export { auth } from "@/auth";
 export function middleware(request: NextRequest) {
   //Log the current request pathname
   const headers = new Headers(request.headers);
-  headers.set("x-current-path", request.nextUrl.pathname);
-  return NextResponse.next({ headers });
+  headers.set("x-url", request.nextUrl.pathname);
+  return NextResponse.next({
+    headers,
+  });
 }
 
 export const config = {
