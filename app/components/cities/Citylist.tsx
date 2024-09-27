@@ -13,17 +13,17 @@ export type CityType = {
 
 const prisma = new PrismaClient();
 
-const Citylist = () => {
+const Citylist = async () => {
   const headerList = headers();
   const pathname = await headerList.get("x-url");
   const countryName = pathname?.substring(pathname.lastIndexOf("/") + 1);
 
   let cities;
   if (countryName) {
-    const cities = prisma.country.findMany();
+    cities = prisma.country.findMany();
   }
 
-  let content = cities?.map((city: any) => {
+  let content = await cities?.map((city: any) => {
     return <CityListItem key={city.id} city={city} />;
   });
 
