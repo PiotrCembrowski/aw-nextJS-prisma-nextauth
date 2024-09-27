@@ -1,7 +1,7 @@
 "use client";
 
 import CountriesLisItem from "./CountriesLisItem";
-import { useState, Fragment, useEffect, cache } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { useContinent } from "@/app/hooks/useContinents";
 import useSWR from "swr";
 
