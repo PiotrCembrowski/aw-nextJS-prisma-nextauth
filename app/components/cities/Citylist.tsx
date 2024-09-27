@@ -20,7 +20,7 @@ const Citylist = async () => {
 
   let cities;
   if (countryName) {
-    cities = prisma.country.findMany();
+    cities = await prisma.country.findMany();
   }
 
   let content = await cities?.map((city: any) => {
