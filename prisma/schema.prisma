@@ -31,6 +31,7 @@ model City {
   countries_country_id String?
   country              Country? @relation(fields: [countries_country_id], references: [country_id])
   posts                Post[]
+  image                String
 }
 
 model Post {
