@@ -1,4 +1,4 @@
-import LivingCostTable from "@/app/components/cities/LivingCostTable";
+import LivingCostTable from "@/app/components/ui/LivingCostTable";
 import { headers } from "next/headers";
 import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
