@@ -20,11 +20,20 @@ const Citylist = async () => {
 
   let cities;
   if (countryName) {
-    cities = await prisma.country.findMany();
+    cities = await prisma.country.findMany({
+      where: {
+        name: countryName,
+      },
+      select: {
+        cities: true,
+      },
+    });
   }
 
-  let content = await cities?.map((city: any) => {
-    return <CityListItem key={city.id} city={city} />;
+  console.log(cities);
+
+  let content = await cities?.map((city) => {
+    return <CityListItem key={city.city_id} city={city} />;
   });
 
   return <Fragment>{content}</Fragment>;

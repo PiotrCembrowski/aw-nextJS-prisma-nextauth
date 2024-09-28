@@ -2,7 +2,7 @@ import LivingCostTable from "@/app/components/ui/LivingCostTable";
 import { headers } from "next/headers";
 import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
-import CityListItem from "@/app/components/cities/CityListItem";
+import Citylist from "@/app/components/cities/Citylist";
 
 const prisma = new PrismaClient();
 
@@ -42,7 +42,7 @@ const CountryPage = async () => {
           </span>
           <p className="my-4">Description of a place and other attractions.</p>
           <div className="oy-6 col-span-3">
-            <CityListItem city={city} />
+            <Citylist />
           </div>
           <div className="py-6 flex items-center space-x-4">
             <Image
