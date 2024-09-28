@@ -19,19 +19,19 @@ model Country {
   name                  String
   costs                 Int
   continent             String
-  cities                City[]
   Continent             Continent? @relation(fields: [continentContinent_id], references: [continent_id])
   continentContinent_id String?
 }
 
 model City {
-  city_id              String   @id @default(cuid())
+  city_id              String  @id @default(cuid())
   name                 String
   costs                Int
   countries_country_id String?
-  country              Country? @relation(fields: [countries_country_id], references: [country_id])
+  country              String?
   posts                Post[]
   image                String?
+  countryCountry_id    String?
 }
 
 model Post {
