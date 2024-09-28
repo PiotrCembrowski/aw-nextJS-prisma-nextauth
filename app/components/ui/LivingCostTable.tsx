@@ -32,7 +32,7 @@ const LivingCostTable: React.FC<ReportSidebarProps> = () => {
   }, [dateRange]);
 
   return (
-    <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
+    <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl h-[450px]">
       <h2 className="mb-5 text-2xl">200$/daily</h2>
 
       <div className="mb-6 p-3 border border-gray-400 rounded-xl">
