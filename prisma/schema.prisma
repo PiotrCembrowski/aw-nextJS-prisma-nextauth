@@ -21,12 +21,11 @@ model Country {
 }
 
 model City {
-  id                   String  @id @default(cuid())
-  name                 String
-  costs                Int
-  countries_country_id String?
-  country              String
-  image                String?
+  id      String  @id @default(cuid())
+  name    String
+  costs   Int
+  country String
+  image   String?
 }
 
 model Post {

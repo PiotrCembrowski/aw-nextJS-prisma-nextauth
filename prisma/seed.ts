@@ -9,9 +9,6 @@ async function main() {
     {
       name: "Asia",
       costs: 9000,
-      countries: {
-        create: [],
-      },
     },
   ];
 
@@ -20,88 +17,16 @@ async function main() {
       name: "China",
       costs: 2500,
       continent: "Asia",
-      cities: {
-        create: [
-          {
-            name: "Beijing",
-            costs: 3500,
-            posts: {},
-            country: "China",
-          },
-          {
-            name: "Hong Kong",
-            costs: 3500,
-            posts: {},
-            country: "China",
-          },
-        ],
-      },
     },
     {
       name: "Japan",
       costs: 4100,
       continent: "Asia",
-      cities: {
-        create: [
-          {
-            name: "Tokio",
-            costs: 6000,
-            posts: {},
-            country: "Japan",
-          },
-          {
-            name: "Saitama",
-            costs: 4100,
-            posts: {},
-            country: "Japan",
-          },
-          {
-            name: "Osaka",
-            costs: 4100,
-            posts: {},
-            country: "Japan",
-          },
-        ],
-      },
     },
     {
       name: "Poland",
       costs: 750,
       continent: "Europe",
-      cities: {
-        create: [
-          {
-            name: "Warsaw",
-            costs: 1000,
-            posts: {},
-            country: "Poland",
-          },
-          {
-            name: "Cracow",
-            costs: 500,
-            posts: {},
-            country: "Poland",
-          },
-          {
-            name: "Poznań",
-            costs: 500,
-            posts: {},
-            country: "Poland",
-          },
-          {
-            name: "Wrocław",
-            costs: 500,
-            posts: {},
-            country: "Poland",
-          },
-          {
-            name: "Lublin",
-            costs: 500,
-            posts: {},
-            country: "Poland",
-          },
-        ],
-      },
     },
   ];
 
