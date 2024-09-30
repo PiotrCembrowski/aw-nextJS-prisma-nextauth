@@ -8,43 +8,36 @@ datasource db {
 }
 
 model Continent {
-  continent_id String    @id @default(cuid())
-  name         String
-  costs        Int?
-  countries    Country[]
+  id    String @id @default(cuid())
+  name  String
+  costs Int?
 }
 
 model Country {
-  country_id            String     @id @default(cuid())
-  name                  String
-  costs                 Int
-  continent             String
-  cities                City[]
-  Continent             Continent? @relation(fields: [continentContinent_id], references: [continent_id])
-  continentContinent_id String?
+  id        String @id @default(cuid())
+  name      String
+  costs     Int
+  continent String
 }
 
 model City {
-  city_id              String   @id @default(cuid())
+  id                   String  @id @default(cuid())
   name                 String
   costs                Int
   countries_country_id String?
   country              String
-  posts                Post[]
   image                String?
-  countryCountry_id    String?
-  Country              Country? @relation(fields: [countryCountry_id], references: [country_id])
 }
 
 model Post {
-  id             String  @id @default(cuid())
-  title          String
-  content        String?
-  published      Boolean @default(false)
-  authorId       String?
-  cities_city_id String?
-  author         User?   @relation(fields: [authorId], references: [id])
-  city           City?   @relation(fields: [cities_city_id], references: [city_id])
+  id         String  @id @default(cuid())
+  title      String
+  content    String?
+  published  Boolean @default(false)
+  authorId   String?
+  user_id    String
+  city_id    String
+  country_id String
 }
 
 model User {
@@ -56,6 +49,5 @@ model User {
   updatedAt      DateTime @updatedAt @map("updated_at")
   img            String?
   authProviderId String?
-  posts          Post[]
   role           String?
 }
