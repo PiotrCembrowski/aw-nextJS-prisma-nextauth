@@ -8,28 +8,45 @@ datasource db {
 }
 
 model Continent {
-  id    String @id @default(cuid())
-  name  String
-  costs Int?
+  continent_id String @id @default(cuid())
+  name         String
+  costs        Int?
 }
 
 model Country {
-  id        String @id @default(cuid())
-  name      String
-  costs     Int
-  continent String
+  country_id      String @id @default(cuid())
+  name            String
+  costs           Int
+  continent       String
+}
+
+model Country_costs {
+  country_costs_id  String @id @default(cuid())
+  country_name      String
+  country_id        Country @relation(fields: [country_costs_id], references: [country_id])
+  country_id_ref    String
+  costs             Int
+  hotel_costs       Int
 }
 
 model City {
-  id      String  @id @default(cuid())
-  name    String
-  costs   Int
-  country String
-  image   String?
+  city_id       String  @id @default(cuid())
+  name          String
+  costs         Int
+  country       String
+  image         String?
+  city_costs_id String
+}
+
+model City_costs {
+  city_costs_id   String @id @default(cuid())
+  city_name       String
+  costs           Int
+  hotel_costs     Int
 }
 
 model Post {
-  id         String  @id @default(cuid())
+  post_id    String  @id @default(cuid())
   title      String
   content    String?
   published  Boolean @default(false)
@@ -40,7 +57,7 @@ model Post {
 }
 
 model User {
-  id             String   @id @default(cuid())
+  user_id        String   @id @default(cuid())
   email          String   @unique
   password       String?
   userName       String?
