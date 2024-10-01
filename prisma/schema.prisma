@@ -29,8 +29,10 @@ model Country_costs {
   costs_one_person Int
   costs_two_persons Int
   costs_family      Int
-  hotel_cost      Int
-  apartment_cost Int
+  hotel_cost_min      Int
+  hotel_cost_max      Int
+  apartment_cost_min Int
+  apartment_cost_max Int
   dinner_cost Int?
   car_rent Int?
 }
@@ -41,14 +43,23 @@ model City {
   costs         Int
   country       String
   image         String?
-  city_costs_id String
+  city_costs    City_costs[]
 }
 
 model City_costs {
   city_costs_id String @id @default(cuid())
   city_name     String
-  costs         Int
-  hotel_costs   Int
+  city_id     City @relation(fields: [city_id_ref], references: [city_id])
+  city_id_ref String
+  costs_one_person Int
+  costs_two_persons Int
+  costs_family      Int
+  hotel_cost_min      Int
+  hotel_cost_max      Int
+  apartment_cost_min Int
+  apartment_cost_max Int
+  dinner_cost Int?
+  car_rent Int?
 }
 
 model Post {
