@@ -27,7 +27,6 @@ model Country_costs {
   country_id       Country @relation(fields: [country_costs_id], references: [country_id])
   country_id_ref   String
   costs_one_person Int
-  costs_two_persons Int
   costs_family      Int
   hotel_cost_min      Int
   hotel_cost_max      Int
@@ -52,7 +51,6 @@ model City_costs {
   city_id     City @relation(fields: [city_id_ref], references: [city_id])
   city_id_ref String
   costs_one_person Int
-  costs_two_persons Int
   costs_family      Int
   hotel_cost_min      Int
   hotel_cost_max      Int
