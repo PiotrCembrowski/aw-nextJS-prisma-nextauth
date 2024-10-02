@@ -12,10 +12,21 @@ async function main() {
       costs_family: 2165,
       hotel_cost_min: 15,
       hotel_cost_max: 150,
-      apartment_cost_min: 500,
+      apartment_cost_min: 400,
       apartment_cost_max: 1500,
       dinner_cost: 15,
       car_rent: 30,
+    },
+    {
+      country_name: "Germany",
+      costs_one_person: 1850,
+      costs_family: 4800,
+      hotel_cost_min: 95,
+      hotel_cost_max: 220,
+      apartment_cost_min: 675,
+      apartment_cost_max: 1650,
+      dinner_cost: 15,
+      car_rent: 55,
     },
   ];
 
