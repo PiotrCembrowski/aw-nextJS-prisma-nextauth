@@ -89,6 +89,12 @@ async function main() {
     });
   });
 
+  Country_costs.forEach(async (country) => {
+    await prisma.country_costs.create({
+      data: country,
+    });
+  });
+
   // const User: Prisma.UserCreateInput = await {
   //   email: "losttape@gmail.com",
   //   password: "123",
