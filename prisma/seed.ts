@@ -5,10 +5,17 @@ const prisma = new PrismaClient();
 async function main() {
   console.log("Start seeding...");
 
-  const Continent: Prisma.ContinentCreateInput[] = await [
+  const Country_costs: Prisma.Country_costsCreateInput[] = await [
     {
-      name: "Asia",
-      costs: 9000,
+      country_name: "Poland",
+      costs_one_person: 520,
+      costs_family: 2165,
+      hotel_cost_min: 15,
+      hotel_cost_max: 150,
+      apartment_cost_min: 500,
+      apartment_cost_max: 1500,
+      dinner_cost: 15,
+      car_rent: 30,
     },
   ];
 
@@ -25,7 +32,7 @@ async function main() {
     },
     {
       name: "Poland",
-      costs: 750,
+      costs: 820,
       continent: "Europe",
     },
   ];
