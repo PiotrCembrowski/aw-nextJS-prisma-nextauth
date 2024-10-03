@@ -369,6 +369,17 @@ async function main() {
       dinner_cost: 11,
       car_rent: 9,
     },
+    {
+      country_name: "North Macedonia",
+      costs_one_person: 850,
+      costs_family: 2429,
+      hotel_cost_min: 8,
+      hotel_cost_max: 144,
+      apartment_cost_min: 230,
+      apartment_cost_max: 503,
+      dinner_cost: 6,
+      car_rent: 16,
+    },
   ];
 
   const Countries: Prisma.CountryCreateInput[] = await [
