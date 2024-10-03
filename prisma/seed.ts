@@ -172,15 +172,15 @@ async function main() {
       car_rent: 10,
     },
     {
-      country_name: "Greece",
-      costs_one_person: 1150,
-      costs_family: 3183,
+      country_name: "Austria",
+      costs_one_person: 2042,
+      costs_family: 5771,
       hotel_cost_min: 50,
-      hotel_cost_max: 500,
-      apartment_cost_min: 393,
-      apartment_cost_max: 847,
-      dinner_cost: 11,
-      car_rent: 13,
+      hotel_cost_max: 1500,
+      apartment_cost_min: 780,
+      apartment_cost_max: 1771,
+      dinner_cost: 17,
+      car_rent: 18,
     },
   ];
 
