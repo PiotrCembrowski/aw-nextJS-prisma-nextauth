@@ -185,5 +185,16 @@
     "apartment_cost_max": 2000,
     "dinner_cost": 4,
     "car_rent": 34
+  },
+  {
+    "country_name": "Malaysia",
+    "costs_one_person": 858,
+    "costs_family": 3029,
+    "hotel_cost_min": 14,
+    "hotel_cost_max": 69,
+    "apartment_cost_min": 142,
+    "apartment_cost_max": 1812,
+    "dinner_cost": 4,
+    "car_rent": 35
   }
 ]
