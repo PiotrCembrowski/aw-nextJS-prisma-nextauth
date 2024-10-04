@@ -1,0 +1,13 @@
+[
+  {
+    "country_name": "Asia",
+    "costs_one_person": 510,
+    "costs_family": 1571,
+    "hotel_cost_min": 11,
+    "hotel_cost_max": 400,
+    "apartment_cost_min": 56,
+    "apartment_cost_max": 1739,
+    "dinner_cost": 3,
+    "car_rent": 88
+  }
+]
