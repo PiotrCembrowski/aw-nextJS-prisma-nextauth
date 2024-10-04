@@ -174,5 +174,16 @@
     "apartment_cost_max": 959,
     "dinner_cost": 7,
     "car_rent": 50
+  },
+  {
+    "country_name": "Uzbekistan",
+    "costs_one_person": 670,
+    "costs_family": 3130,
+    "hotel_cost_min": 5,
+    "hotel_cost_max": 151,
+    "apartment_cost_min": 192,
+    "apartment_cost_max": 2000,
+    "dinner_cost": 4,
+    "car_rent": 34
   }
 ]
