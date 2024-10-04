@@ -262,6 +262,17 @@
     "apartment_cost_max": 1449,
     "dinner_cost": 8,
     "car_rent": 36
+  },
+  {
+    "country_name": "Cambodia",
+    "costs_one_person": 905,
+    "costs_family": 2752,
+    "hotel_cost_min": 6,
+    "hotel_cost_max": 88,
+    "apartment_cost_min": 165,
+    "apartment_cost_max": 1500,
+    "dinner_cost": 4,
+    "car_rent": 68
   }
 ],
 {
