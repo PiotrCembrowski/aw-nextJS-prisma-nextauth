@@ -119,5 +119,16 @@
     "apartment_cost_max": 2273,
     "dinner_cost": 3,
     "car_rent": 16
+  },
+  {
+    "country_name": "Myanmar",
+    "costs_one_person": 1058,
+    "costs_family": 7266,
+    "hotel_cost_min": 8,
+    "hotel_cost_max": 71,
+    "apartment_cost_min": 120,
+    "apartment_cost_max": 1800,
+    "dinner_cost": 2,
+    "car_rent": 125
   }
 ]
