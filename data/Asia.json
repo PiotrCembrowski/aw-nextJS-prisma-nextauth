@@ -284,6 +284,17 @@
     "apartment_cost_max": 1129,
     "dinner_cost": 7,
     "car_rent": 9
+  },
+  {
+    "country_name": "United Arab Emirates",
+    "costs_one_person": 2335,
+    "costs_family": 6037,
+    "hotel_cost_min": 14,
+    "hotel_cost_max": 115,
+    "apartment_cost_min": 681,
+    "apartment_cost_max": 5445,
+    "dinner_cost": 10,
+    "car_rent": 44
   }
 ],
 {
