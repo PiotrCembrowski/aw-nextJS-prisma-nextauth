@@ -20,5 +20,16 @@
     "apartment_cost_max": 2837,
     "dinner_cost": 3,
     "car_rent": 35
+  },
+  {
+    "country_name": "Indonesia",
+    "costs_one_person": 699,
+    "costs_family": 2278,
+    "hotel_cost_min": 7,
+    "hotel_cost_max": 200,
+    "apartment_cost_min": 64,
+    "apartment_cost_max": 2584,
+    "dinner_cost": 2,
+    "car_rent": 41
   }
 ]
