@@ -424,6 +424,17 @@ async function main() {
       dinner_cost: 17,
       car_rent: 29,
     },
+    {
+      country_name: "Iceland",
+      costs_one_person: 3142,
+      costs_family: 7579,
+      hotel_cost_min: 125,
+      hotel_cost_max: 1000,
+      apartment_cost_min: 1708,
+      apartment_cost_max: 2672,
+      dinner_cost: 22,
+      car_rent: 21,
+    },
   ];
 
   const Countries: Prisma.CountryCreateInput[] = await [
