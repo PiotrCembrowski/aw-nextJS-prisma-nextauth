@@ -229,5 +229,16 @@
     "apartment_cost_max": 2343,
     "dinner_cost": 3,
     "car_rent": null
+  },
+  {
+    "country_name": "Syria",
+    "costs_one_person": 518,
+    "costs_family": 1617,
+    "hotel_cost_min": 45,
+    "hotel_cost_max": 231,
+    "apartment_cost_min": 35,
+    "apartment_cost_max": 800,
+    "dinner_cost": 5,
+    "car_rent": 20
   }
 ]
