@@ -163,5 +163,16 @@
     "apartment_cost_max": 363,
     "dinner_cost": 2,
     "car_rent": 5
+  },
+  {
+    "country_name": "Yemen",
+    "costs_one_person": 1225,
+    "costs_family": 4045,
+    "hotel_cost_min": 40,
+    "hotel_cost_max": 202,
+    "apartment_cost_min": 72,
+    "apartment_cost_max": 959,
+    "dinner_cost": 7,
+    "car_rent": 50
   }
 ]
