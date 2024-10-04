@@ -251,6 +251,17 @@
     "apartment_cost_max": 1360,
     "dinner_cost": 3,
     "car_rent": 35
+  },
+  {
+    "country_name": "Kazakhstan",
+    "costs_one_person": 893,
+    "costs_family": 2680,
+    "hotel_cost_min": 8,
+    "hotel_cost_max": 79,
+    "apartment_cost_min": 207,
+    "apartment_cost_max": 1449,
+    "dinner_cost": 8,
+    "car_rent": 36
   }
 ],
 {
