@@ -196,5 +196,16 @@
     "apartment_cost_max": 1812,
     "dinner_cost": 4,
     "car_rent": 35
+  },
+  {
+    "country_name": "Saudi Arabia",
+    "costs_one_person": 1217,
+    "costs_family": 3286,
+    "hotel_cost_min": 16,
+    "hotel_cost_max": 583,
+    "apartment_cost_min": 213,
+    "apartment_cost_max": 2131,
+    "dinner_cost": 7,
+    "car_rent": 28
   }
 ]
