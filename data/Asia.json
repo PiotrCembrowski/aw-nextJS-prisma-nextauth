@@ -240,5 +240,27 @@
     "apartment_cost_max": 800,
     "dinner_cost": 5,
     "car_rent": 20
+  },
+  {
+    "country_name": "Sri Lanka",
+    "costs_one_person": 716,
+    "costs_family": 2422,
+    "hotel_cost_min": 51,
+    "hotel_cost_max": 90,
+    "apartment_cost_min": 85,
+    "apartment_cost_max": 1360,
+    "dinner_cost": 3,
+    "car_rent": 35
   }
-]
+],
+{
+  "country_name": "",
+  "costs_one_person": ,
+  "costs_family": ,
+  "hotel_cost_min": ,
+  "hotel_cost_max": ,
+  "apartment_cost_min": ,
+  "apartment_cost_max": ,
+  "dinner_cost": ,
+  "car_rent": 
+}
