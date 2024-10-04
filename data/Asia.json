@@ -97,5 +97,16 @@
     "apartment_cost_max": 1500,
     "dinner_cost": 4,
     "car_rent": 105
+  },
+  {
+    "country_name": "Turkey",
+    "costs_one_person": 1086,
+    "costs_family": 1628,
+    "hotel_cost_min": 69,
+    "hotel_cost_max": 146,
+    "apartment_cost_min": 234,
+    "apartment_cost_max": 1764,
+    "dinner_cost": 9,
+    "car_rent": 10
   }
 ]
