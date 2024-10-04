@@ -328,6 +328,17 @@
     "apartment_cost_max": 3154,
     "dinner_cost": 20,
     "car_rent": 25
+  },
+  {
+    "country_name": "Laos",
+    "costs_one_person": 1360,
+    "costs_family": 3393,
+    "hotel_cost_min":5,
+    "hotel_cost_max": 20,
+    "apartment_cost_min": 500,
+    "apartment_cost_max": 3800,
+    "dinner_cost": 2,
+    "car_rent": 32
   }
 ],
 {
