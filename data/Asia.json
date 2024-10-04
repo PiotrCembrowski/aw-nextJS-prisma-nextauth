@@ -42,5 +42,16 @@
     "apartment_cost_max": 540,
     "dinner_cost": 2,
     "car_rent": 35
+  },
+  {
+    "country_name": "Bangladesh",
+    "costs_one_person": 419,
+    "costs_family": 1378,
+    "hotel_cost_min": 11,
+    "hotel_cost_max": 129,
+    "apartment_cost_min": 25,
+    "apartment_cost_max": 418,
+    "dinner_cost": 2,
+    "car_rent": 33
   }
 ]
