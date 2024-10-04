@@ -306,6 +306,17 @@
     "apartment_cost_max": 939,
     "dinner_cost": 6,
     "car_rent": 120
+  },
+  {
+    "country_name": "Azerbaijan",
+    "costs_one_person": 868,
+    "costs_family": 2556,
+    "hotel_cost_min": 5,
+    "hotel_cost_max": 21,
+    "apartment_cost_min": 147,
+    "apartment_cost_max": 1765,
+    "dinner_cost": 9,
+    "car_rent": 25
   }
 ],
 {
