@@ -130,5 +130,16 @@
     "apartment_cost_max": 1800,
     "dinner_cost": 2,
     "car_rent": 125
+  },
+  {
+    "country_name": "North Korea",
+    "costs_one_person": 1545,
+    "costs_family": 2561,
+    "hotel_cost_min": 17,
+    "hotel_cost_max": 600,
+    "apartment_cost_min": 225,
+    "apartment_cost_max": 3598,
+    "dinner_cost": 8,
+    "car_rent": 61
   }
 ]
