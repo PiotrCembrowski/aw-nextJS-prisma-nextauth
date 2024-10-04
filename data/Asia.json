@@ -273,6 +273,17 @@
     "apartment_cost_max": 1500,
     "dinner_cost": 4,
     "car_rent": 68
+  },
+  {
+    "country_name": "Jordan",
+    "costs_one_person": 958,
+    "costs_family": 2864,
+    "hotel_cost_min": 9,
+    "hotel_cost_max": 136,
+    "apartment_cost_min": 140,
+    "apartment_cost_max": 1129,
+    "dinner_cost": 7,
+    "car_rent": 9
   }
 ],
 {
