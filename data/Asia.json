@@ -1,6 +1,6 @@
 [
   {
-    "country_name": "Asia",
+    "country_name": "India",
     "costs_one_person": 510,
     "costs_family": 1571,
     "hotel_cost_min": 11,
@@ -9,5 +9,16 @@
     "apartment_cost_max": 1739,
     "dinner_cost": 3,
     "car_rent": 88
+  },
+  {
+    "country_name": "China",
+    "costs_one_person": 963,
+    "costs_family": 2864,
+    "hotel_cost_min": 7,
+    "hotel_cost_max": 5000,
+    "apartment_cost_min": 142,
+    "apartment_cost_max": 2837,
+    "dinner_cost": 3,
+    "car_rent": 35
   }
 ]
