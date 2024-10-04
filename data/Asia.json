@@ -31,5 +31,16 @@
     "apartment_cost_max": 2584,
     "dinner_cost": 2,
     "car_rent": 41
+  },
+  {
+    "country_name": "Pakistan",
+    "costs_one_person": 436,
+    "costs_family": 1312,
+    "hotel_cost_min": 11,
+    "hotel_cost_max": 118,
+    "apartment_cost_min": 36,
+    "apartment_cost_max": 540,
+    "dinner_cost": 2,
+    "car_rent": 35
   }
 ]
