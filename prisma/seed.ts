@@ -468,6 +468,17 @@ async function main() {
       dinner_cost: 28,
       car_rent: 22,
     },
+    {
+      country_name: "San Marino",
+      costs_one_person: 2346,
+      costs_family: 4666,
+      hotel_cost_min: 50,
+      hotel_cost_max: 123,
+      apartment_cost_min: 441,
+      apartment_cost_max: 993,
+      dinner_cost: 17,
+      car_rent: 10,
+    },
   ];
 
   const Countries: Prisma.CountryCreateInput[] = await [
