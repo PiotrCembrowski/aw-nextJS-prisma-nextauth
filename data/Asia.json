@@ -86,5 +86,16 @@
     "apartment_cost_max": 1616,
     "dinner_cost": 2,
     "car_rent": 151
+  },
+  {
+    "country_name": "Iran",
+    "costs_one_person": 1624,
+    "costs_family": 5383,
+    "hotel_cost_min": 45,
+    "hotel_cost_max": 134,
+    "apartment_cost_min": 110,
+    "apartment_cost_max": 1500,
+    "dinner_cost": 4,
+    "car_rent": 105
   }
 ]
