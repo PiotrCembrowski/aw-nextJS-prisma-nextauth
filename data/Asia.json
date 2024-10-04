@@ -295,6 +295,17 @@
     "apartment_cost_max": 5445,
     "dinner_cost": 10,
     "car_rent": 44
+  },
+  {
+    "country_name": "Tajikistan",
+    "costs_one_person": 729,
+    "costs_family": 2059,
+    "hotel_cost_min": 6,
+    "hotel_cost_max": 99,
+    "apartment_cost_min": 94,
+    "apartment_cost_max": 939,
+    "dinner_cost": 6,
+    "car_rent": 120
   }
 ],
 {
