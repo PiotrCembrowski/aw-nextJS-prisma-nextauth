@@ -53,5 +53,16 @@
     "apartment_cost_max": 418,
     "dinner_cost": 2,
     "car_rent": 33
+  },
+  {
+    "country_name": "Japan",
+    "costs_one_person": 1398,
+    "costs_family": 4206,
+    "hotel_cost_min": 13,
+    "hotel_cost_max": 748,
+    "apartment_cost_min": 274,
+    "apartment_cost_max": 3419,
+    "dinner_cost": 7,
+    "car_rent": 57
   }
 ]
