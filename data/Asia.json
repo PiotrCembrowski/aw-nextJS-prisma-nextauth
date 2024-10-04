@@ -141,5 +141,16 @@
     "apartment_cost_max": 3598,
     "dinner_cost": 8,
     "car_rent": 61
+  },
+  {
+    "country_name": "Iraq",
+    "costs_one_person": 3130,
+    "costs_family": 2289,
+    "hotel_cost_min": 75,
+    "hotel_cost_max": 300,
+    "apartment_cost_min": 114,
+    "apartment_cost_max": 1106,
+    "dinner_cost": 5,
+    "car_rent": 44
   }
 ]
