@@ -339,6 +339,17 @@
     "apartment_cost_max": 3800,
     "dinner_cost": 2,
     "car_rent": 32
+  },
+  {
+    "country_name": "Turkmenistan",
+    "costs_one_person": 1668,
+    "costs_family": 14295,
+    "hotel_cost_min": 62,
+    "hotel_cost_max": 8100,
+    "apartment_cost_min": 286,
+    "apartment_cost_max": 2857,
+    "dinner_cost": 34,
+    "car_rent": 517
   }
 ],
 {
