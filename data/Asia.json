@@ -207,5 +207,16 @@
     "apartment_cost_max": 2131,
     "dinner_cost": 7,
     "car_rent": 28
+  },
+  {
+    "country_name": "Nepal",
+    "costs_one_person": 486,
+    "costs_family": 1507,
+    "hotel_cost_min": 6,
+    "hotel_cost_max": 102,
+    "apartment_cost_min": 30,
+    "apartment_cost_max": 595,
+    "dinner_cost": 2,
+    "car_rent": 203
   }
 ]
