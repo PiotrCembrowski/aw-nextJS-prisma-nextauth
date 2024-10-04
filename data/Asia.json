@@ -152,5 +152,16 @@
     "apartment_cost_max": 1106,
     "dinner_cost": 5,
     "car_rent": 44
+  },
+  {
+    "country_name": "Afghanistan",
+    "costs_one_person": 504,
+    "costs_family": 1379,
+    "hotel_cost_min": 23,
+    "hotel_cost_max": 151,
+    "apartment_cost_min": 36,
+    "apartment_cost_max": 363,
+    "dinner_cost": 2,
+    "car_rent": 5
   }
 ]
