@@ -364,6 +364,17 @@ adding AI chat
     "apartment_cost_max": 1122,
     "dinner_cost": 6,
     "car_rent": 30 
+  },
+  {
+    "country_name": "Singapore",
+    "costs_one_person": 3537,
+    "costs_family": 8822,
+    "hotel_cost_min": 32,
+    "hotel_cost_max": 363,
+    "apartment_cost_min": 1227,
+    "apartment_cost_max": 8438,
+    "dinner_cost": 12,
+    "car_rent": 69
   }
 ],
 {
