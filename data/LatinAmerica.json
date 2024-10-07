@@ -31,7 +31,18 @@
         "apartment_cost_max": 1187,
         "dinner_cost": 5,
         "car_rent": 22
-      }
+      },
+      {
+          "country_name": "Argentina",
+          "costs_one_person": 874,
+          "costs_family": 2572,
+          "hotel_cost_min": 11,
+          "hotel_cost_max": 165,
+          "apartment_cost_min": 150,
+          "apartment_cost_max": 1500,
+          "dinner_cost": 9,
+          "car_rent": 34
+        }
 ],
 {
     "country_name": "",
