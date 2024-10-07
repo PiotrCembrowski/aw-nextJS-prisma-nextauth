@@ -119,6 +119,17 @@
             "apartment_cost_max": 1260,
             "dinner_cost": 13,
             "car_rent": 50
+        },
+        {
+            "country_name": "Dominican Republic",
+            "costs_one_person": 951,
+            "costs_family": 2847,
+            "hotel_cost_min": 18,
+            "hotel_cost_max": 352,
+            "apartment_cost_min": 132,
+            "apartment_cost_max": 1697,
+            "dinner_cost": 7,
+            "car_rent": 10
         }
 ],
 {
