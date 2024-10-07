@@ -463,6 +463,17 @@ adding AI chat
     "apartment_cost_max": 2570,
     "dinner_cost": 12,
     "car_rent": 24
+  },
+  {
+    "country_name": "Bahrain",
+    "costs_one_person": 1599,
+    "costs_family": 4490,
+    "hotel_cost_min": 32,
+    "hotel_cost_max": 331,
+    "apartment_cost_min": 398,
+    "apartment_cost_max": 2367,
+    "dinner_cost": 8,
+    "car_rent": 12
   }
 ],
 {
