@@ -496,6 +496,17 @@ adding AI chat
     "apartment_cost_max": 3291,
     "dinner_cost": 16,
     "car_rent": 21
+  },
+  {
+    "country_name": "Bhutan",
+    "costs_one_person": 515,
+    "costs_family": 1669,
+    "hotel_cost_min": 15,
+    "hotel_cost_max": 2100,
+    "apartment_cost_min": 36,
+    "apartment_cost_max": 500,
+    "dinner_cost": 3,
+    "car_rent": 47
   }
 ],
 {
