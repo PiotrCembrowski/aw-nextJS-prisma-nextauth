@@ -485,6 +485,17 @@ adding AI chat
     "apartment_cost_max": 3000,
     "dinner_cost": 5,
     "car_rent": 103
+  },
+  {
+    "country_name": "Cyprus",
+    "costs_one_person": 1883,
+    "costs_family": 5093,
+    "hotel_cost_min": 24,
+    "hotel_cost_max": 307,
+    "apartment_cost_min": 494,
+    "apartment_cost_max": 3291,
+    "dinner_cost": 16,
+    "car_rent": 21
   }
 ],
 {
