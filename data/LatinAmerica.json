@@ -53,8 +53,8 @@
             "apartment_cost_max": 1469,
             "dinner_cost": 4,
             "car_rent": 16
-          },
-          {
+        },
+        {
             "country_name": "Venezuela",
             "costs_one_person": 825,
             "costs_family": 2626,
@@ -63,6 +63,17 @@
             "apartment_cost_min": 100,
             "apartment_cost_max": 1000,
             "dinner_cost": 10,
+            "car_rent": 
+        },
+        {
+            "country_name": "Chile",
+            "costs_one_person": 1124,
+            "costs_family": 3223,
+            "hotel_cost_min": 13,
+            "hotel_cost_max": 1000,
+            "apartment_cost_min": 274,
+            "apartment_cost_max": 1296,
+            "dinner_cost": 9,
             "car_rent": 
         }
 ],
