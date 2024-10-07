@@ -551,6 +551,17 @@ adding AI chat
     "apartment_cost_max": 9014,
     "dinner_cost": 8,
     "car_rent": 41
+  },
+  {
+    "country_name": "Macau",
+    "costs_one_person": 1946,
+    "costs_family": 5385,
+    "hotel_cost_min": 43,
+    "hotel_cost_max": 370,
+    "apartment_cost_min": 560,
+    "apartment_cost_max": 2961,
+    "dinner_cost": 6,
+    "car_rent": 12
   }
 ],
 {
