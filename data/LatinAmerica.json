@@ -108,6 +108,17 @@
             "apartment_cost_max": 1149,
             "dinner_cost": 3,
             "car_rent": 44
+        },
+        {
+            "country_name": "Haiti",
+            "costs_one_person": 4511,
+            "costs_family": 4258,
+            "hotel_cost_min": 28,
+            "hotel_cost_max": 215,
+            "apartment_cost_min": 726,
+            "apartment_cost_max": 1260,
+            "dinner_cost": 13,
+            "car_rent": 50
         }
 ],
 {
