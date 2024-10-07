@@ -430,6 +430,17 @@ adding AI chat
     "apartment_cost_max": 1642,
     "dinner_cost": 9,
     "car_rent": 24
+  },
+  {
+    "country_name": "Mongolia",
+    "costs_one_person": 1024,
+    "costs_family": 3137,
+    "hotel_cost_min": 20,
+    "hotel_cost_max": 94,
+    "apartment_cost_min": 235,
+    "apartment_cost_max": 2060,
+    "dinner_cost": 5,
+    "car_rent": 203
   }
 ],
 {
