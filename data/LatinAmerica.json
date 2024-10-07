@@ -130,6 +130,17 @@
             "apartment_cost_max": 1697,
             "dinner_cost": 7,
             "car_rent": 10
+        },
+        {
+            "country_name": "Cuba",
+            "costs_one_person": 1109,
+            "costs_family": 3079,
+            "hotel_cost_min": 40,
+            "hotel_cost_max": 250,
+            "apartment_cost_min": 200,
+            "apartment_cost_max": 1287,
+            "dinner_cost": 6,
+            "car_rent": 49
         }
 ],
 {
