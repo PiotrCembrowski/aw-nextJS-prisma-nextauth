@@ -518,16 +518,38 @@ adding AI chat
     "apartment_cost_max": 2280,
     "dinner_cost": 6,
     "car_rent": 50
-  }  
+  },
+  {
+    "country_name": "Brunei",
+    "costs_one_person": 1484,
+    "costs_family": 4303,
+    "hotel_cost_min": 7,
+    "hotel_cost_max": 259,
+    "apartment_cost_min": 307,
+    "apartment_cost_max": 1918,
+    "dinner_cost": 5,
+    "car_rent": 51
+  },
+  {
+    "country_name": "Taiwan",
+    "costs_one_person": 1153,
+    "costs_family": 3728,
+    "hotel_cost_min": 67,
+    "hotel_cost_max": 120,
+    "apartment_cost_min": 186,
+    "apartment_cost_max": 2019,
+    "dinner_cost": 7,
+    "car_rent": 56
+  }
 ],
 {
-  "country_name": "Brunei",
-  "costs_one_person": 1484,
-  "costs_family": 4303,
-  "hotel_cost_min": 7,
-  "hotel_cost_max": 259,
-  "apartment_cost_min": 307,
-  "apartment_cost_max": 1918,
-  "dinner_cost": 5,
-  "car_rent": 51
+  "country_name": "",
+  "costs_one_person": ,
+  "costs_family": ,
+  "hotel_cost_min": ,
+  "hotel_cost_max": ,
+  "apartment_cost_min": ,
+  "apartment_cost_max": ,
+  "dinner_cost": ,
+  "car_rent": 
 }
