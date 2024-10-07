@@ -152,6 +152,17 @@
             "apartment_cost_max": 1100,
             "dinner_cost": 8,
             "car_rent": 12
+        },
+        {
+            "country_name": "Paraguay",
+            "costs_one_person": 784,
+            "costs_family": 2100,
+            "hotel_cost_min": 9,
+            "hotel_cost_max": 378,
+            "apartment_cost_min": 191,
+            "apartment_cost_max": 1085,
+            "dinner_cost": 4,
+            "car_rent": 20
         }
 ],
 {
