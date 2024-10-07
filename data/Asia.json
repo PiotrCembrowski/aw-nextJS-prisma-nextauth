@@ -1,3 +1,6 @@
+adding AI chat
+
+
 [
   {
     "country_name": "India",
@@ -350,6 +353,17 @@
     "apartment_cost_max": 2857,
     "dinner_cost": 34,
     "car_rent": 517
+  },
+  {
+    "country_name": "Kyrgyzstan",
+    "costs_one_person": 872,
+    "costs_family": 2381,
+    "hotel_cost_min": 18,
+    "hotel_cost_max": 197,
+    "apartment_cost_min": 260,
+    "apartment_cost_max": 1122,
+    "dinner_cost": 6,
+    "car_rent": 30 
   }
 ],
 {
