@@ -20,6 +20,17 @@
         "apartment_cost_max": 2337,
         "dinner_cost": 9,
         "car_rent": 5
+      },
+      {
+        "country_name": "Colombia",
+        "costs_one_person": 826,
+        "costs_family": 2321,
+        "hotel_cost_min": 7,
+        "hotel_cost_max": 96,
+        "apartment_cost_min": 178,
+        "apartment_cost_max": 1187,
+        "dinner_cost": 5,
+        "car_rent": 22
       }
 ],
 {
