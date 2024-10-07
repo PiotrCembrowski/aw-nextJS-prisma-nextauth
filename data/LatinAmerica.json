@@ -63,7 +63,7 @@
             "apartment_cost_min": 100,
             "apartment_cost_max": 1000,
             "dinner_cost": 10,
-            "car_rent": 
+            "car_rent": 42
         },
         {
             "country_name": "Chile",
@@ -74,7 +74,7 @@
             "apartment_cost_min": 274,
             "apartment_cost_max": 1296,
             "dinner_cost": 9,
-            "car_rent": 
+            "car_rent": 15
         },
         {
             "country_name": "Guatemala",
@@ -86,6 +86,17 @@
             "apartment_cost_max": 2057,
             "dinner_cost": 5,
             "car_rent": 8
+        },
+        {
+            "country_name": "Ecuador",
+            "costs_one_person": 845,
+            "costs_family": 8639,
+            "hotel_cost_min": ,
+            "hotel_cost_max": ,
+            "apartment_cost_min": 150,
+            "apartment_cost_max": 1200,
+            "dinner_cost": 4,
+            "car_rent": 18
         }
 ],
 {
