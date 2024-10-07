@@ -397,6 +397,17 @@ adding AI chat
     "apartment_cost_max": 873,
     "dinner_cost": 7,
     "car_rent": 59
+  },
+  {
+    "country_name": "Oman",
+    "costs_one_person": 1018,
+    "costs_family": 3338,
+    "hotel_cost_min": 18,
+    "hotel_cost_max": 1500,
+    "apartment_cost_min": 260,
+    "apartment_cost_max": 1688,
+    "dinner_cost": 5,
+    "car_rent": 22
   }
 ],
 {
