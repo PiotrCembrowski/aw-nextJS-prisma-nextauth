@@ -207,6 +207,17 @@
             "apartment_cost_max": 3000,
             "dinner_cost": 10,
             "car_rent": 5
+        },
+        {
+            "country_name": "Uruguay",
+            "costs_one_person": 1322,
+            "costs_family": 3823,
+            "hotel_cost_min": 7,
+            "hotel_cost_max": 164,
+            "apartment_cost_min": 336,
+            "apartment_cost_max": 1500,
+            "dinner_cost": 15,
+            "car_rent": 20
         }
 ],
 {
