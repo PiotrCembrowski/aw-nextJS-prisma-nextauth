@@ -540,6 +540,17 @@ adding AI chat
     "apartment_cost_max": 2019,
     "dinner_cost": 7,
     "car_rent": 56
+  },
+  {
+    "country_name": "Hong Kong",
+    "costs_one_person": 3028,
+    "costs_family": 8117,
+    "hotel_cost_min": 18,
+    "hotel_cost_max": 295,
+    "apartment_cost_min": 1030,
+    "apartment_cost_max": 9014,
+    "dinner_cost": 8,
+    "car_rent": 41
   }
 ],
 {
