@@ -375,6 +375,17 @@ adding AI chat
     "apartment_cost_max": 8438,
     "dinner_cost": 12,
     "car_rent": 69
+  },
+  {
+    "country_name": "Lebanon",
+    "costs_one_person": 1206,
+    "costs_family": 3548,
+    "hotel_cost_min": 17,
+    "hotel_cost_max": 147,
+    "apartment_cost_min": 200,
+    "apartment_cost_max": 3300,
+    "dinner_cost": 10,
+    "car_rent": 20
   }
 ],
 {
