@@ -1,6 +1,3 @@
-adding AI chat
-
-
 [
   {
     "country_name": "India",
@@ -563,15 +560,4 @@ adding AI chat
     "dinner_cost": 6,
     "car_rent": 12
   }
-],
-{
-  "country_name": "",
-  "costs_one_person": ,
-  "costs_family": ,
-  "hotel_cost_min": ,
-  "hotel_cost_max": ,
-  "apartment_cost_min": ,
-  "apartment_cost_max": ,
-  "dinner_cost": ,
-  "car_rent": 
-}
+]
