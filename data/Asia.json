@@ -441,6 +441,28 @@ adding AI chat
     "apartment_cost_max": 2060,
     "dinner_cost": 5,
     "car_rent": 203
+  },
+  {
+    "country_name": "Qatar",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": 8,
+    "car_rent": 
+  },
+  {
+    "country_name": "Armenia",
+    "costs_one_person": 1500,
+    "costs_family": 3990,
+    "hotel_cost_min": 5,
+    "hotel_cost_max": 70,
+    "apartment_cost_min": 385,
+    "apartment_cost_max": 2570,
+    "dinner_cost": 12,
+    "car_rent": 24
   }
 ],
 {
