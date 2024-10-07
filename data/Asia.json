@@ -507,7 +507,18 @@ adding AI chat
     "apartment_cost_max": 500,
     "dinner_cost": 3,
     "car_rent": 47
-  }
+  },
+  {
+    "country_name": "Maldives",
+    "costs_one_person": 1638,
+    "costs_family": 4366,
+    "hotel_cost_min": 44,
+    "hotel_cost_max": 8800,
+    "apartment_cost_min": 489,
+    "apartment_cost_max": 2280,
+    "dinner_cost": 6,
+    "car_rent": 50
+  }  
 ],
 {
   "country_name": "",
