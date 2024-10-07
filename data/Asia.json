@@ -521,13 +521,13 @@ adding AI chat
   }  
 ],
 {
-  "country_name": "",
-  "costs_one_person": ,
-  "costs_family": ,
-  "hotel_cost_min": ,
-  "hotel_cost_max": ,
-  "apartment_cost_min": ,
-  "apartment_cost_max": ,
-  "dinner_cost": ,
-  "car_rent": 
+  "country_name": "Brunei",
+  "costs_one_person": 1484,
+  "costs_family": 4303,
+  "hotel_cost_min": 7,
+  "hotel_cost_max": 259,
+  "apartment_cost_min": 307,
+  "apartment_cost_max": 1918,
+  "dinner_cost": 5,
+  "car_rent": 51
 }
