@@ -474,6 +474,17 @@ adding AI chat
     "apartment_cost_max": 2367,
     "dinner_cost": 8,
     "car_rent": 12
+  },
+  {
+    "country_name": "Timor-Leste",
+    "costs_one_person": 1765,
+    "costs_family": 4792,
+    "hotel_cost_min": 18,
+    "hotel_cost_max": 160,
+    "apartment_cost_min": 500,
+    "apartment_cost_max": 3000,
+    "dinner_cost": 5,
+    "car_rent": 103
   }
 ],
 {
