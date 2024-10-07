@@ -141,6 +141,17 @@
             "apartment_cost_max": 1287,
             "dinner_cost": 6,
             "car_rent": 49
+        },
+        {
+            "country_name": "Honduras",
+            "costs_one_person": 1026,
+            "costs_family": 2904,
+            "hotel_cost_min": 95,
+            "hotel_cost_max": 493,
+            "apartment_cost_min": 112,
+            "apartment_cost_max": 1100,
+            "dinner_cost": 8,
+            "car_rent": 12
         }
 ],
 {
