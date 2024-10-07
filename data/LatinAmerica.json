@@ -185,6 +185,17 @@
             "apartment_cost_max": 1800,
             "dinner_cost": 8,
             "car_rent": 12
+        },
+        {
+            "country_name": "Costa Rica",
+            "costs_one_person": 1501,
+            "costs_family": 4370,
+            "hotel_cost_min": 9,
+            "hotel_cost_max": 500,
+            "apartment_cost_min": 326,
+            "apartment_cost_max": 2500,
+            "dinner_cost": 10,
+            "car_rent": 5
         }
 ],
 {
