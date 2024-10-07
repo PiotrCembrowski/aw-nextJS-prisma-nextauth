@@ -9,6 +9,17 @@
         "apartment_cost_max": 1100,
         "dinner_cost": 6,
         "car_rent": 15
+      },
+      {
+        "country_name": "Mexico",
+        "costs_one_person": 1179,
+        "costs_family": 3354,
+        "hotel_cost_min": 30,
+        "hotel_cost_max": 300,
+        "apartment_cost_min": 208,
+        "apartment_cost_max": 2337,
+        "dinner_cost": 9,
+        "car_rent": 5
       }
 ],
 {
