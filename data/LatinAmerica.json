@@ -240,6 +240,17 @@
             "apartment_cost_max": 1772,
             "dinner_cost": 9,
             "car_rent": 32
+        },
+        {
+            "country_name": "Guyana",
+            "costs_one_person": 1546,
+            "costs_family": 3774,
+            "hotel_cost_min": 35,
+            "hotel_cost_max": 600,
+            "apartment_cost_min": 216,
+            "apartment_cost_max": 3000,
+            "dinner_cost": 12,
+            "car_rent": 41
         }
 ],
 {
