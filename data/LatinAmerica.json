@@ -350,6 +350,17 @@
             "apartment_cost_max": 1309,
             "dinner_cost": 7,
             "car_rent": 53
+        },
+        {
+            "country_name": "Saint Kitts And Nevis",
+            "costs_one_person": 1950,
+            "costs_family": 5328,
+            "hotel_cost_min": 85,
+            "hotel_cost_max": 945,
+            "apartment_cost_min": 700,
+            "apartment_cost_max": 2000,
+            "dinner_cost": 22,
+            "car_rent": 42
         }
 ],
 {
