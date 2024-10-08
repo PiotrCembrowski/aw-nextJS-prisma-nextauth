@@ -295,6 +295,17 @@
             "apartment_cost_max": 1500,
             "dinner_cost": 20,
             "car_rent": 26
+        },
+        {
+            "country_name": "Saint Lucia",
+            "costs_one_person": 817,
+            "costs_family": 3000,
+            "hotel_cost_min": 43,
+            "hotel_cost_max": 1308,
+            "apartment_cost_min": 222,
+            "apartment_cost_max": 1110,
+            "dinner_cost": 7,
+            "car_rent": 37
         }
 ],
 {
