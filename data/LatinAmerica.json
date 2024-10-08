@@ -262,6 +262,17 @@
             "apartment_cost_max": 2500,
             "dinner_cost": 7,
             "car_rent": 16
+        },
+        {
+            "country_name": "Belize",
+            "costs_one_person": 500,
+            "costs_family": 1500,
+            "hotel_cost_min": 25,
+            "hotel_cost_max": 400,
+            "apartment_cost_min": 200,
+            "apartment_cost_max": 2691,
+            "dinner_cost": 8,
+            "car_rent": 60
         }
 ],
 {
