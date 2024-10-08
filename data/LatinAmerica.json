@@ -229,6 +229,17 @@
             "apartment_cost_max": 2914,
             "dinner_cost": 8,
             "car_rent": 25
+        },
+        {
+            "country_name": "Trinidad And Tobago",
+            "costs_one_person": 1369,
+            "costs_family": 4194,
+            "hotel_cost_min": 30,
+            "hotel_cost_max": 300,
+            "apartment_cost_min": 325,
+            "apartment_cost_max": 1772,
+            "dinner_cost": 9,
+            "car_rent": 32
         }
 ],
 {
