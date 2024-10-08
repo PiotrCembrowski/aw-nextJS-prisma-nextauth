@@ -394,6 +394,17 @@
             "apartment_cost_max": 1814,
             "dinner_cost": 22,
             "car_rent": 15
+        },
+        {
+            "country_name": "French Guiana",
+            "costs_one_person": 3742,
+            "costs_family": 6554,
+            "hotel_cost_min": 52,
+            "hotel_cost_max": 250,
+            "apartment_cost_min": 550,
+            "apartment_cost_max": 1869,
+            "dinner_cost": 10,
+            "car_rent": 40
         }
 ],
 {
