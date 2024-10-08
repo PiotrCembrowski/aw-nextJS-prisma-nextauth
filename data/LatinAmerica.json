@@ -273,6 +273,17 @@
             "apartment_cost_max": 2691,
             "dinner_cost": 8,
             "car_rent": 60
+        },
+        {
+            "country_name": "Bahamas",
+            "costs_one_person": 3006,
+            "costs_family": 8950,
+            "hotel_cost_min": 77,
+            "hotel_cost_max": 479,
+            "apartment_cost_min": 600,
+            "apartment_cost_max": 7000,
+            "dinner_cost": 30,
+            "car_rent": 53
         }
 ],
 {
