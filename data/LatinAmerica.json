@@ -482,6 +482,17 @@
             "apartment_cost_max": 4500,
             "dinner_cost": 23,
             "car_rent": 39
+        },
+        {
+            "country_name": "Caribbean Netherlands",
+            "costs_one_person": 5300,
+            "costs_family": 8546,
+            "hotel_cost_min": 83,
+            "hotel_cost_max": 1173,
+            "apartment_cost_min": 800,
+            "apartment_cost_max": 2000,
+            "dinner_cost": 23,
+            "car_rent": 37
         }
 ],
 {
