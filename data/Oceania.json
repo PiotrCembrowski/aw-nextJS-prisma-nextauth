@@ -33,14 +33,14 @@
     "car_rent": 11
   },
   {
-    "country_name": "",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
-    "dinner_cost": ,
-    "car_rent": 
+    "country_name": "Fiji",
+    "costs_one_person": 1103,
+    "costs_family": 3337,
+    "hotel_cost_min": 10,
+    "hotel_cost_max": 362,
+    "apartment_cost_min": 180,
+    "apartment_cost_max": 2928,
+    "dinner_cost": 5,
+    "car_rent": 42
   }
 ]
