@@ -22,6 +22,17 @@
     "car_rent": 
   },
   {
+    "country_name": "New Zealand",
+    "costs_one_person": 2079,
+    "costs_family": 5417,
+    "hotel_cost_min": 12,
+    "hotel_cost_max": 944,
+    "apartment_cost_min": 491,
+    "apartment_cost_max": 2943,
+    "dinner_cost": 15,
+    "car_rent": 11
+  },
+  {
     "country_name": "",
     "costs_one_person": ,
     "costs_family": ,
