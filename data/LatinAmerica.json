@@ -405,6 +405,17 @@
             "apartment_cost_max": 1869,
             "dinner_cost": 10,
             "car_rent": 40
+        },
+        {
+            "country_name": "Curaçao",
+            "costs_one_person": 2636,
+            "costs_family": 7345,
+            "hotel_cost_min": 24,
+            "hotel_cost_max": 276,
+            "apartment_cost_min": 389,
+            "apartment_cost_max": 2500,
+            "dinner_cost": 16,
+            "car_rent": 26
         }
 ],
 {
