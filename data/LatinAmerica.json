@@ -416,6 +416,17 @@
             "apartment_cost_max": 2500,
             "dinner_cost": 16,
             "car_rent": 26
+        },
+        {
+            "country_name": "Aruba",
+            "costs_one_person": 2100,
+            "costs_family": 6324,
+            "hotel_cost_min": 31,
+            "hotel_cost_max": 1100,
+            "apartment_cost_min": 500,
+            "apartment_cost_max": 1664,
+            "dinner_cost": 16,
+            "car_rent": 20
         }
 ],
 {
