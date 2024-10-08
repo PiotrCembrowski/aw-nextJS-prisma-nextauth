@@ -317,6 +317,17 @@
             "apartment_cost_max": 3000,
             "dinner_cost": 8,
             "car_rent": 40
+        },
+        {
+            "country_name": "Saint Vincent And The Grenadines",
+            "costs_one_person": 1347,
+            "costs_family": 4865,
+            "hotel_cost_min": 363,
+            "hotel_cost_max": 631,
+            "apartment_cost_min": 222,
+            "apartment_cost_max": 3108,
+            "dinner_cost": 7,
+            "car_rent": 34
         }
 ],
 {
