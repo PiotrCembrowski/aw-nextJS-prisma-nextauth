@@ -361,6 +361,17 @@
             "apartment_cost_max": 2000,
             "dinner_cost": 22,
             "car_rent": 42
+        },
+        {
+            "country_name": "Puerto Rico",
+            "costs_one_person": 1864,
+            "costs_family": 5107,
+            "hotel_cost_min": 30,
+            "hotel_cost_max": 278,
+            "apartment_cost_min": 400,
+            "apartment_cost_max": 3500,
+            "dinner_cost": 15,
+            "car_rent": 5
         }
 ],
 {
