@@ -383,6 +383,17 @@
             "apartment_cost_max": 2749,
             "dinner_cost": 22,
             "car_rent": 13
+        },
+        {
+            "country_name": "Martinique",
+            "costs_one_person": 1800,
+            "costs_family": 5109,
+            "hotel_cost_min": 38,
+            "hotel_cost_max": 1600,
+            "apartment_cost_min": 704,
+            "apartment_cost_max": 1814,
+            "dinner_cost": 22,
+            "car_rent": 15
         }
 ],
 {
