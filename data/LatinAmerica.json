@@ -339,6 +339,17 @@
             "apartment_cost_max": 1800,
             "dinner_cost": 9,
             "car_rent": 34
+        },
+        {
+            "country_name": "Dominica",
+            "costs_one_person": 1234,
+            "costs_family": 4106,
+            "hotel_cost_min": 36,
+            "hotel_cost_max": 1250,
+            "apartment_cost_min": 185,
+            "apartment_cost_max": 1309,
+            "dinner_cost": 7,
+            "car_rent": 53
         }
 ],
 {
