@@ -460,6 +460,17 @@
             "apartment_cost_max": 4000,
             "dinner_cost": 20,
             "car_rent": 35
+        },
+        {
+            "country_name": "Sint Maarten",
+            "costs_one_person": 2162,
+            "costs_family": 6607,
+            "hotel_cost_min": 54,
+            "hotel_cost_max": 575,
+            "apartment_cost_min": 694,
+            "apartment_cost_max": 4500,
+            "dinner_cost": 19,
+            "car_rent": 12
         }
 ],
 {
