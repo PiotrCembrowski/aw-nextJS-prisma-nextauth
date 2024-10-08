@@ -471,6 +471,17 @@
             "apartment_cost_max": 4500,
             "dinner_cost": 19,
             "car_rent": 12
+        },
+        {
+            "country_name": "British Virgin Islands",
+            "costs_one_person": 4820,
+            "costs_family": 9923,
+            "hotel_cost_min": 136,
+            "hotel_cost_max": 817,
+            "apartment_cost_min": 1000,
+            "apartment_cost_max": 4500,
+            "dinner_cost": 23,
+            "car_rent": 39
         }
 ],
 {
