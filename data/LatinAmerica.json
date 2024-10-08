@@ -493,6 +493,17 @@
             "apartment_cost_max": 2000,
             "dinner_cost": 23,
             "car_rent": 37
+        },
+        {
+            "country_name": "Montserrat",
+            "costs_one_person": 5623,
+            "costs_family": 13620,
+            "hotel_cost_min": 58,
+            "hotel_cost_max": 106,
+            "apartment_cost_max": 1295,
+            "apartment_cost_min": 1500,
+            "dinner_cost": 19,
+            "car_rent": 34
         }
 ],
 {
