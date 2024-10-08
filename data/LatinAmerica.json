@@ -306,6 +306,17 @@
             "apartment_cost_max": 1110,
             "dinner_cost": 7,
             "car_rent": 37
+        },
+        {
+            "country_name": "Grenada",
+            "costs_one_person": 1460,
+            "costs_family": 4387,
+            "hotel_cost_min": 43,
+            "hotel_cost_max": 803,
+            "apartment_cost_min": 278,
+            "apartment_cost_max": 3000,
+            "dinner_cost": 8,
+            "car_rent": 40
         }
 ],
 {
