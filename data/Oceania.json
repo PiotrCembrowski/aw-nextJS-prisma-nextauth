@@ -9,5 +9,27 @@
     "apartment_cost_max": 4253,
     "dinner_cost": 17,
     "car_rent": 16
+  },
+  {
+    "country_name": "Papua New Guinea",
+    "costs_one_person": 2909,
+    "costs_family": 5007,
+    "hotel_cost_min": 53,
+    "hotel_cost_max": 159,
+    "apartment_cost_min": 201,
+    "apartment_cost_max": 2513,
+    "dinner_cost": 10,
+    "car_rent": 
+  },
+  {
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
   }
 ]
