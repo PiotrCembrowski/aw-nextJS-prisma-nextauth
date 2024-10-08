@@ -218,6 +218,17 @@
             "apartment_cost_max": 1500,
             "dinner_cost": 15,
             "car_rent": 20
+        },
+        {
+            "country_name": "Jamaica",
+            "costs_one_person": 1354,
+            "costs_family": 4291,
+            "hotel_cost_min": 23,
+            "hotel_cost_max": 175,
+            "apartment_cost_min": 190,
+            "apartment_cost_max": 2914,
+            "dinner_cost": 8,
+            "car_rent": 25
         }
 ],
 {
