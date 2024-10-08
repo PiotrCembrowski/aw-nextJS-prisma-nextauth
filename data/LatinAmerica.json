@@ -251,6 +251,17 @@
             "apartment_cost_max": 3000,
             "dinner_cost": 12,
             "car_rent": 41
+        },
+        {
+            "country_name": "Suriname",
+            "costs_one_person": 1096,
+            "costs_family": 3591,
+            "hotel_cost_min": 26,
+            "hotel_cost_max": 212,
+            "apartment_cost_min": 114,
+            "apartment_cost_max": 2500,
+            "dinner_cost": 7,
+            "car_rent": 16
         }
 ],
 {
