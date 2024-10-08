@@ -284,6 +284,17 @@
             "apartment_cost_max": 7000,
             "dinner_cost": 30,
             "car_rent": 53
+        },
+        {
+            "country_name": "Barbados",
+            "costs_one_person": 1786,
+            "costs_family": 5841,
+            "hotel_cost_min": 400,
+            "hotel_cost_max": 3250,
+            "apartment_cost_min": 60,
+            "apartment_cost_max": 1500,
+            "dinner_cost": 20,
+            "car_rent": 26
         }
 ],
 {
