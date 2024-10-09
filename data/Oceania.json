@@ -19,7 +19,7 @@
     "apartment_cost_min": 201,
     "apartment_cost_max": 2513,
     "dinner_cost": 10,
-    "car_rent": 
+    "car_rent": 101
   },
   {
     "country_name": "New Zealand",
@@ -42,5 +42,39 @@
     "apartment_cost_max": 2928,
     "dinner_cost": 5,
     "car_rent": 42
-  }
+  },
+  {
+    "country_name": "Solomon Islands",
+    "costs_one_person": 1842,
+    "costs_family": 4626,
+    "hotel_cost_min": 80,
+    "hotel_cost_max": 275,
+    "apartment_cost_min": 362,
+    "apartment_cost_max": 1812,
+    "dinner_cost": 5,
+    "car_rent": 50
+  },
+  {
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+}
 ]
+
+{
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+}
