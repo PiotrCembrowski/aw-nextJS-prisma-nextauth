@@ -55,15 +55,15 @@
     "car_rent": 50
   },
   {
-    "country_name": "",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
-    "dinner_cost": ,
-    "car_rent": 
+    "country_name": "Micronesia",
+    "costs_one_person": 1850,
+    "costs_family": 4413,
+    "hotel_cost_min": 97,
+    "hotel_cost_max": 130,
+    "apartment_cost_min": 470,
+    "apartment_cost_max": 3000,
+    "dinner_cost": 30,
+    "car_rent": 85
 }
 ]
 
