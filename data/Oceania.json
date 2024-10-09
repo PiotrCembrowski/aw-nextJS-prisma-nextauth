@@ -218,6 +218,17 @@
       "apartment_cost_max": 231,
       "dinner_cost": 9,
       "car_rent": 37
+  },
+  {
+    "country_name": "Wallis And Futuna",
+    "costs_one_person": 5000,
+    "costs_family": 13852,
+    "hotel_cost_min": null,
+    "hotel_cost_max": null,
+    "apartment_cost_min": 877,
+    "apartment_cost_max": 2193,
+    "dinner_cost": 11,
+    "car_rent": null
   }
 ]
 
