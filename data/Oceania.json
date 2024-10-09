@@ -86,7 +86,18 @@
     "apartment_cost_max": 1655,
     "dinner_cost": 60,
     "car_rent": 70
-}
+  },
+  {
+      "country_name": "Kiribati",
+      "costs_one_person": 1749,
+      "costs_family": 5005,
+      "hotel_cost_min": 50,
+      "hotel_cost_max": 86,
+      "apartment_cost_min": 572,
+      "apartment_cost_max": 1414,
+      "dinner_cost": 3,
+      "car_rent": null
+  }
 ]
 
 {
