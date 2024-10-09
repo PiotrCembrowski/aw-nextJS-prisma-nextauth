@@ -141,6 +141,17 @@
       "apartment_cost_max": 580,
       "dinner_cost": 7,
       "car_rent": 53
+  },
+  {
+      "country_name": "Tuvalu",
+      "costs_one_person": 575,
+      "costs_family": 1429,
+      "hotel_cost_min": 33,
+      "hotel_cost_max": 198,
+      "apartment_cost_min": 97,
+      "apartment_cost_max": 329,
+      "dinner_cost": 4,
+      "car_rent": 100
   }
 ]
 
