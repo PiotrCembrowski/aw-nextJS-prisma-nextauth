@@ -75,7 +75,18 @@
     "apartment_cost_max": 6317,
     "dinner_cost": 11,
     "car_rent": 60
-  }
+  },
+  {
+    "country_name": "Samoa",
+    "costs_one_person": 1785,
+    "costs_family": 3443,
+    "hotel_cost_min": 41,
+    "hotel_cost_max": 250,
+    "apartment_cost_min": 150,
+    "apartment_cost_max": 1655,
+    "dinner_cost": 60,
+    "car_rent": 70
+}
 ]
 
 {
