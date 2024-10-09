@@ -119,6 +119,17 @@
     "apartment_cost_max": 1800,
     "dinner_cost": 2,
     "car_rent": 75
+  },
+  {
+      "country_name": "Palau",
+      "costs_one_person": 1276,
+      "costs_family": 4636,
+      "hotel_cost_min": 71,
+      "hotel_cost_max": 217,
+      "apartment_cost_min": 600,
+      "apartment_cost_max": 2500,
+      "dinner_cost": 12,
+      "car_rent": 53
   }
 ]
 
