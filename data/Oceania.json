@@ -108,6 +108,17 @@
       "apartment_cost_max": 637,
       "dinner_cost": 10,
       "car_rent": 62
+  },
+  {
+    "country_name": "Marshall Islands",
+    "costs_one_person": 1316,
+    "costs_family": 4804,
+    "hotel_cost_min": 47,
+    "hotel_cost_max": 124,
+    "apartment_cost_min": 750,
+    "apartment_cost_max": 1800,
+    "dinner_cost": 2,
+    "car_rent": 75
   }
 ]
 
