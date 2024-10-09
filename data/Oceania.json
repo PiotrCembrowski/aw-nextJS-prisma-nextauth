@@ -174,20 +174,20 @@
       "apartment_cost_max": 2297,
       "dinner_cost": 17,
       "car_rent": 30
+  },
+  {
+      "country_name": "Guam",
+      "costs_one_person": 3042,
+      "costs_family": 8172,
+      "hotel_cost_min": 70,
+      "hotel_cost_max": 243,
+      "apartment_cost_min": 700,
+      "apartment_cost_max": 3500,
+      "dinner_cost": 19,
+      "car_rent": 11
   }
 ]
 
-{
-    "country_name": "",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
-    "dinner_cost": ,
-    "car_rent": 
-}
 {
     "country_name": "",
     "costs_one_person": ,
