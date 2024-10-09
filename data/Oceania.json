@@ -97,6 +97,17 @@
       "apartment_cost_max": 1414,
       "dinner_cost": 3,
       "car_rent": null
+  },
+  {
+      "country_name": "Tonga",
+      "costs_one_person": 975,
+      "costs_family": 2468,
+      "hotel_cost_min": 21,
+      "hotel_cost_max": 204,
+      "apartment_cost_min": 212,
+      "apartment_cost_max": 637,
+      "dinner_cost": 10,
+      "car_rent": 62
   }
 ]
 
