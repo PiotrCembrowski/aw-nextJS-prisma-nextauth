@@ -64,7 +64,18 @@
     "apartment_cost_max": 3000,
     "dinner_cost": 30,
     "car_rent": 85
-}
+  },
+  {
+    "country_name": "Vanuatu",
+    "costs_one_person": 3261,
+    "costs_family": 6861,
+    "hotel_cost_min": 14,
+    "hotel_cost_max": 300,
+    "apartment_cost_min": 1095,
+    "apartment_cost_max": 6317,
+    "dinner_cost": 11,
+    "car_rent": 60
+  }
 ]
 
 {
