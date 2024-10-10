@@ -1,25 +1,25 @@
 [
-  {
-    "country_name": "Nigeria",
-    "costs_one_person": 1229,
-    "costs_family": 3514,
-    "hotel_cost_min": 8,
-    "hotel_cost_max": 128,
-    "apartment_cost_min": 176,
-    "apartment_cost_max": 5740,
-    "dinner_cost": 2,
-    "car_rent": 111
-  },
-  {
-      "country_name": "Ethiopia",
-      "costs_one_person": 1350,
-      "costs_family": 3925,
-      "hotel_cost_min": 12,
-      "hotel_cost_max": 147,
-      "apartment_cost_min": 150,
-      "apartment_cost_max": 3000,
-      "dinner_cost": 5,
-      "car_rent": 5
+    {
+        "country_name": "Nigeria",
+        "costs_one_person": 1229,
+        "costs_family": 3514,
+        "hotel_cost_min": 8,
+        "hotel_cost_max": 128,
+        "apartment_cost_min": 176,
+        "apartment_cost_max": 5740,
+        "dinner_cost": 2,
+        "car_rent": 111
+    },
+    {
+        "country_name": "Ethiopia",
+        "costs_one_person": 1350,
+        "costs_family": 3925,
+        "hotel_cost_min": 12,
+        "hotel_cost_max": 147,
+        "apartment_cost_min": 150,
+        "apartment_cost_max": 3000,
+        "dinner_cost": 5,
+        "car_rent": 5
     },
     {
         "country_name": "Egypt",
@@ -31,117 +31,128 @@
         "apartment_cost_max": 722,
         "dinner_cost": 4,
         "car_rent": 12
-      },
-      {
-          "country_name": "Democratic Republic of the Congo",
-          "costs_one_person": 1858,
-          "costs_family": 4835,
-          "hotel_cost_min": 40,
-          "hotel_cost_max": 169,
-          "apartment_cost_min": 250,
-          "apartment_cost_max": 4500,
-          "dinner_cost": 10,
-          "car_rent": 68
-        },
-        {
-            "country_name": "Tanzania",
-            "costs_one_person": 698,
-            "costs_family": 2008,
-            "hotel_cost_min": 8,
-            "hotel_cost_max": 669,
-            "apartment_cost_min": 74,
-            "apartment_cost_max": 1500,
-            "dinner_cost": 3,
-            "car_rent": 26
-          },
-          {
-            "country_name": "South Africa",
-            "costs_one_person": 1027,
-            "costs_family": 2948,
-            "hotel_cost_min": 12,
-            "hotel_cost_max": 181,
-            "apartment_cost_min": 255,
-            "apartment_cost_max": 1701,
-            "dinner_cost": 9,
-            "car_rent": 15
-          },
-          {
-              "country_name": "Kenya",
-              "costs_one_person": 727,
-              "costs_family": 2456,
-              "hotel_cost_min": 8,
-              "hotel_cost_max": 400,
-              "apartment_cost_min": 77,
-              "apartment_cost_max": 1740,
-              "dinner_cost": 4,
-              "car_rent": 50
-            },
-            {
-                "country_name": "Sudan",
-                "costs_one_person": 1153,
-                "costs_family": 1827,
-                "hotel_cost_min": 55,
-                "hotel_cost_max": 191,
-                "apartment_cost_min": 200,
-                "apartment_cost_max": 1850,
-                "dinner_cost": 6,
-                "car_rent": 50
-              },
-              {
-                "country_name": "Uganda",
-                "costs_one_person": 744,
-                "costs_family": 2424,
-                "hotel_cost_min": 15,
-                "hotel_cost_max": 350,
-                "apartment_cost_min": 109,
-                "apartment_cost_max": 2036,
-                "dinner_cost": 3,
-                "car_rent": 45
-              },
-              {
-                  "country_name": "Algeria",
-                  "costs_one_person": 612,
-                  "costs_family": 1923,
-                  "hotel_cost_min": 24,
-                  "hotel_cost_max": 209,
-                  "apartment_cost_min": 67,
-                  "apartment_cost_max": 584,
-                  "dinner_cost": 3,
-                  "car_rent": 43
-                },
-                {
-                    "country_name": "Morocco",
-                    "costs_one_person": 748,
-                    "costs_family": 2220,
-                    "hotel_cost_min": 9,
-                    "hotel_cost_max": 282,
-                    "apartment_cost_min": 122,
-                    "apartment_cost_max": 1220,
-                    "dinner_cost": 4,
-                    "car_rent": 7
-                  },
-                  {
-                      "country_name": "Angola",
-                      "costs_one_person": 1204,
-                      "costs_family": 4663,
-                      "hotel_cost_min": 34,
-                      "hotel_cost_max": 408,
-                      "apartment_cost_min": 70,
-                      "apartment_cost_max": 4182,
-                      "dinner_cost": 6,
-                      "car_rent": 43
-                    },
-                    {
-                        "country_name": "Mozambique",
-                        "costs_one_person": 1240,
-                        "costs_family": 3692,
-                        "hotel_cost_min": 10,
-                        "hotel_cost_max": 110,
-                        "apartment_cost_min": 235,
-                        "apartment_cost_max": 2735,
-                        "dinner_cost": 10,
-                        "car_rent": 35
-                    }
+    },
+    {
+        "country_name": "Democratic Republic of the Congo",
+        "costs_one_person": 1858,
+        "costs_family": 4835,
+        "hotel_cost_min": 40,
+        "hotel_cost_max": 169,
+        "apartment_cost_min": 250,
+        "apartment_cost_max": 4500,
+        "dinner_cost": 10,
+        "car_rent": 68
+    },
+    {
+        "country_name": "Tanzania",
+        "costs_one_person": 698,
+        "costs_family": 2008,
+        "hotel_cost_min": 8,
+        "hotel_cost_max": 669,
+        "apartment_cost_min": 74,
+        "apartment_cost_max": 1500,
+        "dinner_cost": 3,
+        "car_rent": 26
+    },
+    {
+        "country_name": "South Africa",
+        "costs_one_person": 1027,
+        "costs_family": 2948,
+        "hotel_cost_min": 12,
+        "hotel_cost_max": 181,
+        "apartment_cost_min": 255,
+        "apartment_cost_max": 1701,
+        "dinner_cost": 9,
+        "car_rent": 15
+    },
+    {
+        "country_name": "Kenya",
+        "costs_one_person": 727,
+        "costs_family": 2456,
+        "hotel_cost_min": 8,
+        "hotel_cost_max": 400,
+        "apartment_cost_min": 77,
+        "apartment_cost_max": 1740,
+        "dinner_cost": 4,
+        "car_rent": 50
+    },
+    {
+        "country_name": "Sudan",
+        "costs_one_person": 1153,
+        "costs_family": 1827,
+        "hotel_cost_min": 55,
+        "hotel_cost_max": 191,
+        "apartment_cost_min": 200,
+        "apartment_cost_max": 1850,
+        "dinner_cost": 6,
+        "car_rent": 50
+    },
+    {
+        "country_name": "Uganda",
+        "costs_one_person": 744,
+        "costs_family": 2424,
+        "hotel_cost_min": 15,
+        "hotel_cost_max": 350,
+        "apartment_cost_min": 109,
+        "apartment_cost_max": 2036,
+        "dinner_cost": 3,
+        "car_rent": 45
+    },
+    {
+        "country_name": "Algeria",
+        "costs_one_person": 612,
+        "costs_family": 1923,
+        "hotel_cost_min": 24,
+        "hotel_cost_max": 209,
+        "apartment_cost_min": 67,
+        "apartment_cost_max": 584,
+        "dinner_cost": 3,
+        "car_rent": 43
+    },
+    {
+        "country_name": "Morocco",
+        "costs_one_person": 748,
+        "costs_family": 2220,
+        "hotel_cost_min": 9,
+        "hotel_cost_max": 282,
+        "apartment_cost_min": 122,
+        "apartment_cost_max": 1220,
+        "dinner_cost": 4,
+        "car_rent": 7
+    },
+    {
+        "country_name": "Angola",
+        "costs_one_person": 1204,
+        "costs_family": 4663,
+        "hotel_cost_min": 34,
+        "hotel_cost_max": 408,
+        "apartment_cost_min": 70,
+        "apartment_cost_max": 4182,
+        "dinner_cost": 6,
+        "car_rent": 43
+    },
+    {
+        "country_name": "Mozambique",
+        "costs_one_person": 1240,
+        "costs_family": 3692,
+        "hotel_cost_min": 10,
+        "hotel_cost_max": 110,
+        "apartment_cost_min": 235,
+        "apartment_cost_max": 2735,
+        "dinner_cost": 10,
+        "car_rent": 35
+    },
+    {
+        "country_name": "Ghana",
+        "costs_one_person": 943,
+        "costs_family": 2920,
+        "hotel_cost_min": 8,
+        "hotel_cost_max": 371,
+        "apartment_cost_min": 61,
+        "apartment_cost_max": 3681,
+        "dinner_cost": 4,
+        "car_rent": 66
+    }
 ]
 
 
