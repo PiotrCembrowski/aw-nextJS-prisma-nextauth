@@ -119,9 +119,31 @@
                     "apartment_cost_max": 1220,
                     "dinner_cost": 4,
                     "car_rent": 7
-                  }
+                  },
+                  {
+                      "country_name": "Angola",
+                      "costs_one_person": 1204,
+                      "costs_family": 4663,
+                      "hotel_cost_min": 34,
+                      "hotel_cost_max": 408,
+                      "apartment_cost_min": 70,
+                      "apartment_cost_max": 4182,
+                      "dinner_cost": 6,
+                      "car_rent": 43
+                    }
 ]
 
+{
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+  }
 {
     "country_name": "",
     "costs_one_person": ,
