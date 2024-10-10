@@ -262,9 +262,19 @@
         "apartment_cost_max": 500,
         "dinner_cost": 3,
         "car_rent": 9
+    },
+    {
+        "country_name": "Senegal",
+        "costs_one_person": 1442,
+        "costs_family": 4636,
+        "hotel_cost_min": 25,
+        "hotel_cost_max": 270,
+        "apartment_cost_min": 250,
+        "apartment_cost_max": 2052,
+        "dinner_cost": 5,
+        "car_rent": 31
     }
 ]
-
 
 {
     "country_name": "",
