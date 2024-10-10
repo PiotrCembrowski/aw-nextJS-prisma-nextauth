@@ -1,13 +1,25 @@
 [
-    {
-        "country_name": "",
-        "costs_one_person": ,
-        "costs_family": ,
-        "hotel_cost_min": ,
-        "hotel_cost_max": ,
-        "apartment_cost_min": ,
-        "apartment_cost_max": ,
-        "dinner_cost": ,
-        "car_rent": 
-      }
+  {
+    "country_name": "Nigeria",
+    "costs_one_person": 1229,
+    "costs_family": 3514,
+    "hotel_cost_min": 8,
+    "hotel_cost_max": 128,
+    "apartment_cost_min": 176,
+    "apartment_cost_max": 5740,
+    "dinner_cost": 2,
+    "car_rent": 111
+  }
 ]
+
+{
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+  }
