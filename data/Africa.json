@@ -130,20 +130,21 @@
                       "apartment_cost_max": 4182,
                       "dinner_cost": 6,
                       "car_rent": 43
+                    },
+                    {
+                        "country_name": "Mozambique",
+                        "costs_one_person": 1240,
+                        "costs_family": 3692,
+                        "hotel_cost_min": 10,
+                        "hotel_cost_max": 110,
+                        "apartment_cost_min": 235,
+                        "apartment_cost_max": 2735,
+                        "dinner_cost": 10,
+                        "car_rent": 35
                     }
 ]
 
-{
-    "country_name": "",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
-    "dinner_cost": ,
-    "car_rent": 
-  }
+
 {
     "country_name": "",
     "costs_one_person": ,
