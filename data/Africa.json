@@ -86,6 +86,17 @@
                 "apartment_cost_max": 1850,
                 "dinner_cost": 6,
                 "car_rent": 50
+              },
+              {
+                "country_name": "Uganda",
+                "costs_one_person": 744,
+                "costs_family": 2424,
+                "hotel_cost_min": 15,
+                "hotel_cost_max": 350,
+                "apartment_cost_min": 109,
+                "apartment_cost_max": 2036,
+                "dinner_cost": 3,
+                "car_rent": 45
               }
 ]
 
