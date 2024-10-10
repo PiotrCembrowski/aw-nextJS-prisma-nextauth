@@ -97,7 +97,18 @@
                 "apartment_cost_max": 2036,
                 "dinner_cost": 3,
                 "car_rent": 45
-              }
+              },
+              {
+                  "country_name": "Algeria",
+                  "costs_one_person": 612,
+                  "costs_family": 1923,
+                  "hotel_cost_min": 24,
+                  "hotel_cost_max": 209,
+                  "apartment_cost_min": 67,
+                  "apartment_cost_max": 584,
+                  "dinner_cost": 3,
+                  "car_rent": 43
+                }
 ]
 
 {
