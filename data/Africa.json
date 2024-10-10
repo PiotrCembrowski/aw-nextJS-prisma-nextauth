@@ -273,6 +273,17 @@
         "apartment_cost_max": 2052,
         "dinner_cost": 5,
         "car_rent": 31
+    },
+    {
+        "country_name": "Zimbabwe",
+        "costs_one_person": 915,
+        "costs_family": 2895,
+        "hotel_cost_min": 10,
+        "hotel_cost_max": 494,
+        "apartment_cost_min": 120,
+        "apartment_cost_max": 1800,
+        "dinner_cost": 6,
+        "car_rent": 72
     }
 ]
 
