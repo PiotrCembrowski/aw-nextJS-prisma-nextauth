@@ -152,6 +152,17 @@
         "apartment_cost_max": 3681,
         "dinner_cost": 4,
         "car_rent": 66
+    },
+    {
+        "country_name": "Madagascar",
+        "costs_one_person": 601,
+        "costs_family": 1747,
+        "hotel_cost_min": 13,
+        "hotel_cost_max": 250,
+        "apartment_cost_min": 44,
+        "apartment_cost_max": 983,
+        "dinner_cost": 3,
+        "car_rent": 49
     }
 ]
 
@@ -166,4 +177,4 @@
     "apartment_cost_max": ,
     "dinner_cost": ,
     "car_rent": 
-  }
+}
