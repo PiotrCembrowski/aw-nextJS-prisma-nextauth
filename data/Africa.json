@@ -53,6 +53,17 @@
             "apartment_cost_max": 1500,
             "dinner_cost": 3,
             "car_rent": 26
+          },
+          {
+            "country_name": "South Africa",
+            "costs_one_person": 1027,
+            "costs_family": 2948,
+            "hotel_cost_min": 12,
+            "hotel_cost_max": 181,
+            "apartment_cost_min": 255,
+            "apartment_cost_max": 1701,
+            "dinner_cost": 9,
+            "car_rent": 15
           }
 ]
 
