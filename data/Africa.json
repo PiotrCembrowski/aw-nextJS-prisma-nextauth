@@ -108,7 +108,18 @@
                   "apartment_cost_max": 584,
                   "dinner_cost": 3,
                   "car_rent": 43
-                }
+                },
+                {
+                    "country_name": "Morocco",
+                    "costs_one_person": 748,
+                    "costs_family": 2220,
+                    "hotel_cost_min": 9,
+                    "hotel_cost_max": 282,
+                    "apartment_cost_min": 122,
+                    "apartment_cost_max": 1220,
+                    "dinner_cost": 4,
+                    "car_rent": 7
+                  }
 ]
 
 {
