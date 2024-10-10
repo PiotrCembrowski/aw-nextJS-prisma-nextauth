@@ -207,6 +207,17 @@
         "apartment_cost_max": 419,
         "dinner_cost": 7,
         "car_rent": 38
+    },
+    {
+        "country_name": "Burkina Faso",
+        "costs_one_person": 734,
+        "costs_family": 1815,
+        "hotel_cost_min": 35,
+        "hotel_cost_max": 145,
+        "apartment_cost_min": 250,
+        "apartment_cost_max": 667,
+        "dinner_cost": 1,
+        "car_rent": 50
     }
 ]
 
