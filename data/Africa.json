@@ -185,6 +185,17 @@
         "apartment_cost_max": 2502,
         "dinner_cost": 5,
         "car_rent": 20
+    },
+    {
+        "country_name": "Niger",
+        "costs_one_person": 1349,
+        "costs_family": 2983,
+        "hotel_cost_min": 73,
+        "hotel_cost_max": 300,
+        "apartment_cost_min": 142,
+        "apartment_cost_max": 1334,
+        "dinner_cost": 5,
+        "car_rent": 25
     }
 ]
 
