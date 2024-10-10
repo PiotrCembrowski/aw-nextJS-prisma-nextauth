@@ -229,6 +229,17 @@
         "apartment_cost_max": 780,
         "dinner_cost": 5,
         "car_rent": 58
+    },
+    {
+        "country_name": "Zambia",
+        "costs_one_person": 870,
+        "costs_family": 3941,
+        "hotel_cost_min": 7,
+        "hotel_cost_max": 210,
+        "apartment_cost_min": 77,
+        "apartment_cost_max": 2000,
+        "dinner_cost": 7,
+        "car_rent": 89
     }
 ]
 
