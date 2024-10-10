@@ -42,7 +42,18 @@
           "apartment_cost_max": 4500,
           "dinner_cost": 10,
           "car_rent": 68
-        }
+        },
+        {
+            "country_name": "Tanzania",
+            "costs_one_person": 698,
+            "costs_family": 2008,
+            "hotel_cost_min": 8,
+            "hotel_cost_max": 669,
+            "apartment_cost_min": 74,
+            "apartment_cost_max": 1500,
+            "dinner_cost": 3,
+            "car_rent": 26
+          }
 ]
 
 {
