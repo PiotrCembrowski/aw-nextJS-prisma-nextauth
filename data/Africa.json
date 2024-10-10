@@ -240,6 +240,28 @@
         "apartment_cost_max": 2000,
         "dinner_cost": 7,
         "car_rent": 89
+    },
+    {
+        "country_name": "Chad",
+        "costs_one_person": 850,
+        "costs_family": 4048,
+        "hotel_cost_min": ,
+        "hotel_cost_max": ,
+        "apartment_cost_min": 63,
+        "apartment_cost_max": 1162,
+        "dinner_cost": 8,
+        "car_rent": 299
+    },
+    {
+        "country_name": "Somalia",
+        "costs_one_person": 606,
+        "costs_family": 1937,
+        "hotel_cost_min": 70,
+        "hotel_cost_max": 70,
+        "apartment_cost_min": 40,
+        "apartment_cost_max": 500,
+        "dinner_cost": 3,
+        "car_rent": 9
     }
 ]
 
