@@ -9,7 +9,18 @@
     "apartment_cost_max": 5740,
     "dinner_cost": 2,
     "car_rent": 111
-  }
+  },
+  {
+      "country_name": "Ethiopia",
+      "costs_one_person": 1350,
+      "costs_family": 3925,
+      "hotel_cost_min": 12,
+      "hotel_cost_max": 147,
+      "apartment_cost_min": 150,
+      "apartment_cost_max": 3000,
+      "dinner_cost": 5,
+      "car_rent": 5
+    }
 ]
 
 {
