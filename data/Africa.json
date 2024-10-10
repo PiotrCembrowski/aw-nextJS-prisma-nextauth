@@ -284,6 +284,17 @@
         "apartment_cost_max": 1800,
         "dinner_cost": 6,
         "car_rent": 72
+    },
+    {
+        "country_name": "Guinea",
+        "costs_one_person": 1260,
+        "costs_family": 4420,
+        "hotel_cost_min": 51,
+        "hotel_cost_max": 143,
+        "apartment_cost_min": 200,
+        "apartment_cost_max": 3081,
+        "dinner_cost": 6,
+        "car_rent": 41
     }
 ]
 
