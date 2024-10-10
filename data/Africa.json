@@ -218,6 +218,17 @@
         "apartment_cost_max": 667,
         "dinner_cost": 1,
         "car_rent": 50
+    },
+    {
+        "country_name": "Malawi",
+        "costs_one_person": 690,
+        "costs_family": 2268,
+        "hotel_cost_min": 5,
+        "hotel_cost_max": 149,
+        "apartment_cost_min": 48,
+        "apartment_cost_max": 780,
+        "dinner_cost": 5,
+        "car_rent": 58
     }
 ]
 
