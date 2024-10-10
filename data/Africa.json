@@ -64,7 +64,18 @@
             "apartment_cost_max": 1701,
             "dinner_cost": 9,
             "car_rent": 15
-          }
+          },
+          {
+              "country_name": "Kenya",
+              "costs_one_person": 727,
+              "costs_family": 2456,
+              "hotel_cost_min": 8,
+              "hotel_cost_max": 400,
+              "apartment_cost_min": 77,
+              "apartment_cost_max": 1740,
+              "dinner_cost": 4,
+              "car_rent": 50
+            }
 ]
 
 {
