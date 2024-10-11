@@ -350,6 +350,17 @@
         "apartment_cost_max": 12101,
         "dinner_cost": 5,
         "car_rent": 39
+    },
+    {
+        "country_name": "Togo",
+        "costs_one_person": 837,
+        "costs_family": 2730,
+        "hotel_cost_min": 19,
+        "hotel_cost_max": 153,
+        "apartment_cost_min": 33,
+        "apartment_cost_max": 834,
+        "dinner_cost": 2,
+        "car_rent": 38
     }
 ]
 
