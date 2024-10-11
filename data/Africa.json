@@ -438,6 +438,17 @@
         "apartment_cost_max": 750,
         "dinner_cost": 18,
         "car_rent": 40
+    },
+    {
+        "country_name": "Namibia",
+        "costs_one_person": 926,
+        "costs_family": 2958,
+        "hotel_cost_min": 15,
+        "hotel_cost_max": 1900,
+        "apartment_cost_min": 199,
+        "apartment_cost_max": 1423,
+        "dinner_cost": 10,
+        "car_rent": 18
     }
 ]
 
