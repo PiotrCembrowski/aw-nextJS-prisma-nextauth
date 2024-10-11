@@ -339,6 +339,17 @@
         "apartment_cost_max": 520,
         "dinner_cost": 3,
         "car_rent": 27
+    },
+    {
+        "country_name": "South Sudan",
+        "costs_one_person": 966,
+        "costs_family": 2270,
+        "hotel_cost_min": 55,
+        "hotel_cost_max": 146,
+        "apartment_cost_min": 1300,
+        "apartment_cost_max": 12101,
+        "dinner_cost": 5,
+        "car_rent": 39
     }
 ]
 
