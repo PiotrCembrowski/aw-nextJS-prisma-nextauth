@@ -328,6 +328,17 @@
         "apartment_cost_max": 491,
         "dinner_cost": 2,
         "car_rent": 50
+    },
+    {
+        "country_name": "Tunisia",
+        "costs_one_person": 648,
+        "costs_family": 1935,
+        "hotel_cost_min": 14,
+        "hotel_cost_max": 69,
+        "apartment_cost_min": 98,
+        "apartment_cost_max": 520,
+        "dinner_cost": 3,
+        "car_rent": 27
     }
 ]
 
