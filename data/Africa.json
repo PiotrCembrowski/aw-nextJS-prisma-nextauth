@@ -295,6 +295,17 @@
         "apartment_cost_max": 3081,
         "dinner_cost": 6,
         "car_rent": 41
+    },
+    {
+        "country_name": "Benin",
+        "costs_one_person": 630,
+        "costs_family": 1414,
+        "hotel_cost_min": 28,
+        "hotel_cost_max": 273,
+        "apartment_cost_min": 42,
+        "apartment_cost_max": 750,
+        "dinner_cost": 3,
+        "car_rent": 16
     }
 ]
 
