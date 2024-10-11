@@ -394,6 +394,17 @@
         "apartment_cost_max": 1186,
         "dinner_cost": null,
         "car_rent": 68
+    },
+    {
+        "country_name": "Liberia",
+        "costs_one_person": 1655,
+        "costs_family": 5523,
+        "hotel_cost_min": 108,
+        "hotel_cost_max": 212,
+        "apartment_cost_min": 75,
+        "apartment_cost_max": 3000,
+        "dinner_cost": 8,
+        "car_rent": 5
     }
 ]
 
