@@ -416,6 +416,17 @@
         "apartment_cost_max": 425,
         "dinner_cost": 8,
         "car_rent": 199
+    },
+    {
+        "country_name": "Mauritania",
+        "costs_one_person": 1063,
+        "costs_family": 3534,
+        "hotel_cost_min": 17,
+        "hotel_cost_max": 115,
+        "apartment_cost_min": 151,
+        "apartment_cost_max": 840,
+        "dinner_cost": 4,
+        "car_rent": 20
     }
 ]
 
