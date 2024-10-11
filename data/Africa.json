@@ -449,20 +449,20 @@
         "apartment_cost_max": 1423,
         "dinner_cost": 10,
         "car_rent": 18
+    },
+    {
+        "country_name": "Gambia",
+        "costs_one_person": 647,
+        "costs_family": 2175,
+        "hotel_cost_min": 15,
+        "hotel_cost_max": 287,
+        "apartment_cost_min": 23,
+        "apartment_cost_max": 294,
+        "dinner_cost": 5,
+        "car_rent": 124
     }
 ]
 
-{
-    "country_name": "",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
-    "dinner_cost": ,
-    "car_rent": 
-}
 {
     "country_name": "",
     "costs_one_person": ,
