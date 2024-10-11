@@ -317,6 +317,17 @@
         "apartment_cost_max": 2080,
         "dinner_cost": 3,
         "car_rent": 36
+    },
+    {
+        "country_name": "Burundi",
+        "costs_one_person": 536,
+        "costs_family": 1589,
+        "hotel_cost_min": 33,
+        "hotel_cost_max": 93,
+        "apartment_cost_min": 30,
+        "apartment_cost_max": 491,
+        "dinner_cost": 2,
+        "car_rent": 50
     }
 ]
 
