@@ -427,9 +427,31 @@
         "apartment_cost_max": 840,
         "dinner_cost": 4,
         "car_rent": 20
+    },
+    {
+        "country_name": "Eritrea",
+        "costs_one_person": 1303,
+        "costs_family": 3786,
+        "hotel_cost_min": 93,
+        "hotel_cost_max": 365,
+        "apartment_cost_min": 200,
+        "apartment_cost_max": 750,
+        "dinner_cost": 18,
+        "car_rent": 40
     }
 ]
 
+{
+    "country_name": "",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+}
 {
     "country_name": "",
     "costs_one_person": ,
