@@ -361,6 +361,17 @@
         "apartment_cost_max": 834,
         "dinner_cost": 2,
         "car_rent": 38
+    },
+    {
+        "country_name": "Sierra Leone",
+        "costs_one_person": 636,
+        "costs_family": 1295,
+        "hotel_cost_min": 21,
+        "hotel_cost_max": 200,
+        "apartment_cost_min": 50,
+        "apartment_cost_max": 2500,
+        "dinner_cost": 3,
+        "car_rent": 25
     }
 ]
 
