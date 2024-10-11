@@ -372,6 +372,17 @@
         "apartment_cost_max": 2500,
         "dinner_cost": 3,
         "car_rent": 25
+    },
+    {
+        "country_name": "Libya",
+        "costs_one_person": 533,
+        "costs_family": 1642,
+        "hotel_cost_min": null,
+        "hotel_cost_max": 210,
+        "apartment_cost_min": 84,
+        "apartment_cost_max": 522,
+        "dinner_cost": 4,
+        "car_rent": 56
     }
 ]
 
