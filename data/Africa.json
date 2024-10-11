@@ -306,6 +306,17 @@
         "apartment_cost_max": 750,
         "dinner_cost": 3,
         "car_rent": 16
+    },
+    {
+        "country_name": "Rwanda",
+        "costs_one_person": 818,
+        "costs_family": 2153,
+        "hotel_cost_min": 11,
+        "hotel_cost_max": 129,
+        "apartment_cost_min": 149,
+        "apartment_cost_max": 2080,
+        "dinner_cost": 3,
+        "car_rent": 36
     }
 ]
 
