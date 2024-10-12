@@ -504,6 +504,17 @@
         "apartment_cost_max": 834,
         "dinner_cost": 5,
         "car_rent": 20
+    },
+    {
+        "country_name": "Equatorial Guinea",
+        "costs_one_person": 1238,
+        "costs_family": 3982,
+        "hotel_cost_min": 116,
+        "hotel_cost_max": 257,
+        "apartment_cost_min": 117,
+        "apartment_cost_max": 918,
+        "dinner_cost": 13,
+        "car_rent": 50
     }
 ]
 
