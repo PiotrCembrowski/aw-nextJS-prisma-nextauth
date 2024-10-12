@@ -482,6 +482,17 @@
         "apartment_cost_max": 753,
         "dinner_cost": 5,
         "car_rent": 27
+    },
+    {
+        "country_name": "Lesotho",
+        "costs_one_person": 606,
+        "costs_family": 1440,
+        "hotel_cost_min": 10,
+        "hotel_cost_max": 167,
+        "apartment_cost_min": 40,
+        "apartment_cost_max": 286,
+        "dinner_cost": 7,
+        "car_rent": 31
     }
 ]
 
