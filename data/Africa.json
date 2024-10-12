@@ -471,6 +471,17 @@
         "apartment_cost_max": 2500,
         "dinner_cost": 17,
         "car_rent": 84
+    },
+    {
+        "country_name": "Botswana",
+        "costs_one_person": 724,
+        "costs_family": 2282,
+        "hotel_cost_min": 11,
+        "hotel_cost_max": 86,
+        "apartment_cost_min": 113,
+        "apartment_cost_max": 753,
+        "dinner_cost": 5,
+        "car_rent": 27
     }
 ]
 
