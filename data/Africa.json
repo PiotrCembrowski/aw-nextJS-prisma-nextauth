@@ -515,6 +515,17 @@
         "apartment_cost_max": 918,
         "dinner_cost": 13,
         "car_rent": 50
+    },
+    {
+        "country_name": "Mauritius",
+        "costs_one_person": 964,
+        "costs_family": 2788,
+        "hotel_cost_min": 22,
+        "hotel_cost_max": 868,
+        "apartment_cost_min": 173,
+        "apartment_cost_max": 1082,
+        "dinner_cost": 7,
+        "car_rent": 27
     }
 ]
 
