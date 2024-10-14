@@ -603,6 +603,17 @@
         "apartment_cost_max": 656,
         "dinner_cost": 4,
         "car_rent": 38
+    },
+    {
+        "country_name": "Saint Helena",
+        "costs_one_person": 1443,
+        "costs_family": 3302,
+        "hotel_cost_min": 100,
+        "hotel_cost_max": 935,
+        "apartment_cost_min": 509,
+        "apartment_cost_max": 718,
+        "dinner_cost": 16,
+        "car_rent": 50
     }
 ]
 
