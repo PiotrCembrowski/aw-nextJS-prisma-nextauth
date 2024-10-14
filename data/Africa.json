@@ -570,6 +570,17 @@
         "apartment_cost_max": 820,
         "dinner_cost": 19,
         "car_rent": 29
+    },
+    {
+        "country_name": "Seychelles",
+        "costs_one_person": 1970,
+        "costs_family": 5501,
+        "hotel_cost_min": 43,
+        "hotel_cost_max": 2977,
+        "apartment_cost_min": 661,
+        "apartment_cost_max": 2570,
+        "dinner_cost": 18,
+        "car_rent": 72
     }
 ]
 
