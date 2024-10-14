@@ -548,6 +548,17 @@
         "apartment_cost_max": 3365,
         "dinner_cost": 9,
         "car_rent": 
+    },
+    {
+        "country_name": "Comoros",
+        "costs_one_person": 1325,
+        "costs_family": 3580,
+        "hotel_cost_min": 12,
+        "hotel_cost_max": 125,
+        "apartment_cost_min": 590,
+        "apartment_cost_max": 1366,
+        "dinner_cost": 1,
+        "car_rent": 54
     }
 ]
 
