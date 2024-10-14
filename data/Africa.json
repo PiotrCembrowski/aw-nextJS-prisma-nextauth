@@ -592,6 +592,17 @@
         "apartment_cost_max": 2546,
         "dinner_cost": 14,
         "car_rent": 28
+    },
+    {
+        "country_name": "Western Sahara",
+        "costs_one_person": 579,
+        "costs_family": 2199,
+        "hotel_cost_max": 27,
+        "hotel_cost_min": 102,
+        "apartment_cost_min": 164,
+        "apartment_cost_max": 656,
+        "dinner_cost": 4,
+        "car_rent": 38
     }
 ]
 
