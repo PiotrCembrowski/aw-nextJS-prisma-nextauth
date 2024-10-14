@@ -636,6 +636,17 @@
         "apartment_cost_max": 3751,
         "dinner_cost": 18,
         "car_rent": 30
+    },
+    {
+        "country_name": "Bermuda",
+        "costs_one_person": 5071,
+        "costs_family": 14952,
+        "hotel_cost_min": 105,
+        "hotel_cost_max": 750,
+        "apartment_cost_min": 1600,
+        "apartment_cost_max": 10000,
+        "dinner_cost": 40,
+        "car_rent": 130
     }
 ]
 
