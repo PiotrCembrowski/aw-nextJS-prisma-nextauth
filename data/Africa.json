@@ -537,6 +537,17 @@
         "apartment_cost_max": 572,
         "dinner_cost": 2,
         "car_rent": 22
+    },
+    {
+        "country_name": "Djibouti",
+        "costs_one_person": 4181,
+        "costs_family": 6422,
+        "hotel_cost_min": 67,
+        "hotel_cost_max": 109,
+        "apartment_cost_min": 1122,
+        "apartment_cost_max": 3365,
+        "dinner_cost": 9,
+        "car_rent": 
     }
 ]
 
