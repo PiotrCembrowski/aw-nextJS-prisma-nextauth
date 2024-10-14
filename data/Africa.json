@@ -559,6 +559,17 @@
         "apartment_cost_max": 1366,
         "dinner_cost": 1,
         "car_rent": 54
+    },
+    {
+        "country_name": "Sao Tome And Principe",
+        "costs_one_person": 878,
+        "costs_family": 2258,
+        "hotel_cost_min": 38,
+        "hotel_cost_max": 217,
+        "apartment_cost_min": 98,
+        "apartment_cost_max": 820,
+        "dinner_cost": 19,
+        "car_rent": 29
     }
 ]
 
