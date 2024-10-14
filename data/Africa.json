@@ -647,6 +647,17 @@
         "apartment_cost_max": 10000,
         "dinner_cost": 40,
         "car_rent": 130
+    },
+    {
+        "country_name": "Greenland",
+        "costs_one_person": 2345,
+        "costs_family": 6986,
+        "hotel_cost_min": 32,
+        "hotel_cost_max": 145,
+        "apartment_cost_min": 346,
+        "apartment_cost_max": 2197,
+        "dinner_cost": 18,
+        "car_rent": 45
     }
 ]
 
