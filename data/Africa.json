@@ -625,6 +625,17 @@
         "apartment_cost_max": 8759,
         "dinner_cost": 20,
         "car_rent": 15
+    },
+    {
+        "country_name": "Canada",
+        "costs_one_person": 2333,
+        "costs_family": 5782,
+        "hotel_cost_min": 37,
+        "hotel_cost_max": 452,
+        "apartment_cost_min": 870,
+        "apartment_cost_max": 3751,
+        "dinner_cost": 18,
+        "car_rent": 30
     }
 ]
 
