@@ -581,6 +581,17 @@
         "apartment_cost_max": 2570,
         "dinner_cost": 18,
         "car_rent": 72
+    },
+    {
+        "country_name": "Réunion",
+        "costs_one_person": 1563,
+        "costs_family": 4352,
+        "hotel_cost_min": 19,
+        "hotel_cost_max": 178,
+        "apartment_cost_min": 525,
+        "apartment_cost_max": 2546,
+        "dinner_cost": 14,
+        "car_rent": 28
     }
 ]
 
