@@ -526,6 +526,17 @@
         "apartment_cost_max": 1082,
         "dinner_cost": 7,
         "car_rent": 27
+    },
+    {
+        "country_name": "Eswatini",
+        "costs_one_person": 665,
+        "costs_family": 2039,
+        "hotel_cost_min": 16,
+        "hotel_cost_max": 80,
+        "apartment_cost_min": 86,
+        "apartment_cost_max": 572,
+        "dinner_cost": 2,
+        "car_rent": 22
     }
 ]
 
