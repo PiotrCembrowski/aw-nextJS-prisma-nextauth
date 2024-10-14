@@ -614,6 +614,17 @@
         "apartment_cost_max": 718,
         "dinner_cost": 16,
         "car_rent": 50
+    },
+    {
+        "country_name": "United States",
+        "costs_one_person": 2769,
+        "costs_family": 6815,
+        "hotel_cost_min": 16,
+        "hotel_cost_max": 417,
+        "apartment_cost_min": 950,
+        "apartment_cost_max": 8759,
+        "dinner_cost": 20,
+        "car_rent": 15
     }
 ]
 
