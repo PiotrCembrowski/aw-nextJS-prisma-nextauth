@@ -333,7 +333,7 @@
     "country_name": "Laos",
     "costs_one_person": 1360,
     "costs_family": 3393,
-    "hotel_cost_min":5,
+    "hotel_cost_min": 5,
     "hotel_cost_max": 20,
     "apartment_cost_min": 500,
     "apartment_cost_max": 3800,
@@ -360,7 +360,7 @@
     "apartment_cost_min": 260,
     "apartment_cost_max": 1122,
     "dinner_cost": 6,
-    "car_rent": 30 
+    "car_rent": 30
   },
   {
     "country_name": "Singapore",
@@ -441,14 +441,14 @@
   },
   {
     "country_name": "Qatar",
-    "costs_one_person": ,
-    "costs_family": ,
-    "hotel_cost_min": ,
-    "hotel_cost_max": ,
-    "apartment_cost_min": ,
-    "apartment_cost_max": ,
+    "costs_one_person": 2120,
+    "costs_family": 2521,
+    "hotel_cost_min": 29,
+    "hotel_cost_max": 207,
+    "apartment_cost_min": 685,
+    "apartment_cost_max": 4110,
     "dinner_cost": 8,
-    "car_rent": 
+    "car_rent": 14
   },
   {
     "country_name": "Armenia",
