@@ -4,33 +4,17 @@ import { promises as fs } from "fs";
 const prisma = new PrismaClient();
 
 async function main() {
-  const fileAfrica = await fs.readFile(
-    process.cwd() + "/data/Africa.json",
-    "utf8"
-  );
-  const fileAsia = await fs.readFile(process.cwd() + "/data/Asia.json", "utf8");
-  const fileEurope = await fs.readFile(
-    process.cwd() + "/data/Europe.json",
-    "utf8"
-  );
-  const fileLatinAmerica = await fs.readFile(
-    process.cwd() + "/data/LatinAmerica.json",
-    "utf8"
-  );
-  const fileOceania = await fs.readFile(
-    process.cwd() + "/data/Oceania.json",
+  const fileCountriesCosts = await fs.readFile(
+    process.cwd() + "/data/CountriesCosts.json",
     "utf8"
   );
 
-  const dataAfrica = JSON.parse(fileAfrica);
-  const dataAsia = JSON.parse(fileAsia);
-  const dataEurope = JSON.parse(fileEurope);
-  const dataLatinAmerica = JSON.parse(fileLatinAmerica);
-  const dataOceania = JSON.parse(fileOceania);
+  const dataCountriesCosts = JSON.parse(fileCountriesCosts);
 
   console.log("Start seeding...");
 
-  const Country_costs: Prisma.Country_costsCreateInput[] = await [];
+  const Country_costs: Prisma.Country_costsCreateInput[] =
+    await dataCountriesCosts;
 
   const Countries: Prisma.CountryCreateInput[] = await [
     {
