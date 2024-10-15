@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 const prisma = new PrismaClient();
 
 async function main() {
-  const fileAfrican = await fs.readFile(
+  const fileAfrica = await fs.readFile(
     process.cwd() + "/data/Africa.json",
     "utf8"
   );
@@ -21,6 +21,12 @@ async function main() {
     process.cwd() + "/data/Oceania.json",
     "utf8"
   );
+
+  const dataAfrica = JSON.parse(fileAfrica);
+  const dataAsia = JSON.parse(fileAsia);
+  const dataEurope = JSON.parse(fileEurope);
+  const dataLatinAmerica = JSON.parse(fileLatinAmerica);
+  const dataOceania = JSON.parse(fileOceania);
 
   console.log("Start seeding...");
 
