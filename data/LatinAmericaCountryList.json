@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Brazil",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Mexico",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Colombia",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Argentina",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Peru",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Venezuela",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Chile",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Guatemala",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Ecuador",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Bolivia",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Haiti",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Dominican Republic",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Cuba",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Honduras",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Paraguay",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Nicaragua",
+    "continent": "Latin America"
+  },
+  {
+    "name": "El Salvador",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Costa Rica",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Panama",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Uruguay",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Jamaica",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Guyana",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Suriname",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Belize",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Bahamas",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Barbados",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Saint Lucia",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Grenada",
+    "continent": "Latin America"
+  },
+  {
+    "name": "St. Vincent & Grenadines",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Dominica",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Saint Kitts & Nevis",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Puerto Rico",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Guadeloupe",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Martinique",
+    "continent": "Latin America"
+  },
+  {
+    "name": "French Guiana",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Curaçao",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Aruba",
+    "continent": "Latin America"
+  },
+  {
+    "name": "U.S. Virgin Islands",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Cayman Islands",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Turks and Caicos",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Sint Maarten",
+    "continent": "Latin America"
+  },
+  {
+    "name": "British Virgin Islands",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Caribbean Netherlands",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Anguilla",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Montserrat",
+    "continent": "Latin America"
+  },
+  {
+    "name": "Falkland Islands",
+    "continent": "Latin America"
+  }
+]
