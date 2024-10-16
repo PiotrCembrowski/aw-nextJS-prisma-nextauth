@@ -19,17 +19,14 @@ async function main() {
   const Countries: Prisma.CountryCreateInput[] = await [
     {
       name: "China",
-      costs: 2500,
       continent: "Asia",
     },
     {
       name: "Japan",
-      costs: 4100,
       continent: "Asia",
     },
     {
       name: "Poland",
-      costs: 820,
       continent: "Europe",
     },
   ];
