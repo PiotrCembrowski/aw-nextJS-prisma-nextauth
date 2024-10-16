@@ -26,20 +26,7 @@ async function main() {
   const Country_costs: Prisma.Country_costsCreateInput[] =
     await dataCountriesCosts;
 
-  const Countries: Prisma.CountryCreateInput[] = await [
-    {
-      name: "China",
-      continent: "Asia",
-    },
-    {
-      name: "Japan",
-      continent: "Asia",
-    },
-    {
-      name: "Poland",
-      continent: "Europe",
-    },
-  ];
+  const Countries: Prisma.CountryCreateInput[] = await dataCountryList;
 
   console.log("Seeding countries...");
 
