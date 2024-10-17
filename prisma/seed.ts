@@ -23,8 +23,32 @@ async function main() {
 
   console.log("Start seeding...");
 
-  const Country_costs: Prisma.Country_costsCreateInput[] =
-    await dataCountriesCosts;
+  // create country costs
+
+  const Country_costs: Prisma.Country_costsCreateInput[] = await [
+    {
+      country_name: "Brazil",
+      costs_one_person: 806,
+      costs_family: 2415,
+      hotel_cost_min: 8,
+      hotel_cost_max: 115,
+      apartment_cost_min: 146,
+      apartment_cost_max: 1100,
+      dinner_cost: 6,
+      car_rent: 15,
+    },
+    {
+      country_name: "Mexico",
+      costs_one_person: 1179,
+      costs_family: 3354,
+      hotel_cost_min: 30,
+      hotel_cost_max: 300,
+      apartment_cost_min: 208,
+      apartment_cost_max: 2337,
+      dinner_cost: 9,
+      car_rent: 5,
+    },
+  ];
 
   const Countries: Prisma.CountryCreateInput[] = await dataCountryList;
 
