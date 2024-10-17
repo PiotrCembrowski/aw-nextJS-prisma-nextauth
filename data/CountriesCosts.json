@@ -377,7 +377,7 @@
     "country_name": "Libya",
     "costs_one_person": 533,
     "costs_family": 1642,
-    "hotel_cost_min": null,
+    "hotel_cost_min": 0,
     "hotel_cost_max": 210,
     "apartment_cost_min": 84,
     "apartment_cost_max": 522,
@@ -392,7 +392,7 @@
     "hotel_cost_max": 176,
     "apartment_cost_min": 465,
     "apartment_cost_max": 1186,
-    "dinner_cost": null,
+    "dinner_cost": 0,
     "car_rent": 68
   },
   {
@@ -899,7 +899,7 @@
     "apartment_cost_min": 88,
     "apartment_cost_max": 2343,
     "dinner_cost": 3,
-    "car_rent": null
+    "car_rent": 0
   },
   {
     "country_name": "Syria",
@@ -2318,7 +2318,7 @@
     "apartment_cost_min": 572,
     "apartment_cost_max": 1414,
     "dinner_cost": 3,
-    "car_rent": null
+    "car_rent": 0
   },
   {
     "country_name": "Tonga",
@@ -2445,11 +2445,11 @@
     "country_name": "Wallis And Futuna",
     "costs_one_person": 5000,
     "costs_family": 13852,
-    "hotel_cost_min": null,
-    "hotel_cost_max": null,
+    "hotel_cost_min": 0,
+    "hotel_cost_max": 0,
     "apartment_cost_min": 877,
     "apartment_cost_max": 2193,
     "dinner_cost": 11,
-    "car_rent": null
+    "car_rent": 0
   }
 ]
