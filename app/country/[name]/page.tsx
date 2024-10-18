@@ -12,6 +12,8 @@ const CountryPage = async () => {
   const countryName = pathname?.substring(pathname.lastIndexOf("/") + 1);
 
   // db fetching
+
+  // country info
   let country;
   if (countryName) {
     country = await prisma.country.findFirst({
@@ -20,6 +22,20 @@ const CountryPage = async () => {
       },
     });
   }
+
+  console.log(country);
+
+  //country costs of living
+  let countryCosts;
+  if (countryName) {
+    countryCosts = await prisma.country_costs.findFirst({
+      where: {
+        country_name: countryName,
+      },
+    });
+  }
+
+  console.log(countryCosts);
 
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
