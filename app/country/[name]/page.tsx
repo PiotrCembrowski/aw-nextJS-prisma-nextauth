@@ -23,8 +23,6 @@ const CountryPage = async () => {
     });
   }
 
-  console.log(country);
-
   //country costs of living
   let countryCosts;
   if (countryName) {
@@ -52,7 +50,7 @@ const CountryPage = async () => {
         <div className="py-6 pr-6 col-span-3">
           <h1 className="mb-4 text-4xl">{countryName}</h1>
           <span className="mt-6 block text-lg text-gray-600">
-            Cost of leaving - {country?.costs}$/monthly
+            Cost of leaving - {countryCosts?.costs_one_person}$/monthly
           </span>
           <p className="my-4">Description of a place and other attractions.</p>
           <div className="oy-6 col-span-3">
