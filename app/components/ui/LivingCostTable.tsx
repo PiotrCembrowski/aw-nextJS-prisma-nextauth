@@ -31,6 +31,24 @@ const LivingCostTable = ({ costs }) => {
         <p>Car rent:</p>
         <p>{costs.car_rent}$/daily</p>
       </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>Dinner:</p>
+        <p>{costs.dinner_cost}$</p>
+      </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>Apartment rent:</p>
+        <p>
+          {costs.apartment_cost_min} - {costs.apartment_cost_max}$/monthly
+        </p>
+      </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>Cheap hotel room:</p>
+        <p>{costs.hotel_cost_min}$/daily</p>
+      </div>
+      <div className="mb-4 flex justify-between align-center">
+        <p>5 star hotel room:</p>
+        <p>{costs.hotel_cost_max}$/daily</p>
+      </div>
       <hr />
       <div className="mt-4 flex justify-between align-center font-bold">
         <p>Total costs:</p>
