@@ -11,7 +11,7 @@ const CountriesLisItem: React.FC<CountryProps> = ({ country }) => {
   return (
     <Link href={`/country/${country.name}`}>
       <div className="cursor-pointer">
-        <div className="relative overflow-hidden aspect-square rounded-xl">
+        {/* <div className="relative overflow-hidden aspect-square rounded-xl">
           <Image
             fill
             src={AsiaImg}
@@ -19,7 +19,7 @@ const CountriesLisItem: React.FC<CountryProps> = ({ country }) => {
             className="hover:scale-110 object-cover transition h-full w-full"
             alt="Asia"
           />
-        </div>
+        </div> */}
 
         <div className="mt-2">
           <p className="text-lg font-bold">{country.name}</p>

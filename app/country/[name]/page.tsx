@@ -37,26 +37,30 @@ const CountryPage = async () => {
 
   return (
     <main className="max-w-[1500px] mx-auto px-6 pb-6">
-      <div className="w-full h-[32vh] mb-4 overflow-hidden rounded-xl relative">
+      {/* <div className="w-full h-[32vh] mb-4 overflow-hidden rounded-xl relative">
         <Image
           fill
           src="/images/sunrise.jpg"
           className="object-cover w-full h-full"
           alt="China"
         />
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="py-6 pr-6 col-span-3">
           <h1 className="mb-4 text-4xl">{countryName}</h1>
           <span className="mt-6 block text-lg text-gray-600">
-            Cost of leaving - {countryCosts?.costs_one_person}$/monthly
+            Get detailed information on the cost of living in every country
+            around the world.
           </span>
-          <p className="my-4">Description of a place and other attractions.</p>
+          <p className="my-4">
+            Our website is regularly updated with the latest cost of living
+            information for countries worldwide.
+          </p>
           <div className="oy-6 col-span-3">
             <Citylist />
           </div>
-          <div className="py-6 flex items-center space-x-4">
+          {/* <div className="py-6 flex items-center space-x-4">
             <Image
               src="/images/user.png"
               width={50}
@@ -74,7 +78,7 @@ const CountryPage = async () => {
             error neque quibusdam assumenda iusto, nam possimus placeat quidem
             corrupti. Aperiam dolorum ullam id minima atque repudiandae
             accusantium ut mollitia delectus.
-          </p>
+          </p> */}
         </div>
 
         <LivingCostTable costs={countryCosts} />

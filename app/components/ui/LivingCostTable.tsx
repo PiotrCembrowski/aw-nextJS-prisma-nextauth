@@ -1,23 +1,9 @@
 "use client";
 
-interface CostsType {
-  apartment_costs_min: number;
-  apartment_costs_max: number;
-  car_rent: number;
-  costs_family: number;
-  costs_one_person: number;
-  dinner_cost: number;
-  hotel_cost_min: number;
-  hotel_cost_max: number;
-}
-
 const LivingCostTable = ({ costs }) => {
-  console.log(costs);
   return (
-    <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl h-[450px]">
-      <h2 className="mb-5 text-2xl">
-        {costs.costs_one_person}$/monthly - for one person
-      </h2>
+    <aside className="mt-6 p-6 col-span-2 rounded-xl border border-gray-300 shadow-xl">
+      <h2 className="mb-5 text-2xl">Costs of living in Russia</h2>
 
       {/* <div className="mb-6 p-3 border border-gray-400 rounded-xl">
         <label className="block font-bold text-xs">Expenses</label>
@@ -32,6 +18,10 @@ const LivingCostTable = ({ costs }) => {
       <div className="w-full mb-6 py-6 text-center text-white bg-aw rounded-xl hover:bg-awDark">
         Show more
       </div> */}
+      <div className="mb-4 flex justify-between align-center">
+        <p>One person:</p>
+        <p>{costs.costs_one_person}$/monthly</p>
+      </div>
       <div className="mb-4 flex justify-between align-center">
         <p>Family of four:</p>
         <p>{costs.costs_family}$/month</p>
@@ -59,10 +49,10 @@ const LivingCostTable = ({ costs }) => {
         <p>{costs.hotel_cost_max}$/daily</p>
       </div>
       <hr />
-      <div className="mt-4 flex justify-between align-center font-bold">
+      {/* <div className="mt-4 flex justify-between align-center font-bold">
         <p>Total costs:</p>
         <p>{costs.costs_family}$</p>
-      </div>
+      </div> */}
     </aside>
   );
 };
