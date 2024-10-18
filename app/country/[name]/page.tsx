@@ -77,7 +77,7 @@ const CountryPage = async () => {
           </p>
         </div>
 
-        <LivingCostTable report={{ id: "fds", costs: 234 }} userId={"dsa"} />
+        <LivingCostTable costs={countryCosts} />
       </div>
     </main>
   );
