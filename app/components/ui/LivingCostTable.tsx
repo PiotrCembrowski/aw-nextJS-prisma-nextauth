@@ -1,6 +1,6 @@
 "use client";
 
-export type CostsType = {
+interface CostsType {
   apartment_costs_min: number;
   apartment_costs_max: number;
   car_rent: number;
@@ -9,7 +9,7 @@ export type CostsType = {
   dinner_cost: number;
   hotel_cost_min: number;
   hotel_cost_max: number;
-};
+}
 
 const LivingCostTable = ({ costs }) => {
   console.log(costs);
