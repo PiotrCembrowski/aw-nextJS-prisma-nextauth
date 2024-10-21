@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { usePathname } from "next/navigation";
 import { NextResponse } from "next/server";
 
 const prisma = new PrismaClient();
