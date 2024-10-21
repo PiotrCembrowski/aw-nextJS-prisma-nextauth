@@ -9,27 +9,26 @@ const prisma = new PrismaClient();
 const CountryPage = async () => {
   const headerList = headers();
   const pathname = await headerList.get("x-url");
-  const countryName = pathname?.substring(pathname.lastIndexOf("/") + 1);
-  const properURL = countryName?.replace(/%20/g, " ");
-  console.log(properURL);
+  const url = pathname?.substring(pathname.lastIndexOf("/") + 1);
+  const name = url?.replace(/%20/g, " ");
   // db fetching
 
   // country info
   let country;
-  if (countryName) {
+  if (name) {
     country = await prisma.country.findFirst({
       where: {
-        name: countryName,
+        name: name,
       },
     });
   }
 
   //country costs of living
   let countryCosts;
-  if (countryName) {
+  if (name) {
     countryCosts = await prisma.country_costs.findFirst({
       where: {
-        country_name: countryName,
+        country_name: name,
       },
     });
   }
@@ -49,7 +48,7 @@ const CountryPage = async () => {
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <div className="py-6 pr-6 col-span-3">
-          <h1 className="mb-4 text-4xl">{countryName}</h1>
+          <h1 className="mb-4 text-4xl">{name}</h1>
           <span className="mt-6 block text-lg text-gray-600">
             Get detailed information on the cost of living in every country
             around the world.
