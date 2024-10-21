@@ -10,7 +10,8 @@ const CountryPage = async () => {
   const headerList = headers();
   const pathname = await headerList.get("x-url");
   const countryName = pathname?.substring(pathname.lastIndexOf("/") + 1);
-
+  const properURL = countryName?.replace(/%20/g, " ");
+  console.log(properURL);
   // db fetching
 
   // country info
