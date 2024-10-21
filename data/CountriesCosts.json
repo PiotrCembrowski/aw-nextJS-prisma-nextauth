@@ -2451,5 +2451,27 @@
     "apartment_cost_max": 2193,
     "dinner_cost": 11,
     "car_rent": 0
+  },
+  {
+    "country_name": "USA",
+    "costs_one_person": 2767,
+    "costs_family": 6815,
+    "hotel_cost_min": 15,
+    "hotel_cost_max": 417,
+    "apartment_cost_min": 950,
+    "apartment_cost_max": 8733,
+    "dinner_cost": 20,
+    "car_rent": 15
+  },
+  {
+    "country_name": "Canada",
+    "costs_one_person": 2330,
+    "costs_family": 5778,
+    "hotel_cost_min": 31,
+    "hotel_cost_max": 515,
+    "apartment_cost_min": 867,
+    "apartment_cost_max": 3747,
+    "dinner_cost": 18,
+    "car_rent": 30
   }
 ]

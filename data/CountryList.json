@@ -906,5 +906,13 @@
   {
     "name": "Falkland Islands",
     "continent": "South America"
+  },
+  {
+    "name": "USA",
+    "continent": "North America"
+  },
+  {
+    "name": "Canada",
+    "continent": "North America"
   }
 ]

@@ -1,0 +1,25 @@
+[
+  {
+    "country_name": "USA",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": ,
+    "car_rent": 
+  }
+  {
+    "country_name": "Canada",
+    "costs_one_person": ,
+    "costs_family": ,
+    "hotel_cost_min": ,
+    "hotel_cost_max": ,
+    "apartment_cost_min": ,
+    "apartment_cost_max": ,
+    "dinner_cost": 20,
+    "car_rent": 
+  }
+
+]
