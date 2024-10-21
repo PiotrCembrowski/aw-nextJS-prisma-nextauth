@@ -12,10 +12,13 @@ export async function GET(req: Request, res: Response) {
   let continent;
   const queryName = lastPart.charAt(0).toUpperCase() + lastPart.slice(1);
 
+  const nameCountry = queryName?.replace(/%20/g, " ");
+  console.log(nameCountry);
+
   if (name.search(lastPart)) {
     continent = await prisma.country.findMany({
       where: {
-        continent: queryName,
+        continent: nameCountry,
       },
     });
   }

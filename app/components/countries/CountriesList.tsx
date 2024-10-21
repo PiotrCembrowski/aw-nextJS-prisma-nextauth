@@ -25,7 +25,7 @@ const CountriesList: React.FC<CountryListProps> = (
   name: string
   // { user_id, favorites }
 ) => {
-  const continentName = useContinent((state) => state.name);
+  let continentName = useContinent((state) => state.name);
   const [countries, setCountries] = useState<CountryType[]>([]);
 
   const { data, error } = useSWR(

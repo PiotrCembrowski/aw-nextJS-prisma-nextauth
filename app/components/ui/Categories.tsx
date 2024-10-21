@@ -50,7 +50,7 @@ const Categories = () => {
       </div>
       <div
         onClick={(e) => {
-          settingCountryName("Austalia & Oceania");
+          settingCountryName("Oceania");
         }}
         className="pb-4 flex flex-col items-center space-y-2 border-b-2 border-white opacity-60 hover:opacity-100"
       >
